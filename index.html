@@ -1005,6 +1005,36 @@ async function fetchPitcherRecentStarts(pid,n=4){
   if(!d?.stats?.[0]?.splits)return null;
   return d.stats[0].splits.slice(0,n).reverse(); // oldest→newest so trend direction is clear
 }
+// Standard Statcast pitch-type family groupings, used to bucket a
+// pitcher's real arsenal into fastball / offspeed / breaking.
+const PITCH_FAMILY={
+  FF:'fb',SI:'fb',FT:'fb',FC:'fb',FA:'fb',
+  CH:'off',FS:'off',FO:'off',SC:'off',
+  SL:'brk',CU:'brk',KC:'brk',CS:'brk',SV:'brk',ST:'brk',KN:'brk',EP:'brk',
+};
+async function fetchPitcherArsenal(pid){
+  // Real per-pitcher pitch-type usage (MLB Stats API pitchArsenal stat),
+  // replacing the old hand/K%/GB-rate heuristic that only ever produced a
+  // handful of generic combinations regardless of who was actually pitching.
+  if(!pid)return null;
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&season=${YR}&sportId=1`);
+  const splits=d?.stats?.[0]?.splits;
+  if(!splits?.length)return null;
+  const totals={fb:0,off:0,brk:0};
+  let anyUsage=false;
+  for(const s of splits){
+    const code=s.stat?.pitchType?.code;
+    const usage=parseFloat(s.stat?.usage ?? s.stat?.percentage ?? 0);
+    if(!code||!usage)continue;
+    anyUsage=true;
+    const fam=PITCH_FAMILY[code]||'off';
+    totals[fam]+=usage;
+  }
+  if(!anyUsage)return null;
+  const sum=totals.fb+totals.off+totals.brk;
+  if(sum<=0)return null;
+  return{fb:totals.fb/sum,off:totals.off/sum,brk:totals.brk/sum,source:'real'};
+}
 async function fetchH2H(batterId,pitcherId){
   if(!batterId||!pitcherId)return null;
   const d=await fetchJ(`${MLB}/people/${batterId}/stats?stats=vsPlayer&group=hitting&opposingPlayerId=${pitcherId}`);
@@ -1729,10 +1759,12 @@ function runMC(perPAprob,raw,pitcherFBPct,expPA,nSims=10000){
 }
 
 function estimatePitchMix(hand,era,gbPct,kPct){
+  // Fallback only -- used when a pitcher has no pitchArsenal data yet
+  // (e.g. a brand-new call-up with no MLB innings logged).
   const isPowerArm=kPct>0.26;
   const isGroundBall=(gbPct||1.0)>1.3;
-  if(hand==='L'){return{fb:isGroundBall?0.48:0.58,off:isPowerArm?0.26:0.32,brk:0.10+(isGroundBall?0.04:0)};}
-  return{fb:isGroundBall?0.42:0.52,off:isPowerArm?0.22:0.26,brk:isPowerArm?0.26:0.22};
+  if(hand==='L'){return{fb:isGroundBall?0.48:0.58,off:isPowerArm?0.26:0.32,brk:0.10+(isGroundBall?0.04:0),source:'est'};}
+  return{fb:isGroundBall?0.42:0.52,off:isPowerArm?0.22:0.26,brk:isPowerArm?0.26:0.22,source:'est'};
 }
 
 // ═══════════════════════════════════════
@@ -1811,10 +1843,10 @@ async function buildPredictions(){
   }
 
   setProgress(20,'FETCHING PITCHER STATS + TRENDS...');
-  const pitcherMap={},pitcherPersonMap={},pitcherRecentMap={};
+  const pitcherMap={},pitcherPersonMap={},pitcherRecentMap={},pitcherArsenalMap={};
   await Promise.all([...pitcherIds].map(async pid=>{
-    const[stats,person,recentStarts]=await Promise.all([fetchPitcherSeason(pid),fetchPerson(pid),fetchPitcherRecentStarts(pid)]);
-    pitcherMap[pid]=stats;pitcherPersonMap[pid]=person;pitcherRecentMap[pid]=recentStarts;
+    const[stats,person,recentStarts,arsenal]=await Promise.all([fetchPitcherSeason(pid),fetchPerson(pid),fetchPitcherRecentStarts(pid),fetchPitcherArsenal(pid)]);
+    pitcherMap[pid]=stats;pitcherPersonMap[pid]=person;pitcherRecentMap[pid]=recentStarts;pitcherArsenalMap[pid]=arsenal;
   }));
 
   setProgress(28,'FETCHING WEATHER...');
@@ -1878,7 +1910,10 @@ async function buildPredictions(){
     if(!model)continue;
     const gameProb=clamp(1-Math.pow(1-model.perPA,model.expPA),0,0.85);
     const mc=runMC(model.perPA,model.raw,pitcher?.gbPct,model.expPA);
-    const pitchMix=estimatePitchMix(pitcherHand,pitcher?.era,pitcher?.gbPct,pitcher?.kPct);
+    // Prefer the pitcher's real, individual arsenal mix (MLB Stats API);
+    // only fall back to the hand/K%/GB-rate estimate when a pitcher's
+    // pitchArsenal data isn't available (e.g. brand-new call-up).
+    const pitchMix=pitcherArsenalMap[b.pitcherId]||estimatePitchMix(pitcherHand,pitcher?.era,pitcher?.gbPct,pitcher?.kPct);
     preds.push({
       pid:b.pid,name:b.name,batterHand,
       team:b.homeAbbr||'—',park:b.park,parkName:b.park?.name||'—',
@@ -2805,7 +2840,7 @@ function renderPitchMix(p){
   const pm=p.pitchMix;
   const pitcherHR9=fmt(p.pitcher?.hr9||LG.pitHR9,2);
   const kPct=fmt((p.pitcher?.kPct||LG.pitKPct)*100,0)+'%';
-  document.getElementById('throwsTitle').textContent=`${(p.pitcherName||'PITCHER').split(' ').pop().toUpperCase()} THROWS`;
+  document.getElementById('throwsTitle').textContent=`${(p.pitcherName||'PITCHER').split(' ').pop().toUpperCase()} THROWS${pm.source==='real'?' · ACTUAL ARSENAL':' · EST'}`;
   document.getElementById('pitchMix').innerHTML=`
     <div class="pm-pill fb active"><div><span class="pm-dot fb"></span>FB</div><div class="pm-pct" style="color:var(--blue)">${fmt(pm.fb*100,0)}%</div><div class="pm-lbl">FASTBALL</div></div>
     <div class="pm-pill off active"><div><span class="pm-dot off"></span>OFF</div><div class="pm-pct" style="color:var(--purple)">${fmt(pm.off*100,0)}%</div><div class="pm-lbl">OFFSPEED</div></div>
