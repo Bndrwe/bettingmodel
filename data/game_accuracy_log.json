@@ -2,30 +2,30 @@
   "sessions": [
     {
       "date": "2026-07-11",
-      "gamesGraded": 14,
+      "gamesGraded": 16,
       "moneyline": {
         "hits": 9,
-        "total": 14
+        "total": 16
       },
       "runLine": {
-        "hits": 8,
-        "total": 14
+        "hits": 9,
+        "total": 16
       },
       "total": {
-        "hits": 2,
-        "total": 14
+        "hits": 4,
+        "total": 16
       },
       "f5": {
         "hits": 6,
-        "total": 11
+        "total": 13
       },
       "nrfi": {
-        "hits": 4,
-        "total": 14
+        "hits": 5,
+        "total": 16
       },
       "teamHits": {
-        "hits": 9,
-        "total": 28
+        "hits": 11,
+        "total": 32
       },
       "detail": [
         {
@@ -612,6 +612,90 @@
               "pick": "under",
               "line": 8.5,
               "actual": 6,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 823276,
+          "matchup": "TOR @ SD",
+          "actualScore": "7-8",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5518,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 7.0,
+            "hit": true
+          },
+          "f5": {
+            "pick": "away",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 6.5,
+              "actual": 8,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 8,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 823926,
+          "matchup": "AZ @ LAD",
+          "actualScore": "9-2",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.7438,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "home",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.0,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": false
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 9.0,
+              "actual": 6,
+              "hit": true
+            },
+            "away": {
+              "pick": "over",
+              "line": 6.0,
+              "actual": 9,
               "hit": true
             }
           }
