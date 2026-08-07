@@ -1,0 +1,117 @@
+{
+  "date": "2026-08-06",
+  "games": [
+    {
+      "homeRuns": 1,
+      "awayRuns": 4,
+      "homeHits": 4,
+      "awayHits": 9,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 1,
+        "away": 3
+      },
+      "f5Complete": true,
+      "gamePk": 824804
+    },
+    {
+      "homeRuns": 6,
+      "awayRuns": 5,
+      "homeHits": 8,
+      "awayHits": 9,
+      "firstInningRuns": {
+        "home": 1,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 5,
+        "away": 3
+      },
+      "f5Complete": true,
+      "gamePk": 824481
+    },
+    {
+      "homeRuns": 6,
+      "awayRuns": 13,
+      "homeHits": 10,
+      "awayHits": 18,
+      "firstInningRuns": {
+        "home": 2,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 5,
+        "away": 6
+      },
+      "f5Complete": true,
+      "gamePk": 824401
+    },
+    {
+      "homeRuns": 5,
+      "awayRuns": 2,
+      "homeHits": 7,
+      "awayHits": 6,
+      "firstInningRuns": {
+        "home": 1,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 4,
+        "away": 2
+      },
+      "f5Complete": true,
+      "gamePk": 823754
+    },
+    {
+      "homeRuns": 3,
+      "awayRuns": 2,
+      "homeHits": 5,
+      "awayHits": 11,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 1
+      },
+      "f5Runs": {
+        "home": 0,
+        "away": 1
+      },
+      "f5Complete": true,
+      "gamePk": 824664
+    },
+    {
+      "homeRuns": 0,
+      "awayRuns": 11,
+      "homeHits": 7,
+      "awayHits": 16,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 3
+      },
+      "f5Runs": {
+        "home": 0,
+        "away": 4
+      },
+      "f5Complete": true,
+      "gamePk": 823105
+    },
+    {
+      "homeRuns": 7,
+      "awayRuns": 3,
+      "homeHits": 16,
+      "awayHits": 8,
+      "firstInningRuns": {
+        "home": 2,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 6,
+        "away": 2
+      },
+      "f5Complete": true,
+      "gamePk": 823430
+    }
+  ]
+}
