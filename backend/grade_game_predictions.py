@@ -71,7 +71,10 @@ def grade_day(date_str):
             # closest to it as the representative over/under lean.
             over_line = min(tot["lines"], key=lambda l: abs(l.get("line", model_total) - model_total))
             tot_pick = "over" if over_line.get("overProb", 0.5) >= 0.5 else "under"
-            tot_hit = (actual_total > model_total) if tot_pick == "over" else (actual_total < model_total)
+            if actual_total == model_total:
+                tot_hit = None  # landed exactly on a whole-number total: push, not a miss
+            else:
+                tot_hit = (actual_total > model_total) if tot_pick == "over" else (actual_total < model_total)
 
         f5 = g.get("f5", {}) or {}
         f5_runs = r.get("f5Runs")
@@ -99,7 +102,10 @@ def grade_day(date_str):
             h = hits.get(side)
             if h and actual_hits is not None and h.get("modelLine") is not None:
                 pick = "over" if h.get("overProb", 0.5) >= 0.5 else "under"
-                hit = (actual_hits > h["modelLine"]) if pick == "over" else (actual_hits < h["modelLine"])
+                if actual_hits == h["modelLine"]:
+                    hit = None  # push on a whole-number line
+                else:
+                    hit = (actual_hits > h["modelLine"]) if pick == "over" else (actual_hits < h["modelLine"])
                 hits_graded[side] = {"pick": pick, "line": h["modelLine"], "actual": actual_hits, "hit": hit}
 
         graded.append({
@@ -132,8 +138,8 @@ def update_accuracy_log(date_str, graded):
     tot_hits, tot_total = _tally(graded, "total")
     f5_hits, f5_total = _tally(graded, "f5")
     nrfi_hits, nrfi_total = _tally(graded, "nrfi")
-    hits_hits = sum(1 for g in graded for v in g["teamHits"].values() if v.get("hit"))
-    hits_total = sum(1 for g in graded for v in g["teamHits"].values())
+    hits_hits = sum(1 for g in graded for v in g["teamHits"].values() if v.get("hit") is True)
+    hits_total = sum(1 for g in graded for v in g["teamHits"].values() if v.get("hit") is not None)
 
     session = {
         "date": date_str,
