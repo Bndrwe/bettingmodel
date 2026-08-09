@@ -12,7 +12,7 @@ between players.
 """
 import requests
 import json
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import sys
@@ -315,6 +315,63 @@ def fetch_batter_extra(batter_id, opp_pitcher_id, opp_pitcher_hand, season):
     }
 
 
+def fetch_last_lineup(team_id, season):
+    """Most recent completed game's starting nine for *team_id* -- batting
+    order, person info, and season batting stats straight from that game's
+    boxscore.
+
+    This is the projected-lineup fallback: the daily model run fires at
+    15:00 UTC, hours before most lineups post (and before *any* West-coast
+    lineup posts), and the old code simply produced zero predictions for
+    every team whose lineup wasn't up yet -- silently dropping up to half
+    the slate every single day (Ohtani's Dodgers included, ~13 of 30 teams
+    on a typical run)."""
+    if not team_id:
+        return []
+    end = date.today() - timedelta(days=1)
+    start = end - timedelta(days=6)
+    sched = fetch_json(
+        f"{MLB_API}/schedule?sportId=1&teamId={team_id}"
+        f"&startDate={start.isoformat()}&endDate={end.isoformat()}"
+    )
+    if not sched or not sched.get("dates"):
+        return []
+
+    last_pk, last_side = None, None
+    for dt in sched["dates"]:
+        for g in dt.get("games", []):
+            if g.get("status", {}).get("detailedState") != "Final":
+                continue
+            for side in ("home", "away"):
+                if g.get("teams", {}).get(side, {}).get("team", {}).get("id") == team_id:
+                    last_pk, last_side = g.get("gamePk"), side
+    if not last_pk:
+        return []
+
+    box = fetch_json(f"{MLB_API}/game/{last_pk}/boxscore")
+    if not box:
+        return []
+    players = box.get("teams", {}).get(last_side, {}).get("players", {})
+    starters = []
+    for pdata in players.values():
+        try:
+            bo = int(pdata.get("battingOrder"))
+        except (TypeError, ValueError):
+            continue
+        if bo % 100 == 0:  # 100..900 = the starting nine; subs get 101, 502, ...
+            starters.append((bo, pdata))
+    starters.sort(key=lambda t: t[0])
+    return [
+        {
+            "id": pdata.get("person", {}).get("id"),
+            "person": pdata.get("person", {}),
+            "seasonStats": pdata.get("seasonStats", {}).get("batting", {}),
+        }
+        for _, pdata in starters[:9]
+        if pdata.get("person", {}).get("id")
+    ]
+
+
 # -- weather ----------------------------------------------------------
 
 def fetch_weather(lat, lon):
@@ -431,6 +488,13 @@ def main():
             _bullpen_cache[team_id] = fetch_team_bullpen_hr9(team_id, season)
         return _bullpen_cache[team_id]
 
+    _lineup_cache = {}
+
+    def get_last_lineup(team_id):
+        if team_id not in _lineup_cache:
+            _lineup_cache[team_id] = fetch_last_lineup(team_id, season)
+        return _lineup_cache[team_id]
+
     # -- Pass 1: walk every game/side/batter and build a prediction context.
     # Recent-form, splits and H2H are deferred to a concurrent fetch stage
     # below since that's O(hundreds of batters) and would be far too slow
@@ -498,19 +562,43 @@ def main():
                     "pitcher stat unavailable - using league-average adjustments."
                 )
 
+            # Normalize the batter source: today's posted lineup when the
+            # boxscore has one, otherwise this team's most recent completed
+            # game's starting nine (projected lineup) so no team silently
+            # drops off the slate just because its lineup isn't up yet.
+            side_team_id = home_team_id if side == "home" else away_team_id
             batters = team_data.get("batters", [])
-            batter_order_map = {bid: idx + 1 for idx, bid in enumerate(batters)}
+            if batters:
+                lineup_status = "confirmed"
+                lineup_entries = []
+                for idx, bid in enumerate(batters):
+                    pdata = team_data.get("players", {}).get(f"ID{bid}", {})
+                    if not pdata:
+                        continue
+                    lineup_entries.append({
+                        "id": bid,
+                        "person": pdata.get("person", {}),
+                        "seasonStats": pdata.get("seasonStats", {}).get("batting", {}),
+                        "order": idx + 1,
+                    })
+            else:
+                lineup_status = "projected"
+                lineup_entries = [
+                    dict(e, order=idx + 1)
+                    for idx, e in enumerate(get_last_lineup(side_team_id))
+                ]
+                if lineup_entries:
+                    print(f"[INFO] {team_abbr or side}: lineup not posted - projecting last game's starting nine.")
+                else:
+                    print(f"[WARN] {team_abbr or side}: lineup not posted and no recent lineup found - skipping side.")
 
             season_start = date(season, 3, 28)
             season_day   = max(1, (date.today() - season_start).days)
 
-            for batter_id in batters:
-                batter_stats = team_data.get("players", {}).get(f"ID{batter_id}", {})
-                if not batter_stats:
-                    continue
-
-                person       = batter_stats.get("person", {})
-                season_stats = batter_stats.get("seasonStats", {}).get("batting", {})
+            for entry in lineup_entries:
+                batter_id    = entry["id"]
+                person       = entry["person"]
+                season_stats = entry["seasonStats"]
 
                 pa = _safe_int(season_stats, "plateAppearances")
                 if pa < 40:
@@ -534,16 +622,15 @@ def main():
                     "iso": round(max(0.02, min(0.45, slg - avg)), 3),
                 }
 
-                batting_order = batter_order_map.get(batter_id, 5)
-
                 game_ctx = {
                     "team_abbr": team_abbr,
                     "opp_abbr":  opp_abbr,
                     "isAway":    side == "away",
                     "pitThrows": pit_throws,
-                    "order":     batting_order,
+                    "order":     entry["order"],
                     "dayNight":  game.get("dayNight", "night"),
                     "pitcher":   pit_name,
+                    "lineupStatus": lineup_status,
                 }
 
                 contexts.append({

@@ -123,9 +123,13 @@ def pitcher_hr_k_mult(pitcher_stat):
 
 def fb_factor(pitcher_stat):
     """Pitcher fly-ball tendency (estimated from groundout/airout ratio).
-    Higher FB% pitchers surrender more home runs."""
-    fb_pct = pitcher_stat.get("fbPct", LG["pitFBPct"]) if pitcher_stat else LG["pitFBPct"]
-    return clamp(0.90 + 0.10 * (fb_pct / LG["pitFBPct"]), 0.90, 1.10)
+    Higher FB% pitchers surrender more home runs. The neutral reference is
+    0.53 -- what the 0.42 + 0.12/GB estimator produces at a league-average
+    GB ratio (same constant the client-side model uses); the old 0.38
+    reference made this factor ~1.04 for every pitcher."""
+    neutral_fb = 0.53
+    fb_pct = pitcher_stat.get("fbPct", neutral_fb) if pitcher_stat else neutral_fb
+    return clamp(0.90 + 0.10 * (fb_pct / neutral_fb), 0.90, 1.10)
 
 def whip_factor(pitcher_stat):
     whip = pitcher_stat.get("whip", 1.30) if pitcher_stat else 1.30
@@ -491,6 +495,7 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
         "gameMatchup": game_matchup,
         "battingOrder": order,
         "pitcherName": game.get("pitcher", ""),
+        "lineupStatus": game.get("lineupStatus", "confirmed"),
         "grade": grade,
         "factors": {
             "iso": round(iso_mult, 3),

@@ -217,7 +217,8 @@ def fetch_bullpen_quality(team_id, starter_id, season):
         return None
     pitcher_ids = [
         p["person"]["id"] for p in roster["roster"]
-        if p.get("position", {}).get("abbreviation") in ("P", "SP", "RP")
+        # TWP included: a two-way player's pitching line is real staff innings
+        if p.get("position", {}).get("abbreviation") in ("P", "SP", "RP", "TWP")
         and p.get("person", {}).get("id") != starter_id
     ]
     if not pitcher_ids:
