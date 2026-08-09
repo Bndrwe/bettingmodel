@@ -14,49 +14,51 @@
       "awayPitcher": "Brady Singer",
       "expectedRuns": {
         "home": 5.8,
-        "away": 4.4
+        "away": 4.24
       },
       "pitchingQuality": {
-        "homeStarter": 3.91,
-        "awayStarter": 4.65,
-        "homePen": 4.37,
-        "awayPen": 3.99
+        "homeStarter": 3.84,
+        "awayStarter": 4.64,
+        "homeStarterEra": 3.79,
+        "awayStarterEra": 4.66,
+        "homePen": 4.34,
+        "awayPen": 4.01
       },
       "lineupMatchup": {
         "home": {
-          "mult": 0.997,
+          "mult": 0.993,
           "source": "lineup"
         },
         "away": {
-          "mult": 1.001,
+          "mult": 0.982,
           "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.6135,
-        "awayProb": 0.3865,
-        "homeOdds": -159,
-        "awayOdds": 159
+        "homeProb": 0.6288,
+        "awayProb": 0.3712,
+        "homeOdds": -169,
+        "awayOdds": 169
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.4911,
-          "awayCoverProb": 0.5089
+          "homeCoverProb": 0.5052,
+          "awayCoverProb": 0.4948
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.5364,
-            "awayCoverProb": 0.4636
+            "homeCoverProb": 0.5504,
+            "awayCoverProb": 0.4496
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.4015,
-            "awayCoverProb": 0.5985
+            "homeCoverProb": 0.4152,
+            "awayCoverProb": 0.5848
           }
         ]
       },
@@ -65,202 +67,71 @@
         "lines": [
           {
             "line": 8.5,
-            "overProb": 0.618,
-            "underProb": 0.382
+            "overProb": 0.6077,
+            "underProb": 0.3923
           },
           {
             "line": 9.5,
-            "overProb": 0.5493,
-            "underProb": 0.4507
+            "overProb": 0.5385,
+            "underProb": 0.4615
           },
           {
             "line": 10.5,
-            "overProb": 0.4783,
-            "underProb": 0.5217
+            "overProb": 0.4674,
+            "underProb": 0.5326
           },
           {
             "line": 11.5,
-            "overProb": 0.4083,
-            "underProb": 0.5917
+            "overProb": 0.3979,
+            "underProb": 0.6021
           }
         ]
       },
       "f5": {
         "expectedRuns": {
           "home": 3.22,
-          "away": 2.44
+          "away": 2.36
         },
         "moneyline": {
-          "homeProb": 0.624,
-          "awayProb": 0.376,
-          "homeOdds": -166,
-          "awayOdds": 166
+          "homeProb": 0.6393,
+          "awayProb": 0.3607,
+          "homeOdds": -177,
+          "awayOdds": 177
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5939,
-          "awayCoverProb": 0.4061
+          "homeCoverProb": 0.604,
+          "awayCoverProb": 0.396
         },
         "total": {
           "modelTotal": 5.5,
-          "overProb": 0.519,
-          "underProb": 0.481
+          "overProb": 0.5091,
+          "underProb": 0.4909
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.676,
-          "away": 0.513
+          "home": 0.677,
+          "away": 0.495
         },
-        "nrfiProb": 0.3152,
-        "yrfiProb": 0.6848
+        "nrfiProb": 0.3204,
+        "yrfiProb": 0.6796
       },
       "teamHits": {
         "home": {
           "team": "WSH",
-          "expectedHits": 9.15,
+          "expectedHits": 9.21,
           "modelLine": 9.0,
-          "overProb": 0.5198,
-          "underProb": 0.4802
+          "overProb": 0.528,
+          "underProb": 0.472
         },
         "away": {
           "team": "CIN",
-          "expectedHits": 8.25,
-          "modelLine": 8.5,
-          "overProb": 0.4672,
-          "underProb": 0.5328
-        }
-      }
-    },
-    {
-      "gamePk": 823345,
-      "gameDate": "2026-08-09T17:35:00Z",
-      "venue": "PNC Park",
-      "homeTeam": "PIT",
-      "awayTeam": "NYM",
-      "homeTeamId": 134,
-      "awayTeamId": 121,
-      "homePitcher": "Jared Jones",
-      "awayPitcher": "Sean Manaea",
-      "expectedRuns": {
-        "home": 5.05,
-        "away": 3.77
-      },
-      "pitchingQuality": {
-        "homeStarter": 3.99,
-        "awayStarter": 4.18,
-        "homePen": 3.55,
-        "awayPen": 3.94
-      },
-      "lineupMatchup": {
-        "home": {
-          "mult": 1.003,
-          "source": "lineup"
-        },
-        "away": {
-          "mult": 0.965,
-          "source": "teamSplit"
-        }
-      },
-      "moneyline": {
-        "homeProb": 0.621,
-        "awayProb": 0.379,
-        "homeOdds": -164,
-        "awayOdds": 164
-      },
-      "runLine": {
-        "standard": {
-          "homeLine": -1.5,
-          "awayLine": 1.5,
-          "homeCoverProb": 0.4808,
-          "awayCoverProb": 0.5192
-        },
-        "alternates": [
-          {
-            "homeLine": -1.0,
-            "awayLine": 1.0,
-            "homeCoverProb": 0.5261,
-            "awayCoverProb": 0.4739
-          },
-          {
-            "homeLine": -2.5,
-            "awayLine": 2.5,
-            "homeCoverProb": 0.3915,
-            "awayCoverProb": 0.6085
-          }
-        ]
-      },
-      "total": {
-        "modelTotal": 9.0,
-        "lines": [
-          {
-            "line": 7.5,
-            "overProb": 0.5926,
-            "underProb": 0.4074
-          },
-          {
-            "line": 8.5,
-            "overProb": 0.5227,
-            "underProb": 0.4773
-          },
-          {
-            "line": 9.5,
-            "overProb": 0.4517,
-            "underProb": 0.5483
-          },
-          {
-            "line": 10.5,
-            "overProb": 0.3829,
-            "underProb": 0.6171
-          }
-        ]
-      },
-      "f5": {
-        "expectedRuns": {
-          "home": 2.81,
-          "away": 2.09
-        },
-        "moneyline": {
-          "homeProb": 0.6315,
-          "awayProb": 0.3685,
-          "homeOdds": -171,
-          "awayOdds": 171
-        },
-        "runLine": {
-          "homeLine": -0.5,
-          "awayLine": 0.5,
-          "homeCoverProb": 0.5864,
-          "awayCoverProb": 0.4136
-        },
-        "total": {
-          "modelTotal": 5.0,
-          "overProb": 0.4883,
-          "underProb": 0.5117
-        }
-      },
-      "nrfi": {
-        "expectedFirstInningRuns": {
-          "home": 0.59,
-          "away": 0.439
-        },
-        "nrfiProb": 0.3653,
-        "yrfiProb": 0.6347
-      },
-      "teamHits": {
-        "home": {
-          "team": "PIT",
-          "expectedHits": 8.71,
-          "modelLine": 8.5,
-          "overProb": 0.5285,
-          "underProb": 0.4715
-        },
-        "away": {
-          "team": "NYM",
-          "expectedHits": 7.57,
-          "modelLine": 7.5,
-          "overProb": 0.5094,
-          "underProb": 0.4906
+          "expectedHits": 8.14,
+          "modelLine": 8.0,
+          "overProb": 0.518,
+          "underProb": 0.482
         }
       }
     },
@@ -275,14 +146,16 @@
       "homePitcher": "Erik Miller",
       "awayPitcher": "J.T. Ginn",
       "expectedRuns": {
-        "home": 5.39,
+        "home": 5.33,
         "away": 3.4
       },
       "pitchingQuality": {
-        "homeStarter": 3.44,
-        "awayStarter": 3.8,
-        "homePen": 3.19,
-        "awayPen": 4.68
+        "homeStarter": 3.37,
+        "awayStarter": 3.74,
+        "homeStarterEra": 2.5,
+        "awayStarterEra": 3.41,
+        "homePen": 3.18,
+        "awayPen": 4.66
       },
       "lineupMatchup": {
         "home": {
@@ -290,108 +163,108 @@
           "source": "lineup"
         },
         "away": {
-          "mult": 0.964,
+          "mult": 0.974,
           "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.6295,
-        "awayProb": 0.3705,
-        "homeOdds": -170,
-        "awayOdds": 170
+        "homeProb": 0.6257,
+        "awayProb": 0.3743,
+        "homeOdds": -167,
+        "awayOdds": 167
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.5439,
-          "awayCoverProb": 0.4561
+          "homeCoverProb": 0.5391,
+          "awayCoverProb": 0.4609
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.5886,
-            "awayCoverProb": 0.4114
+            "homeCoverProb": 0.5839,
+            "awayCoverProb": 0.4161
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.4534,
-            "awayCoverProb": 0.5466
+            "homeCoverProb": 0.4487,
+            "awayCoverProb": 0.5513
           }
         ]
       },
       "total": {
-        "modelTotal": 9.0,
+        "modelTotal": 8.5,
         "lines": [
           {
-            "line": 7.5,
-            "overProb": 0.5906,
-            "underProb": 0.4094
+            "line": 7.0,
+            "overProb": 0.6207,
+            "underProb": 0.3793
           },
           {
-            "line": 8.5,
-            "overProb": 0.5206,
-            "underProb": 0.4794
+            "line": 8.0,
+            "overProb": 0.5522,
+            "underProb": 0.4478
           },
           {
-            "line": 9.5,
-            "overProb": 0.4496,
-            "underProb": 0.5504
+            "line": 9.0,
+            "overProb": 0.4812,
+            "underProb": 0.5188
           },
           {
-            "line": 10.5,
-            "overProb": 0.3809,
-            "underProb": 0.6191
+            "line": 10.0,
+            "overProb": 0.4111,
+            "underProb": 0.5889
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.99,
+          "home": 2.96,
           "away": 1.89
         },
         "moneyline": {
-          "homeProb": 0.6987,
-          "awayProb": 0.3013,
-          "homeOdds": -232,
-          "awayOdds": 232
+          "homeProb": 0.6949,
+          "awayProb": 0.3051,
+          "homeOdds": -228,
+          "awayOdds": 228
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.6317,
-          "awayCoverProb": 0.3683
+          "homeCoverProb": 0.6283,
+          "awayCoverProb": 0.3717
         },
         "total": {
           "modelTotal": 5.0,
-          "overProb": 0.4864,
-          "underProb": 0.5136
+          "overProb": 0.4829,
+          "underProb": 0.5171
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.628,
+          "home": 0.622,
           "away": 0.397
         },
-        "nrfiProb": 0.3665,
-        "yrfiProb": 0.6335
+        "nrfiProb": 0.3686,
+        "yrfiProb": 0.6314
       },
       "teamHits": {
         "home": {
           "team": "BOS",
-          "expectedHits": 9.58,
+          "expectedHits": 9.48,
           "modelLine": 9.5,
-          "overProb": 0.5109,
-          "underProb": 0.4891
+          "overProb": 0.4977,
+          "underProb": 0.5023
         },
         "away": {
           "team": "ATH",
-          "expectedHits": 6.87,
+          "expectedHits": 6.81,
           "modelLine": 7.0,
-          "overProb": 0.4827,
-          "underProb": 0.5173
+          "overProb": 0.4751,
+          "underProb": 0.5249
         }
       }
     },
@@ -406,18 +279,20 @@
       "homePitcher": "Jes\u00fas Luzardo",
       "awayPitcher": "Shane Bieber",
       "expectedRuns": {
-        "home": 5.01,
-        "away": 3.45
+        "home": 5.15,
+        "away": 3.44
       },
       "pitchingQuality": {
-        "homeStarter": 3.28,
-        "awayStarter": 4.82,
-        "homePen": 3.73,
+        "homeStarter": 3.22,
+        "awayStarter": 5.14,
+        "homeStarterEra": 3.32,
+        "awayStarterEra": 5.48,
+        "homePen": 3.75,
         "awayPen": 3.76
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.036,
+          "mult": 1.039,
           "source": "lineup"
         },
         "away": {
@@ -426,30 +301,30 @@
         }
       },
       "moneyline": {
-        "homeProb": 0.5957,
-        "awayProb": 0.4043,
-        "homeOdds": -147,
-        "awayOdds": 147
+        "homeProb": 0.6073,
+        "awayProb": 0.3927,
+        "homeOdds": -155,
+        "awayOdds": 155
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.506,
-          "awayCoverProb": 0.494
+          "homeCoverProb": 0.519,
+          "awayCoverProb": 0.481
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.5512,
-            "awayCoverProb": 0.4488
+            "homeCoverProb": 0.5641,
+            "awayCoverProb": 0.4359
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.4159,
-            "awayCoverProb": 0.5841
+            "homeCoverProb": 0.4287,
+            "awayCoverProb": 0.5713
           }
         ]
       },
@@ -458,71 +333,204 @@
         "lines": [
           {
             "line": 7.0,
-            "overProb": 0.6022,
-            "underProb": 0.3978
+            "overProb": 0.6112,
+            "underProb": 0.3888
           },
           {
             "line": 8.0,
-            "overProb": 0.5326,
-            "underProb": 0.4674
+            "overProb": 0.5421,
+            "underProb": 0.4579
           },
           {
             "line": 9.0,
-            "overProb": 0.4616,
-            "underProb": 0.5384
+            "overProb": 0.471,
+            "underProb": 0.529
           },
           {
             "line": 10.0,
-            "overProb": 0.3923,
-            "underProb": 0.6077
+            "overProb": 0.4014,
+            "underProb": 0.5986
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.78,
+          "home": 2.86,
           "away": 1.91
         },
         "moneyline": {
-          "homeProb": 0.6649,
-          "awayProb": 0.3351,
-          "homeOdds": -198,
-          "awayOdds": 198
+          "homeProb": 0.6766,
+          "awayProb": 0.3234,
+          "homeOdds": -209,
+          "awayOdds": 209
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.6046,
-          "awayCoverProb": 0.3954
+          "homeCoverProb": 0.6139,
+          "awayCoverProb": 0.3861
         },
         "total": {
-          "modelTotal": 4.5,
-          "overProb": 0.5232,
-          "underProb": 0.4768
+          "modelTotal": 5.0,
+          "overProb": 0.4737,
+          "underProb": 0.5263
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.585,
+          "home": 0.601,
           "away": 0.402
         },
-        "nrfiProb": 0.3798,
-        "yrfiProb": 0.6202
+        "nrfiProb": 0.3743,
+        "yrfiProb": 0.6257
       },
       "teamHits": {
         "home": {
           "team": "PHI",
-          "expectedHits": 8.55,
+          "expectedHits": 8.73,
           "modelLine": 8.5,
-          "overProb": 0.5066,
-          "underProb": 0.4934
+          "overProb": 0.531,
+          "underProb": 0.469
         },
         "away": {
           "team": "TOR",
-          "expectedHits": 7.75,
+          "expectedHits": 7.72,
           "modelLine": 7.5,
-          "overProb": 0.5328,
-          "underProb": 0.4672
+          "overProb": 0.5288,
+          "underProb": 0.4712
+        }
+      }
+    },
+    {
+      "gamePk": 823345,
+      "gameDate": "2026-08-09T17:35:00Z",
+      "venue": "PNC Park",
+      "homeTeam": "PIT",
+      "awayTeam": "NYM",
+      "homeTeamId": 134,
+      "awayTeamId": 121,
+      "homePitcher": "Jared Jones",
+      "awayPitcher": "Sean Manaea",
+      "expectedRuns": {
+        "home": 4.95,
+        "away": 4.04
+      },
+      "pitchingQuality": {
+        "homeStarter": 4.56,
+        "awayStarter": 4.03,
+        "homeStarterEra": 5.03,
+        "awayStarterEra": 4.13,
+        "homePen": 3.56,
+        "awayPen": 3.94
+      },
+      "lineupMatchup": {
+        "home": {
+          "mult": 1.003,
+          "source": "lineup"
+        },
+        "away": {
+          "mult": 0.975,
+          "source": "lineup"
+        }
+      },
+      "moneyline": {
+        "homeProb": 0.5931,
+        "awayProb": 0.4069,
+        "homeOdds": -146,
+        "awayOdds": 146
+      },
+      "runLine": {
+        "standard": {
+          "homeLine": -1.5,
+          "awayLine": 1.5,
+          "homeCoverProb": 0.4461,
+          "awayCoverProb": 0.5539
+        },
+        "alternates": [
+          {
+            "homeLine": -1.0,
+            "awayLine": 1.0,
+            "homeCoverProb": 0.4912,
+            "awayCoverProb": 0.5088
+          },
+          {
+            "homeLine": -2.5,
+            "awayLine": 2.5,
+            "homeCoverProb": 0.3583,
+            "awayCoverProb": 0.6417
+          }
+        ]
+      },
+      "total": {
+        "modelTotal": 9.0,
+        "lines": [
+          {
+            "line": 7.5,
+            "overProb": 0.6044,
+            "underProb": 0.3956
+          },
+          {
+            "line": 8.5,
+            "overProb": 0.535,
+            "underProb": 0.465
+          },
+          {
+            "line": 9.5,
+            "overProb": 0.4639,
+            "underProb": 0.5361
+          },
+          {
+            "line": 10.5,
+            "overProb": 0.3946,
+            "underProb": 0.6054
+          }
+        ]
+      },
+      "f5": {
+        "expectedRuns": {
+          "home": 2.75,
+          "away": 2.25
+        },
+        "moneyline": {
+          "homeProb": 0.5912,
+          "awayProb": 0.4088,
+          "homeOdds": -145,
+          "awayOdds": 145
+        },
+        "runLine": {
+          "homeLine": -0.5,
+          "awayLine": 0.5,
+          "homeCoverProb": 0.5608,
+          "awayCoverProb": 0.4392
+        },
+        "total": {
+          "modelTotal": 5.0,
+          "overProb": 0.4995,
+          "underProb": 0.5005
+        }
+      },
+      "nrfi": {
+        "expectedFirstInningRuns": {
+          "home": 0.577,
+          "away": 0.472
+        },
+        "nrfiProb": 0.3585,
+        "yrfiProb": 0.6415
+      },
+      "teamHits": {
+        "home": {
+          "team": "PIT",
+          "expectedHits": 8.54,
+          "modelLine": 8.5,
+          "overProb": 0.5055,
+          "underProb": 0.4945
+        },
+        "away": {
+          "team": "NYM",
+          "expectedHits": 7.99,
+          "modelLine": 8.0,
+          "overProb": 0.4981,
+          "underProb": 0.5019
         }
       }
     },
@@ -537,13 +545,15 @@
       "homePitcher": "Cam Schlittler",
       "awayPitcher": "Grant Holmes",
       "expectedRuns": {
-        "home": 4.48,
-        "away": 4.17
+        "home": 4.39,
+        "away": 4.08
       },
       "pitchingQuality": {
-        "homeStarter": 2.63,
-        "awayStarter": 4.14,
-        "homePen": 3.3,
+        "homeStarter": 2.6,
+        "awayStarter": 4.01,
+        "homeStarterEra": 2.21,
+        "awayStarterEra": 3.47,
+        "homePen": 3.29,
         "awayPen": 3.38
       },
       "lineupMatchup": {
@@ -552,35 +562,35 @@
           "source": "lineup"
         },
         "away": {
-          "mult": 1.048,
+          "mult": 1.041,
           "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.5485,
-        "awayProb": 0.4515,
-        "homeOdds": -121,
-        "awayOdds": 121
+        "homeProb": 0.549,
+        "awayProb": 0.451,
+        "homeOdds": -122,
+        "awayOdds": 122
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.3933,
-          "awayCoverProb": 0.6067
+          "homeCoverProb": 0.3932,
+          "awayCoverProb": 0.6068
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.4376,
-            "awayCoverProb": 0.5624
+            "homeCoverProb": 0.4375,
+            "awayCoverProb": 0.5625
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.3093,
-            "awayCoverProb": 0.6907
+            "homeCoverProb": 0.3092,
+            "awayCoverProb": 0.6908
           }
         ]
       },
@@ -589,71 +599,71 @@
         "lines": [
           {
             "line": 7.0,
-            "overProb": 0.615,
-            "underProb": 0.385
+            "overProb": 0.6032,
+            "underProb": 0.3968
           },
           {
             "line": 8.0,
-            "overProb": 0.5462,
-            "underProb": 0.4538
+            "overProb": 0.5337,
+            "underProb": 0.4663
           },
           {
             "line": 9.0,
-            "overProb": 0.4752,
-            "underProb": 0.5248
+            "overProb": 0.4627,
+            "underProb": 0.5373
           },
           {
             "line": 10.0,
-            "overProb": 0.4053,
-            "underProb": 0.5947
+            "overProb": 0.3934,
+            "underProb": 0.6066
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.49,
-          "away": 2.32
+          "home": 2.44,
+          "away": 2.27
         },
         "moneyline": {
-          "homeProb": 0.5327,
-          "awayProb": 0.4673,
+          "homeProb": 0.5332,
+          "awayProb": 0.4668,
           "homeOdds": -114,
           "awayOdds": 114
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5209,
-          "awayCoverProb": 0.4791
+          "homeCoverProb": 0.5208,
+          "awayCoverProb": 0.4792
         },
         "total": {
-          "modelTotal": 5.0,
-          "overProb": 0.4774,
-          "underProb": 0.5226
+          "modelTotal": 4.5,
+          "overProb": 0.5242,
+          "underProb": 0.4758
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.523,
-          "away": 0.487
+          "home": 0.512,
+          "away": 0.476
         },
-        "nrfiProb": 0.372,
-        "yrfiProb": 0.628
+        "nrfiProb": 0.3791,
+        "yrfiProb": 0.6209
       },
       "teamHits": {
         "home": {
           "team": "NYY",
-          "expectedHits": 7.35,
-          "modelLine": 7.5,
-          "overProb": 0.4803,
-          "underProb": 0.5197
+          "expectedHits": 7.23,
+          "modelLine": 7.0,
+          "overProb": 0.5299,
+          "underProb": 0.4701
         },
         "away": {
           "team": "ATL",
-          "expectedHits": 7.02,
+          "expectedHits": 6.93,
           "modelLine": 7.0,
-          "overProb": 0.503,
-          "underProb": 0.497
+          "overProb": 0.4911,
+          "underProb": 0.5089
         }
       }
     },
@@ -668,18 +678,20 @@
       "homePitcher": "Ryan Gusto",
       "awayPitcher": "Grayson Rodriguez",
       "expectedRuns": {
-        "home": 5.06,
-        "away": 3.88
+        "home": 5.17,
+        "away": 3.86
       },
       "pitchingQuality": {
-        "homeStarter": 4.28,
-        "awayStarter": 5.87,
-        "homePen": 3.94,
-        "awayPen": 4.1
+        "homeStarter": 4.32,
+        "awayStarter": 5.93,
+        "homeStarterEra": 4.78,
+        "awayStarterEra": 7.2,
+        "homePen": 3.93,
+        "awayPen": 4.18
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.014,
+          "mult": 1.013,
           "source": "lineup"
         },
         "away": {
@@ -688,30 +700,30 @@
         }
       },
       "moneyline": {
-        "homeProb": 0.609,
-        "awayProb": 0.391,
-        "homeOdds": -156,
-        "awayOdds": 156
+        "homeProb": 0.6199,
+        "awayProb": 0.3801,
+        "homeOdds": -163,
+        "awayOdds": 163
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.4713,
-          "awayCoverProb": 0.5287
+          "homeCoverProb": 0.4826,
+          "awayCoverProb": 0.5174
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.5166,
-            "awayCoverProb": 0.4834
+            "homeCoverProb": 0.5279,
+            "awayCoverProb": 0.4721
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.3824,
-            "awayCoverProb": 0.6176
+            "homeCoverProb": 0.3932,
+            "awayCoverProb": 0.6068
           }
         ]
       },
@@ -720,202 +732,71 @@
         "lines": [
           {
             "line": 7.5,
-            "overProb": 0.6004,
-            "underProb": 0.3996
+            "overProb": 0.6066,
+            "underProb": 0.3934
           },
           {
             "line": 8.5,
-            "overProb": 0.5308,
-            "underProb": 0.4692
+            "overProb": 0.5373,
+            "underProb": 0.4627
           },
           {
             "line": 9.5,
-            "overProb": 0.4598,
-            "underProb": 0.5402
+            "overProb": 0.4663,
+            "underProb": 0.5337
           },
           {
             "line": 10.5,
-            "overProb": 0.3906,
-            "underProb": 0.6094
+            "overProb": 0.3968,
+            "underProb": 0.6032
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.81,
-          "away": 2.15
+          "home": 2.87,
+          "away": 2.14
         },
         "moneyline": {
-          "homeProb": 0.6195,
-          "awayProb": 0.3805,
-          "homeOdds": -163,
-          "awayOdds": 163
+          "homeProb": 0.6304,
+          "awayProb": 0.3696,
+          "homeOdds": -171,
+          "awayOdds": 171
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5794,
-          "awayCoverProb": 0.4206
+          "homeCoverProb": 0.5877,
+          "awayCoverProb": 0.4123
         },
         "total": {
           "modelTotal": 5.0,
-          "overProb": 0.4957,
-          "underProb": 0.5043
+          "overProb": 0.5016,
+          "underProb": 0.4984
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.59,
-          "away": 0.452
+          "home": 0.603,
+          "away": 0.45
         },
-        "nrfiProb": 0.3608,
-        "yrfiProb": 0.6392
+        "nrfiProb": 0.3573,
+        "yrfiProb": 0.6427
       },
       "teamHits": {
         "home": {
           "team": "MIA",
-          "expectedHits": 9.35,
+          "expectedHits": 9.48,
           "modelLine": 9.5,
-          "overProb": 0.4804,
-          "underProb": 0.5196
+          "overProb": 0.4967,
+          "underProb": 0.5033
         },
         "away": {
           "team": "LAA",
-          "expectedHits": 7.51,
+          "expectedHits": 7.5,
           "modelLine": 7.5,
-          "overProb": 0.5013,
-          "underProb": 0.4987
-        }
-      }
-    },
-    {
-      "gamePk": 824078,
-      "gameDate": "2026-08-09T18:10:00Z",
-      "venue": "Kauffman Stadium",
-      "homeTeam": "KC",
-      "awayTeam": "CHC",
-      "homeTeamId": 118,
-      "awayTeamId": 112,
-      "homePitcher": "Randy Dobnak",
-      "awayPitcher": "Matthew Boyd",
-      "expectedRuns": {
-        "home": 3.97,
-        "away": 4.9
-      },
-      "pitchingQuality": {
-        "homeStarter": 3.4,
-        "awayStarter": 3.69,
-        "homePen": 4.1,
-        "awayPen": 4.1
-      },
-      "lineupMatchup": {
-        "home": {
-          "mult": 1.022,
-          "source": "lineup"
-        },
-        "away": {
-          "mult": 1.009,
-          "source": "teamSplit"
-        }
-      },
-      "moneyline": {
-        "homeProb": 0.4026,
-        "awayProb": 0.5974,
-        "homeOdds": 148,
-        "awayOdds": -148
-      },
-      "runLine": {
-        "standard": {
-          "homeLine": -1.5,
-          "awayLine": 1.5,
-          "homeCoverProb": 0.2901,
-          "awayCoverProb": 0.7099
-        },
-        "alternates": [
-          {
-            "homeLine": -1.0,
-            "awayLine": 1.0,
-            "homeCoverProb": 0.3301,
-            "awayCoverProb": 0.6699
-          },
-          {
-            "homeLine": -2.5,
-            "awayLine": 2.5,
-            "homeCoverProb": 0.2176,
-            "awayCoverProb": 0.7824
-          }
-        ]
-      },
-      "total": {
-        "modelTotal": 9.0,
-        "lines": [
-          {
-            "line": 7.5,
-            "overProb": 0.5962,
-            "underProb": 0.4038
-          },
-          {
-            "line": 8.5,
-            "overProb": 0.5264,
-            "underProb": 0.4736
-          },
-          {
-            "line": 9.5,
-            "overProb": 0.4554,
-            "underProb": 0.5446
-          },
-          {
-            "line": 10.5,
-            "overProb": 0.3864,
-            "underProb": 0.6136
-          }
-        ]
-      },
-      "f5": {
-        "expectedRuns": {
-          "home": 2.2,
-          "away": 2.72
-        },
-        "moneyline": {
-          "homeProb": 0.4045,
-          "awayProb": 0.5955,
-          "homeOdds": 147,
-          "awayOdds": -147
-        },
-        "runLine": {
-          "homeLine": -0.5,
-          "awayLine": 0.5,
-          "homeCoverProb": 0.4371,
-          "awayCoverProb": 0.5629
-        },
-        "total": {
-          "modelTotal": 5.0,
-          "overProb": 0.4917,
-          "underProb": 0.5083
-        }
-      },
-      "nrfi": {
-        "expectedFirstInningRuns": {
-          "home": 0.463,
-          "away": 0.572
-        },
-        "nrfiProb": 0.3632,
-        "yrfiProb": 0.6368
-      },
-      "teamHits": {
-        "home": {
-          "team": "KC",
-          "expectedHits": 7.54,
-          "modelLine": 7.5,
-          "overProb": 0.506,
-          "underProb": 0.494
-        },
-        "away": {
-          "team": "CHC",
-          "expectedHits": 8.24,
-          "modelLine": 8.0,
-          "overProb": 0.532,
-          "underProb": 0.468
+          "overProb": 0.4994,
+          "underProb": 0.5006
         }
       }
     },
@@ -934,24 +815,26 @@
         "away": 3.73
       },
       "pitchingQuality": {
-        "homeStarter": 3.86,
+        "homeStarter": 3.88,
         "awayStarter": 3.95,
+        "homeStarterEra": 4.17,
+        "awayStarterEra": 3.91,
         "homePen": 3.65,
         "awayPen": 3.45
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.002,
+          "mult": 1.011,
           "source": "lineup"
         },
         "away": {
-          "mult": 0.976,
-          "source": "teamSplit"
+          "mult": 0.981,
+          "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.5972,
-        "awayProb": 0.4028,
+        "homeProb": 0.5965,
+        "awayProb": 0.4035,
         "homeOdds": -148,
         "awayOdds": 148
       },
@@ -959,21 +842,21 @@
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.4435,
-          "awayCoverProb": 0.5565
+          "homeCoverProb": 0.4429,
+          "awayCoverProb": 0.5571
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.4886,
-            "awayCoverProb": 0.5114
+            "homeCoverProb": 0.488,
+            "awayCoverProb": 0.512
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.3559,
-            "awayCoverProb": 0.6441
+            "homeCoverProb": 0.3554,
+            "awayCoverProb": 0.6446
           }
         ]
       },
@@ -982,8 +865,8 @@
         "lines": [
           {
             "line": 7.0,
-            "overProb": 0.5932,
-            "underProb": 0.4068
+            "overProb": 0.5933,
+            "underProb": 0.4067
           },
           {
             "line": 8.0,
@@ -997,37 +880,37 @@
           },
           {
             "line": 10.0,
-            "overProb": 0.3835,
-            "underProb": 0.6165
+            "overProb": 0.3836,
+            "underProb": 0.6164
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.56,
+          "home": 2.55,
           "away": 2.07
         },
         "moneyline": {
-          "homeProb": 0.5953,
-          "awayProb": 0.4047,
+          "homeProb": 0.5946,
+          "awayProb": 0.4054,
           "homeOdds": -147,
           "awayOdds": 147
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5589,
-          "awayCoverProb": 0.4411
+          "homeCoverProb": 0.5585,
+          "awayCoverProb": 0.4415
         },
         "total": {
           "modelTotal": 4.5,
-          "overProb": 0.5147,
-          "underProb": 0.4853
+          "overProb": 0.5148,
+          "underProb": 0.4852
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.537,
+          "home": 0.536,
           "away": 0.435
         },
         "nrfiProb": 0.3852,
@@ -1036,17 +919,150 @@
       "teamHits": {
         "home": {
           "team": "CWS",
-          "expectedHits": 7.54,
+          "expectedHits": 7.47,
           "modelLine": 7.5,
-          "overProb": 0.5049,
-          "underProb": 0.4951
+          "overProb": 0.4965,
+          "underProb": 0.5035
         },
         "away": {
           "team": "CLE",
-          "expectedHits": 7.56,
+          "expectedHits": 7.51,
           "modelLine": 7.5,
-          "overProb": 0.5081,
-          "underProb": 0.4919
+          "overProb": 0.5013,
+          "underProb": 0.4987
+        }
+      }
+    },
+    {
+      "gamePk": 824078,
+      "gameDate": "2026-08-09T18:10:00Z",
+      "venue": "Kauffman Stadium",
+      "homeTeam": "KC",
+      "awayTeam": "CHC",
+      "homeTeamId": 118,
+      "awayTeamId": 112,
+      "homePitcher": "Randy Dobnak",
+      "awayPitcher": "Matthew Boyd",
+      "expectedRuns": {
+        "home": 3.95,
+        "away": 5.0
+      },
+      "pitchingQuality": {
+        "homeStarter": 3.45,
+        "awayStarter": 3.72,
+        "homeStarterEra": 2.0,
+        "awayStarterEra": 3.56,
+        "homePen": 4.12,
+        "awayPen": 4.09
+      },
+      "lineupMatchup": {
+        "home": {
+          "mult": 1.022,
+          "source": "lineup"
+        },
+        "away": {
+          "mult": 1.019,
+          "source": "lineup"
+        }
+      },
+      "moneyline": {
+        "homeProb": 0.405,
+        "awayProb": 0.595,
+        "homeOdds": 147,
+        "awayOdds": -147
+      },
+      "runLine": {
+        "standard": {
+          "homeLine": -1.5,
+          "awayLine": 1.5,
+          "homeCoverProb": 0.2816,
+          "awayCoverProb": 0.7184
+        },
+        "alternates": [
+          {
+            "homeLine": -1.0,
+            "awayLine": 1.0,
+            "homeCoverProb": 0.3212,
+            "awayCoverProb": 0.6788
+          },
+          {
+            "homeLine": -2.5,
+            "awayLine": 2.5,
+            "homeCoverProb": 0.2103,
+            "awayCoverProb": 0.7897
+          }
+        ]
+      },
+      "total": {
+        "modelTotal": 9.0,
+        "lines": [
+          {
+            "line": 7.5,
+            "overProb": 0.6016,
+            "underProb": 0.3984
+          },
+          {
+            "line": 8.5,
+            "overProb": 0.532,
+            "underProb": 0.468
+          },
+          {
+            "line": 9.5,
+            "overProb": 0.461,
+            "underProb": 0.539
+          },
+          {
+            "line": 10.5,
+            "overProb": 0.3918,
+            "underProb": 0.6082
+          }
+        ]
+      },
+      "f5": {
+        "expectedRuns": {
+          "home": 2.2,
+          "away": 2.78
+        },
+        "moneyline": {
+          "homeProb": 0.3945,
+          "awayProb": 0.6055,
+          "homeOdds": 153,
+          "awayOdds": -153
+        },
+        "runLine": {
+          "homeLine": -0.5,
+          "awayLine": 0.5,
+          "homeCoverProb": 0.4299,
+          "awayCoverProb": 0.5701
+        },
+        "total": {
+          "modelTotal": 5.0,
+          "overProb": 0.4968,
+          "underProb": 0.5032
+        }
+      },
+      "nrfi": {
+        "expectedFirstInningRuns": {
+          "home": 0.461,
+          "away": 0.583
+        },
+        "nrfiProb": 0.3601,
+        "yrfiProb": 0.6399
+      },
+      "teamHits": {
+        "home": {
+          "team": "KC",
+          "expectedHits": 7.52,
+          "modelLine": 7.5,
+          "overProb": 0.5023,
+          "underProb": 0.4977
+        },
+        "away": {
+          "team": "CHC",
+          "expectedHits": 8.32,
+          "modelLine": 8.5,
+          "overProb": 0.4763,
+          "underProb": 0.5237
         }
       }
     },
@@ -1061,18 +1077,20 @@
       "homePitcher": "Jacob Misiorowski",
       "awayPitcher": "Connor Prielipp",
       "expectedRuns": {
-        "home": 5.72,
-        "away": 3.47
+        "home": 5.69,
+        "away": 3.5
       },
       "pitchingQuality": {
-        "homeStarter": 2.08,
-        "awayStarter": 4.3,
-        "homePen": 3.35,
+        "homeStarter": 2.19,
+        "awayStarter": 4.38,
+        "homeStarterEra": 1.76,
+        "awayStarterEra": 4.79,
+        "homePen": 3.34,
         "awayPen": 4.1
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.046,
+          "mult": 1.04,
           "source": "lineup"
         },
         "away": {
@@ -1081,30 +1099,30 @@
         }
       },
       "moneyline": {
-        "homeProb": 0.7136,
-        "awayProb": 0.2864,
-        "homeOdds": -249,
-        "awayOdds": 249
+        "homeProb": 0.7088,
+        "awayProb": 0.2912,
+        "homeOdds": -243,
+        "awayOdds": 243
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.5673,
-          "awayCoverProb": 0.4327
+          "homeCoverProb": 0.5624,
+          "awayCoverProb": 0.4376
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.6115,
-            "awayCoverProb": 0.3885
+            "homeCoverProb": 0.6067,
+            "awayCoverProb": 0.3933
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.477,
-            "awayCoverProb": 0.523
+            "homeCoverProb": 0.472,
+            "awayCoverProb": 0.528
           }
         ]
       },
@@ -1113,53 +1131,53 @@
         "lines": [
           {
             "line": 7.5,
-            "overProb": 0.6177,
-            "underProb": 0.3823
+            "overProb": 0.6176,
+            "underProb": 0.3824
           },
           {
             "line": 8.5,
-            "overProb": 0.549,
-            "underProb": 0.451
+            "overProb": 0.5489,
+            "underProb": 0.4511
           },
           {
             "line": 9.5,
-            "overProb": 0.478,
-            "underProb": 0.522
+            "overProb": 0.4779,
+            "underProb": 0.5221
           },
           {
             "line": 10.5,
-            "overProb": 0.4081,
-            "underProb": 0.5919
+            "overProb": 0.4079,
+            "underProb": 0.5921
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 3.18,
-          "away": 1.93
+          "home": 3.16,
+          "away": 1.94
         },
         "moneyline": {
-          "homeProb": 0.7136,
-          "awayProb": 0.2864,
-          "homeOdds": -249,
-          "awayOdds": 249
+          "homeProb": 0.7088,
+          "awayProb": 0.2912,
+          "homeOdds": -243,
+          "awayOdds": 243
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.6482,
-          "awayCoverProb": 0.3518
+          "homeCoverProb": 0.6447,
+          "awayCoverProb": 0.3553
         },
         "total": {
           "modelTotal": 5.0,
-          "overProb": 0.5124,
-          "underProb": 0.4876
+          "overProb": 0.5122,
+          "underProb": 0.4878
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.667,
-          "away": 0.405
+          "home": 0.664,
+          "away": 0.408
         },
         "nrfiProb": 0.351,
         "yrfiProb": 0.649
@@ -1167,17 +1185,17 @@
       "teamHits": {
         "home": {
           "team": "MIL",
-          "expectedHits": 9.21,
+          "expectedHits": 9.22,
           "modelLine": 9.0,
-          "overProb": 0.5275,
-          "underProb": 0.4725
+          "overProb": 0.5294,
+          "underProb": 0.4706
         },
         "away": {
           "team": "MIN",
-          "expectedHits": 6.11,
+          "expectedHits": 6.15,
           "modelLine": 6.0,
-          "overProb": 0.5143,
-          "underProb": 0.4857
+          "overProb": 0.5194,
+          "underProb": 0.4806
         }
       }
     },
@@ -1192,12 +1210,14 @@
       "homePitcher": "Michael McGreevy",
       "awayPitcher": "Michael Lorenzen",
       "expectedRuns": {
-        "home": 5.73,
-        "away": 4.76
+        "home": 5.69,
+        "away": 4.7
       },
       "pitchingQuality": {
-        "homeStarter": 3.89,
-        "awayStarter": 5.82,
+        "homeStarter": 3.84,
+        "awayStarter": 5.73,
+        "homeStarterEra": 3.52,
+        "awayStarterEra": 6.77,
         "homePen": 3.97,
         "awayPen": 5.12
       },
@@ -1212,30 +1232,30 @@
         }
       },
       "moneyline": {
-        "homeProb": 0.5855,
-        "awayProb": 0.4145,
-        "homeOdds": -141,
-        "awayOdds": 141
+        "homeProb": 0.5887,
+        "awayProb": 0.4113,
+        "homeOdds": -143,
+        "awayOdds": 143
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.4516,
-          "awayCoverProb": 0.5484
+          "homeCoverProb": 0.454,
+          "awayCoverProb": 0.546
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.4968,
-            "awayCoverProb": 0.5032
+            "homeCoverProb": 0.4992,
+            "awayCoverProb": 0.5008
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.3636,
-            "awayCoverProb": 0.6364
+            "homeCoverProb": 0.3659,
+            "awayCoverProb": 0.6341
           }
         ]
       },
@@ -1244,71 +1264,71 @@
         "lines": [
           {
             "line": 9.0,
-            "overProb": 0.6043,
-            "underProb": 0.3957
+            "overProb": 0.597,
+            "underProb": 0.403
           },
           {
             "line": 10.0,
-            "overProb": 0.5349,
-            "underProb": 0.4651
+            "overProb": 0.5273,
+            "underProb": 0.4727
           },
           {
             "line": 11.0,
-            "overProb": 0.4638,
-            "underProb": 0.5362
+            "overProb": 0.4562,
+            "underProb": 0.5438
           },
           {
             "line": 12.0,
-            "overProb": 0.3945,
-            "underProb": 0.6055
+            "overProb": 0.3872,
+            "underProb": 0.6128
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 3.18,
-          "away": 2.65
+          "home": 3.16,
+          "away": 2.61
         },
         "moneyline": {
-          "homeProb": 0.5836,
-          "awayProb": 0.4164,
-          "homeOdds": -140,
-          "awayOdds": 140
+          "homeProb": 0.5868,
+          "awayProb": 0.4132,
+          "homeOdds": -142,
+          "awayOdds": 142
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5649,
-          "awayCoverProb": 0.4351
+          "homeCoverProb": 0.5667,
+          "awayCoverProb": 0.4333
         },
         "total": {
           "modelTotal": 6.0,
-          "overProb": 0.48,
-          "underProb": 0.52
+          "overProb": 0.4731,
+          "underProb": 0.5269
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.668,
-          "away": 0.556
+          "home": 0.664,
+          "away": 0.548
         },
-        "nrfiProb": 0.3055,
-        "yrfiProb": 0.6945
+        "nrfiProb": 0.309,
+        "yrfiProb": 0.691
       },
       "teamHits": {
         "home": {
           "team": "STL",
-          "expectedHits": 10.25,
+          "expectedHits": 10.17,
           "modelLine": 10.0,
-          "overProb": 0.5326,
-          "underProb": 0.4674
+          "overProb": 0.5225,
+          "underProb": 0.4775
         },
         "away": {
           "team": "COL",
-          "expectedHits": 8.23,
+          "expectedHits": 8.15,
           "modelLine": 8.0,
-          "overProb": 0.5303,
-          "underProb": 0.4697
+          "overProb": 0.5193,
+          "underProb": 0.4807
         }
       }
     },
@@ -1323,123 +1343,125 @@
       "homePitcher": "Kumar Rocker",
       "awayPitcher": "Cade Povich",
       "expectedRuns": {
-        "home": 4.39,
-        "away": 4.21
+        "home": 4.7,
+        "away": 4.2
       },
       "pitchingQuality": {
-        "homeStarter": 4.09,
-        "awayStarter": 4.16,
+        "homeStarter": 4.3,
+        "awayStarter": 4.35,
+        "homeStarterEra": 4.38,
+        "awayStarterEra": 4.45,
         "homePen": 3.76,
         "awayPen": 3.72
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.02,
-          "source": "teamSplit"
+          "mult": 1.08,
+          "source": "lineup"
         },
         "away": {
-          "mult": 0.99,
-          "source": "teamSplit"
+          "mult": 0.967,
+          "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.5355,
-        "awayProb": 0.4645,
-        "homeOdds": -115,
-        "awayOdds": 115
+        "homeProb": 0.5528,
+        "awayProb": 0.4472,
+        "homeOdds": -124,
+        "awayOdds": 124
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.3826,
-          "awayCoverProb": 0.6174
+          "homeCoverProb": 0.4098,
+          "awayCoverProb": 0.5902
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.4266,
-            "awayCoverProb": 0.5734
+            "homeCoverProb": 0.4544,
+            "awayCoverProb": 0.5456
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.2994,
-            "awayCoverProb": 0.7006
+            "homeCoverProb": 0.3244,
+            "awayCoverProb": 0.6756
           }
         ]
       },
       "total": {
-        "modelTotal": 8.5,
+        "modelTotal": 9.0,
         "lines": [
           {
-            "line": 7.0,
-            "overProb": 0.6118,
-            "underProb": 0.3882
+            "line": 7.5,
+            "overProb": 0.5985,
+            "underProb": 0.4015
           },
           {
-            "line": 8.0,
-            "overProb": 0.5428,
-            "underProb": 0.4572
+            "line": 8.5,
+            "overProb": 0.5288,
+            "underProb": 0.4712
           },
           {
-            "line": 9.0,
-            "overProb": 0.4718,
-            "underProb": 0.5282
+            "line": 9.5,
+            "overProb": 0.4577,
+            "underProb": 0.5423
           },
           {
-            "line": 10.0,
-            "overProb": 0.402,
-            "underProb": 0.598
+            "line": 10.5,
+            "overProb": 0.3887,
+            "underProb": 0.6113
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 2.44,
+          "home": 2.61,
           "away": 2.34
         },
         "moneyline": {
-          "homeProb": 0.5197,
-          "awayProb": 0.4803,
-          "homeOdds": -108,
-          "awayOdds": 108
+          "homeProb": 0.5509,
+          "awayProb": 0.4491,
+          "homeOdds": -123,
+          "awayOdds": 123
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5125,
-          "awayCoverProb": 0.4875
+          "homeCoverProb": 0.5335,
+          "awayCoverProb": 0.4665
         },
         "total": {
           "modelTotal": 5.0,
-          "overProb": 0.4743,
-          "underProb": 0.5257
+          "overProb": 0.4938,
+          "underProb": 0.5062
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.513,
-          "away": 0.491
+          "home": 0.548,
+          "away": 0.49
         },
-        "nrfiProb": 0.3739,
-        "yrfiProb": 0.6261
+        "nrfiProb": 0.362,
+        "yrfiProb": 0.638
       },
       "teamHits": {
         "home": {
           "team": "TEX",
-          "expectedHits": 8.29,
+          "expectedHits": 8.36,
           "modelLine": 8.5,
-          "overProb": 0.4722,
-          "underProb": 0.5278
+          "overProb": 0.4811,
+          "underProb": 0.5189
         },
         "away": {
           "team": "BAL",
-          "expectedHits": 7.57,
+          "expectedHits": 7.71,
           "modelLine": 7.5,
-          "overProb": 0.5093,
-          "underProb": 0.4907
+          "overProb": 0.5286,
+          "underProb": 0.4714
         }
       }
     },
@@ -1454,50 +1476,52 @@
       "homePitcher": "Logan Webb",
       "awayPitcher": "Troy Melton",
       "expectedRuns": {
-        "home": 3.18,
-        "away": 4.16
+        "home": 3.28,
+        "away": 4.43
       },
       "pitchingQuality": {
         "homeStarter": 3.61,
         "awayStarter": 2.69,
+        "homeStarterEra": 3.74,
+        "awayStarterEra": 1.58,
         "homePen": 4.13,
-        "awayPen": 3.64
+        "awayPen": 3.63
       },
       "lineupMatchup": {
         "home": {
-          "mult": 1.01,
-          "source": "teamSplit"
+          "mult": 1.043,
+          "source": "lineup"
         },
         "away": {
-          "mult": 1.017,
-          "source": "teamSplit"
+          "mult": 1.083,
+          "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.3897,
-        "awayProb": 0.6103,
-        "homeOdds": 157,
-        "awayOdds": -157
+        "homeProb": 0.3765,
+        "awayProb": 0.6235,
+        "homeOdds": 166,
+        "awayOdds": -166
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.2864,
-          "awayCoverProb": 0.7136
+          "homeCoverProb": 0.2736,
+          "awayCoverProb": 0.7264
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.3262,
-            "awayCoverProb": 0.6738
+            "homeCoverProb": 0.3127,
+            "awayCoverProb": 0.6873
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.2144,
-            "awayCoverProb": 0.7856
+            "homeCoverProb": 0.2035,
+            "awayCoverProb": 0.7965
           }
         ]
       },
@@ -1506,64 +1530,64 @@
         "lines": [
           {
             "line": 6.0,
-            "overProb": 0.5936,
-            "underProb": 0.4064
+            "overProb": 0.6188,
+            "underProb": 0.3812
           },
           {
             "line": 7.0,
-            "overProb": 0.5237,
-            "underProb": 0.4763
+            "overProb": 0.5501,
+            "underProb": 0.4499
           },
           {
             "line": 8.0,
-            "overProb": 0.4527,
-            "underProb": 0.5473
+            "overProb": 0.4792,
+            "underProb": 0.5208
           },
           {
             "line": 9.0,
-            "overProb": 0.3839,
-            "underProb": 0.6161
+            "overProb": 0.4092,
+            "underProb": 0.5908
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 1.76,
-          "away": 2.31
+          "home": 1.82,
+          "away": 2.46
         },
         "moneyline": {
-          "homeProb": 0.3792,
-          "awayProb": 0.6208,
-          "homeOdds": 164,
-          "awayOdds": -164
+          "homeProb": 0.366,
+          "awayProb": 0.634,
+          "homeOdds": 173,
+          "awayOdds": -173
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.434,
-          "awayCoverProb": 0.566
+          "homeCoverProb": 0.4229,
+          "awayCoverProb": 0.5771
         },
         "total": {
-          "modelTotal": 4.0,
-          "overProb": 0.5086,
-          "underProb": 0.4914
+          "modelTotal": 4.5,
+          "overProb": 0.4746,
+          "underProb": 0.5254
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.371,
-          "away": 0.485
+          "home": 0.383,
+          "away": 0.517
         },
-        "nrfiProb": 0.4292,
-        "yrfiProb": 0.5708
+        "nrfiProb": 0.4121,
+        "yrfiProb": 0.5879
       },
       "teamHits": {
         "home": {
           "team": "SF",
           "expectedHits": 6.33,
           "modelLine": 6.5,
-          "overProb": 0.4776,
-          "underProb": 0.5224
+          "overProb": 0.4775,
+          "underProb": 0.5225
         },
         "away": {
           "team": "DET",
@@ -1571,137 +1595,6 @@
           "modelLine": 7.5,
           "overProb": 0.5028,
           "underProb": 0.4972
-        }
-      }
-    },
-    {
-      "gamePk": 825050,
-      "gameDate": "2026-08-09T20:10:00Z",
-      "venue": "Chase Field",
-      "homeTeam": "AZ",
-      "awayTeam": "LAD",
-      "homeTeamId": 109,
-      "awayTeamId": 119,
-      "homePitcher": "Eduardo Rodriguez",
-      "awayPitcher": "Justin Wrobleski",
-      "expectedRuns": {
-        "home": 4.39,
-        "away": 4.86
-      },
-      "pitchingQuality": {
-        "homeStarter": 3.36,
-        "awayStarter": 3.65,
-        "homePen": 3.86,
-        "awayPen": 3.75
-      },
-      "lineupMatchup": {
-        "home": {
-          "mult": 1.049,
-          "source": "teamSplit"
-        },
-        "away": {
-          "mult": 1.026,
-          "source": "teamSplit"
-        }
-      },
-      "moneyline": {
-        "homeProb": 0.4376,
-        "awayProb": 0.5624,
-        "homeOdds": 129,
-        "awayOdds": -129
-      },
-      "runLine": {
-        "standard": {
-          "homeLine": -1.5,
-          "awayLine": 1.5,
-          "homeCoverProb": 0.327,
-          "awayCoverProb": 0.673
-        },
-        "alternates": [
-          {
-            "homeLine": -1.0,
-            "awayLine": 1.0,
-            "homeCoverProb": 0.369,
-            "awayCoverProb": 0.631
-          },
-          {
-            "homeLine": -2.5,
-            "awayLine": 2.5,
-            "homeCoverProb": 0.2497,
-            "awayCoverProb": 0.7503
-          }
-        ]
-      },
-      "total": {
-        "modelTotal": 9.0,
-        "lines": [
-          {
-            "line": 7.5,
-            "overProb": 0.6216,
-            "underProb": 0.3784
-          },
-          {
-            "line": 8.5,
-            "overProb": 0.5531,
-            "underProb": 0.4469
-          },
-          {
-            "line": 9.5,
-            "overProb": 0.4822,
-            "underProb": 0.5178
-          },
-          {
-            "line": 10.5,
-            "overProb": 0.4121,
-            "underProb": 0.5879
-          }
-        ]
-      },
-      "f5": {
-        "expectedRuns": {
-          "home": 2.44,
-          "away": 2.7
-        },
-        "moneyline": {
-          "homeProb": 0.4534,
-          "awayProb": 0.5466,
-          "homeOdds": 121,
-          "awayOdds": -121
-        },
-        "runLine": {
-          "homeLine": -0.5,
-          "awayLine": 0.5,
-          "homeCoverProb": 0.4681,
-          "awayCoverProb": 0.5319
-        },
-        "total": {
-          "modelTotal": 5.0,
-          "overProb": 0.5161,
-          "underProb": 0.4839
-        }
-      },
-      "nrfi": {
-        "expectedFirstInningRuns": {
-          "home": 0.512,
-          "away": 0.567
-        },
-        "nrfiProb": 0.3487,
-        "yrfiProb": 0.6513
-      },
-      "teamHits": {
-        "home": {
-          "team": "AZ",
-          "expectedHits": 7.38,
-          "modelLine": 7.5,
-          "overProb": 0.484,
-          "underProb": 0.516
-        },
-        "away": {
-          "team": "LAD",
-          "expectedHits": 8.46,
-          "modelLine": 8.5,
-          "overProb": 0.4942,
-          "underProb": 0.5058
         }
       }
     },
@@ -1716,123 +1609,258 @@
       "homePitcher": "Emerson Hancock",
       "awayPitcher": "Ian Seymour",
       "expectedRuns": {
-        "home": 3.3,
-        "away": 3.76
+        "home": 3.55,
+        "away": 3.87
       },
       "pitchingQuality": {
         "homeStarter": 3.57,
         "awayStarter": 4.08,
+        "homeStarterEra": 3.33,
+        "awayStarterEra": 4.27,
         "homePen": 3.66,
-        "awayPen": 3.62
+        "awayPen": 3.61
       },
       "lineupMatchup": {
         "home": {
-          "mult": 0.942,
-          "source": "teamSplit"
+          "mult": 1.013,
+          "source": "lineup"
         },
         "away": {
-          "mult": 1.026,
-          "source": "teamSplit"
+          "mult": 1.056,
+          "source": "lineup"
         }
       },
       "moneyline": {
-        "homeProb": 0.4385,
-        "awayProb": 0.5615,
-        "homeOdds": 128,
-        "awayOdds": -128
+        "homeProb": 0.4439,
+        "awayProb": 0.5561,
+        "homeOdds": 125,
+        "awayOdds": -125
       },
       "runLine": {
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.3279,
-          "awayCoverProb": 0.6721
+          "homeCoverProb": 0.339,
+          "awayCoverProb": 0.661
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.3699,
-            "awayCoverProb": 0.6301
+            "homeCoverProb": 0.3814,
+            "awayCoverProb": 0.6186
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.2504,
-            "awayCoverProb": 0.7496
+            "homeCoverProb": 0.2602,
+            "awayCoverProb": 0.7398
           }
         ]
       },
       "total": {
-        "modelTotal": 7.0,
+        "modelTotal": 7.5,
         "lines": [
           {
-            "line": 5.5,
-            "overProb": 0.6091,
-            "underProb": 0.3909
+            "line": 6.0,
+            "overProb": 0.5994,
+            "underProb": 0.4006
           },
           {
-            "line": 6.5,
-            "overProb": 0.5399,
-            "underProb": 0.4601
+            "line": 7.0,
+            "overProb": 0.5298,
+            "underProb": 0.4702
           },
           {
-            "line": 7.5,
-            "overProb": 0.4689,
-            "underProb": 0.5311
+            "line": 8.0,
+            "overProb": 0.4587,
+            "underProb": 0.5413
           },
           {
-            "line": 8.5,
-            "overProb": 0.3993,
-            "underProb": 0.6007
+            "line": 9.0,
+            "overProb": 0.3896,
+            "underProb": 0.6104
           }
         ]
       },
       "f5": {
         "expectedRuns": {
-          "home": 1.83,
-          "away": 2.09
+          "home": 1.97,
+          "away": 2.15
         },
         "moneyline": {
-          "homeProb": 0.4404,
-          "awayProb": 0.5596,
-          "homeOdds": 127,
-          "awayOdds": -127
+          "homeProb": 0.4597,
+          "awayProb": 0.5403,
+          "homeOdds": 118,
+          "awayOdds": -118
         },
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.4688,
-          "awayCoverProb": 0.5312
+          "homeCoverProb": 0.4779,
+          "awayCoverProb": 0.5221
         },
         "total": {
           "modelTotal": 4.0,
-          "overProb": 0.4911,
-          "underProb": 0.5089
+          "overProb": 0.5141,
+          "underProb": 0.4859
         }
       },
       "nrfi": {
         "expectedFirstInningRuns": {
-          "home": 0.385,
-          "away": 0.439
+          "home": 0.414,
+          "away": 0.452
         },
-        "nrfiProb": 0.4421,
-        "yrfiProb": 0.5579
+        "nrfiProb": 0.4252,
+        "yrfiProb": 0.5748
       },
       "teamHits": {
         "home": {
           "team": "SEA",
           "expectedHits": 6.65,
           "modelLine": 6.5,
-          "overProb": 0.5206,
-          "underProb": 0.4794
+          "overProb": 0.5199,
+          "underProb": 0.4801
         },
         "away": {
           "team": "TB",
           "expectedHits": 7.24,
           "modelLine": 7.0,
-          "overProb": 0.5325,
-          "underProb": 0.4675
+          "overProb": 0.5324,
+          "underProb": 0.4676
+        }
+      }
+    },
+    {
+      "gamePk": 825050,
+      "gameDate": "2026-08-09T20:10:00Z",
+      "venue": "Chase Field",
+      "homeTeam": "AZ",
+      "awayTeam": "LAD",
+      "homeTeamId": 109,
+      "awayTeamId": 119,
+      "homePitcher": "Eduardo Rodriguez",
+      "awayPitcher": "Justin Wrobleski",
+      "expectedRuns": {
+        "home": 4.55,
+        "away": 5.05
+      },
+      "pitchingQuality": {
+        "homeStarter": 3.36,
+        "awayStarter": 3.65,
+        "homeStarterEra": 2.71,
+        "awayStarterEra": 3.31,
+        "homePen": 3.86,
+        "awayPen": 3.75
+      },
+      "lineupMatchup": {
+        "home": {
+          "mult": 1.088,
+          "source": "lineup"
+        },
+        "away": {
+          "mult": 1.066,
+          "source": "lineup"
+        }
+      },
+      "moneyline": {
+        "homeProb": 0.4369,
+        "awayProb": 0.5631,
+        "homeOdds": 129,
+        "awayOdds": -129
+      },
+      "runLine": {
+        "standard": {
+          "homeLine": -1.5,
+          "awayLine": 1.5,
+          "homeCoverProb": 0.325,
+          "awayCoverProb": 0.675
+        },
+        "alternates": [
+          {
+            "homeLine": -1.0,
+            "awayLine": 1.0,
+            "homeCoverProb": 0.3668,
+            "awayCoverProb": 0.6332
+          },
+          {
+            "homeLine": -2.5,
+            "awayLine": 2.5,
+            "homeCoverProb": 0.2479,
+            "awayCoverProb": 0.7521
+          }
+        ]
+      },
+      "total": {
+        "modelTotal": 9.5,
+        "lines": [
+          {
+            "line": 8.0,
+            "overProb": 0.6116,
+            "underProb": 0.3884
+          },
+          {
+            "line": 9.0,
+            "overProb": 0.5426,
+            "underProb": 0.4574
+          },
+          {
+            "line": 10.0,
+            "overProb": 0.4715,
+            "underProb": 0.5285
+          },
+          {
+            "line": 11.0,
+            "overProb": 0.4018,
+            "underProb": 0.5982
+          }
+        ]
+      },
+      "f5": {
+        "expectedRuns": {
+          "home": 2.53,
+          "away": 2.8
+        },
+        "moneyline": {
+          "homeProb": 0.4527,
+          "awayProb": 0.5473,
+          "homeOdds": 121,
+          "awayOdds": -121
+        },
+        "runLine": {
+          "homeLine": -0.5,
+          "awayLine": 0.5,
+          "homeCoverProb": 0.4664,
+          "awayCoverProb": 0.5336
+        },
+        "total": {
+          "modelTotal": 5.5,
+          "overProb": 0.4806,
+          "underProb": 0.5194
+        }
+      },
+      "nrfi": {
+        "expectedFirstInningRuns": {
+          "home": 0.531,
+          "away": 0.589
+        },
+        "nrfiProb": 0.3359,
+        "yrfiProb": 0.6641
+      },
+      "teamHits": {
+        "home": {
+          "team": "AZ",
+          "expectedHits": 7.38,
+          "modelLine": 7.5,
+          "overProb": 0.484,
+          "underProb": 0.516
+        },
+        "away": {
+          "team": "LAD",
+          "expectedHits": 8.45,
+          "modelLine": 8.5,
+          "overProb": 0.4939,
+          "underProb": 0.5061
         }
       }
     },
@@ -1853,6 +1881,8 @@
       "pitchingQuality": {
         "homeStarter": 4.15,
         "awayStarter": 4.9,
+        "homeStarterEra": null,
+        "awayStarterEra": 6.59,
         "homePen": 3.68,
         "awayPen": 3.77
       },
@@ -1867,8 +1897,8 @@
         }
       },
       "moneyline": {
-        "homeProb": 0.5229,
-        "awayProb": 0.4771,
+        "homeProb": 0.5228,
+        "awayProb": 0.4772,
         "homeOdds": -110,
         "awayOdds": 110
       },
@@ -1876,21 +1906,21 @@
         "standard": {
           "homeLine": -1.5,
           "awayLine": 1.5,
-          "homeCoverProb": 0.3723,
-          "awayCoverProb": 0.6277
+          "homeCoverProb": 0.3722,
+          "awayCoverProb": 0.6278
         },
         "alternates": [
           {
             "homeLine": -1.0,
             "awayLine": 1.0,
-            "homeCoverProb": 0.416,
-            "awayCoverProb": 0.584
+            "homeCoverProb": 0.4159,
+            "awayCoverProb": 0.5841
           },
           {
             "homeLine": -2.5,
             "awayLine": 2.5,
-            "homeCoverProb": 0.2901,
-            "awayCoverProb": 0.7099
+            "homeCoverProb": 0.29,
+            "awayCoverProb": 0.71
           }
         ]
       },
@@ -1899,23 +1929,23 @@
         "lines": [
           {
             "line": 7.0,
-            "overProb": 0.6029,
-            "underProb": 0.3971
+            "overProb": 0.6028,
+            "underProb": 0.3972
           },
           {
             "line": 8.0,
-            "overProb": 0.5334,
-            "underProb": 0.4666
+            "overProb": 0.5333,
+            "underProb": 0.4667
           },
           {
             "line": 9.0,
-            "overProb": 0.4624,
-            "underProb": 0.5376
+            "overProb": 0.4623,
+            "underProb": 0.5377
           },
           {
             "line": 10.0,
-            "overProb": 0.3931,
-            "underProb": 0.6069
+            "overProb": 0.393,
+            "underProb": 0.607
           }
         ]
       },
@@ -1933,13 +1963,13 @@
         "runLine": {
           "homeLine": -0.5,
           "awayLine": 0.5,
-          "homeCoverProb": 0.5045,
-          "awayCoverProb": 0.4955
+          "homeCoverProb": 0.5044,
+          "awayCoverProb": 0.4956
         },
         "total": {
           "modelTotal": 4.5,
-          "overProb": 0.5239,
-          "underProb": 0.4761
+          "overProb": 0.5238,
+          "underProb": 0.4762
         }
       },
       "nrfi": {
@@ -1947,23 +1977,23 @@
           "home": 0.498,
           "away": 0.49
         },
-        "nrfiProb": 0.3793,
-        "yrfiProb": 0.6207
+        "nrfiProb": 0.3794,
+        "yrfiProb": 0.6206
       },
       "teamHits": {
         "home": {
           "team": "SD",
           "expectedHits": 7.82,
           "modelLine": 8.0,
-          "overProb": 0.4762,
-          "underProb": 0.5238
+          "overProb": 0.4759,
+          "underProb": 0.5241
         },
         "away": {
           "team": "HOU",
           "expectedHits": 7.51,
           "modelLine": 7.5,
-          "overProb": 0.5018,
-          "underProb": 0.4982
+          "overProb": 0.5017,
+          "underProb": 0.4983
         }
       }
     }
