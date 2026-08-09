@@ -64,7 +64,9 @@ def wind_effect(wind_speed, wind_dir, cf_bearing):
     return clamp(1 + component * wind_speed * 0.0048, 0.78, 1.22)
 
 def lineup_pa(order):
-    return [5.2, 5.1, 5.0, 4.9, 4.7, 4.5, 4.2, 3.9, 3.7][order - 1] if 1 <= order <= 9 else 4.5
+    """Expected plate appearances by lineup slot (league-typical values,
+    matching the client-side model's table in index.html)."""
+    return [4.65, 4.5, 4.35, 4.2, 4.1, 3.95, 3.85, 3.75, 3.65][order - 1] if 1 <= order <= 9 else 4.1
 
 def count_advantage(k_pct, bb_pct, pit_k_pct, pit_bb_pct):
     batter_disc = bb_pct - k_pct
@@ -79,11 +81,13 @@ def k_rate_trend(k_recent, k_season, pa_recent):
     return clamp(1 + k_diff * 0.35, 0.90, 1.12)
 
 def bullpen_vulnerability(team_bullpen_hr9):
-    """Opposing pitching staff HR/9 rate (team-level proxy for bullpen quality)"""
+    """Opposing pitching staff HR/9 rate (team-level proxy for bullpen quality).
+    Centered so a league-average staff yields exactly 1.0 (the old
+    0.92 + 0.16*(ratio-1) form penalized every batter 8% at neutral)."""
     if team_bullpen_hr9 is None:
         return 1.0
     mult = team_bullpen_hr9 / LG["pitHR9"]
-    return clamp(0.92 + 0.16 * (mult - 1), 0.85, 1.18)
+    return clamp(1 + 0.16 * (mult - 1), 0.85, 1.18)
 
 def pitcher_fatigue_factor(pitcher_ip_season):
     """Pitcher fatigue from cumulative innings pitched"""
@@ -256,8 +260,11 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
 
     # === EXISTING FACTORS (1-29) ===
 
-    # Factor 1: ISO multiplier
-    iso_mult = clamp(iso / LG["iso"], 0.45, 2.10)
+    # Factor 1: ISO multiplier -- dampened to 30% strength (matching the
+    # client-side model) because barrel/zone/hard-contact/pull below are all
+    # derived from the same ISO signal; at full strength the correlated
+    # stack pushed every slugger straight into the probability cap.
+    iso_mult = clamp(0.70 + 0.30 * (iso / LG["iso"]), 0.75, 1.45)
 
     # Factor 2: Platoon advantage
     platoon_mult = 1.15 if platoon else 0.96
@@ -280,9 +287,11 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
     wind_dir = weather.get("windDir", 0) if weather else 0
     wind_mult = wind_effect(wind_speed, wind_dir, cf_bearing)
 
-    # Factor 7: Temperature
+    # Factor 7: Temperature -- ~0.3% carry per degree F, centered at 70F.
+    # The old form (0.93 + 0.001*(temp-70)) gave every batter a flat 7%
+    # penalty in neutral weather and barely responded to real heat/cold.
     temp = weather.get("temp", 70) if weather else 70
-    temp_mult = clamp(0.93 + 0.01 * (temp - 70) / 10, 0.88, 1.14)
+    temp_mult = clamp(1 + 0.003 * (temp - 70), 0.88, 1.12)
 
     # Factor 8: Precipitation risk
     precip = weather.get("precipProb", 0) if weather else 0
@@ -295,29 +304,36 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
     elif season_day > 140:
         season_mult = 1.05
 
-    # Factor 10: Lineup slot
+    # Factor 10: Lineup slot -- handled as *real expected plate appearances*
+    # in the per-PA -> per-game conversion below (lineup_pa), not as yet
+    # another multiplier on the per-PA rate, which double-counted the slot.
     order = game.get("order", 5)
-    lineup_mult = clamp(0.90 + 0.025 * (5 - order), 0.85, 1.10)
 
     # Factor 11: Day/night
     is_day = game.get("dayNight", "night") == "day"
     day_night_mult = 0.97 if is_day else 1.02
 
-    # Factor 12: H2H history
+    # Factor 12: H2H history -- compared against the batter's own regressed
+    # rate (not the league's, which double-counted overall power) and
+    # shrunk by sample size so a 12-PA career matchup can't swing 35%.
     h2h_mult = 1.0
     if h2h and h2h.get("pa", 0) >= 10:
-        h2h_hr = h2h.get("hr", 0)
         h2h_pa = h2h.get("pa", 1)
-        h2h_rate = h2h_hr / h2h_pa
-        h2h_mult = clamp(1 + 0.50 * (h2h_rate / LG["hrPA"] - 1), 0.80, 1.35)
+        h2h_rate = h2h.get("hr", 0) / h2h_pa
+        h2h_w = clamp(h2h_pa / 40, 0.0, 0.60)
+        h2h_mult = clamp(1 + 0.50 * h2h_w * (h2h_rate / max(base_rate, 0.001) - 1), 0.80, 1.30)
 
-    # Factor 13: Vs hand splits
+    # Factor 13: Vs hand splits -- blended toward the batter's own regressed
+    # base rate by split sample size (mirrors the client-side model). The
+    # old raw vs_rate/LG ratio re-applied the batter's overall power on top
+    # of base_rate, so sluggers got the same edge counted twice.
     vs_mult = 1.0
     if vs_hand and vs_hand.get("pa", 0) >= 50:
-        vs_hr = vs_hand.get("hr", 0)
         vs_pa = vs_hand.get("pa", 1)
-        vs_rate = vs_hr / vs_pa
-        vs_mult = clamp(vs_rate / LG["hrPA"], 0.60, 1.55)
+        vs_rate = vs_hand.get("hr", 0) / vs_pa
+        vs_w = clamp(vs_pa / 200, 0.0, 0.75)
+        blended_vs = vs_w * vs_rate + (1 - vs_w) * base_rate
+        vs_mult = clamp(blended_vs / max(base_rate, 0.001), 0.70, 1.40)
 
     # Factor 14-15: Count advantage -- now uses the real pitcher K%/BB% when
     # available instead of always plugging in the league average (which made
@@ -326,23 +342,25 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
     pit_bb_pct = pitcher_stat.get("bbPct", LG["pitBBPct"]) if pitcher_stat else LG["pitBBPct"]
     count_adv_mult = count_advantage(k_pct, bb_pct, pit_k_pct, pit_bb_pct)
 
-    # Factor 16: Barrel estimate
+    # Factor 16: Barrel estimate (ISO-derived -- dampened, see Factor 1)
     barrel = est_barrel(iso)
-    barrel_mult = clamp(1 + 0.90 * (barrel / 0.078 - 1), 0.75, 1.40)
+    barrel_mult = clamp(1 + 0.30 * (barrel / 0.078 - 1), 0.85, 1.30)
 
     # Factor 17: Zone match
     zone_score = 50 + (iso / LG["iso"] - 1) * 14 - (pit_k_pct / LG["pitKPct"] - 1) * 11
     if platoon:
         zone_score += 8
-    zone_mult = clamp(zone_score / 50, 0.75, 1.35)
+    zone_mult = clamp(0.87 + (zone_score / 50) * 0.13, 0.87, 1.13)
 
-    # Factor 18: Hard contact
+    # Factor 18: Hard contact -- centered so a league-average hard-hit rate
+    # yields 1.0 (was 0.88 + 0.24*ratio = 1.12 at neutral, a free 12% boost
+    # for everyone).
     hard_rate = est_hard_contact(slg, avg, xbh, pa)
-    hard_mult = clamp(0.88 + 0.24 * (hard_rate / LG["hardHitPct"]), 0.88, 1.20)
+    hard_mult = clamp(1 + 0.15 * (hard_rate / LG["hardHitPct"] - 1), 0.88, 1.15)
 
-    # Factor 19: Pull tendency
+    # Factor 19: Pull tendency -- likewise recentered around 1.0.
     pull_rate = est_pull_rate(hr, ab)
-    pull_mult = clamp(0.92 + 0.18 * (pull_rate / LG["pullPct"]), 0.85, 1.18)
+    pull_mult = clamp(1 + 0.18 * (pull_rate / LG["pullPct"] - 1), 0.85, 1.18)
 
     # Factor 20: Pitcher fly-ball rate -- wired to the real groundout/airout
     # based estimate from pitcher_stat instead of a hard-coded 1.0.
@@ -414,10 +432,17 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
         convergence_mult = 1.0
 
     # === COMBINE ALL FACTORS (pre-calibration) ===
-    prelim_prob = (
-        base_rate *
+    #
+    # base_rate is a *per-plate-appearance* HR rate (LG hrPA ~= 0.031), so
+    # the factor product yields a per-PA probability that must be converted
+    # to a per-game probability over the batter's expected PAs. The old code
+    # skipped that conversion entirely (lineup_pa() existed but was never
+    # called) and published the per-PA number as "gameProb" -- which is why
+    # tracked 5-10% picks actually homered ~15% of the time while the top
+    # of the slate simultaneously pinned the 0.40 clamp.
+    factor_product = (
         iso_mult * platoon_mult * park_mult * pitcher_hr_mult * pitcher_k_mult *
-        wind_mult * temp_mult * precip_mult * season_mult * lineup_mult *
+        wind_mult * temp_mult * precip_mult * season_mult *
         day_night_mult * h2h_mult * vs_mult * count_adv_mult *
         barrel_mult * zone_mult * hard_mult * pull_mult * fb_mult *
         pit_trend_mult * slug_trend_mult * lineup_prot_mult *
@@ -426,7 +451,15 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
         bullpen_mult * pit_fatigue_mult *
         whip_mult * recent_form * streak7 * convergence_mult
     )
-    prelim_prob = clamp(prelim_prob, 0.001, 0.40)
+    # Square-root damping: ~30 individually-bounded factors still compound
+    # multiplicatively, and many are positively correlated, so the raw
+    # product routinely reached 4x+ for good hitters. Halving it in log
+    # space keeps every factor's *direction* while restoring realistic
+    # spread (a top slugger in a great spot lands ~25-30% per game, in line
+    # with sportsbook HR props, instead of everything pinning a cap).
+    per_pa = clamp(base_rate * (factor_product ** 0.5), 0.002, 0.075)
+    exp_pa = lineup_pa(order)
+    prelim_prob = clamp(1 - (1 - per_pa) ** exp_pa, 0.01, 0.30)
 
     # Factor 34: Self-calibration -- a global drift multiplier from recent
     # training_log.json accuracy, blended with a bucket-level (tiered)
@@ -435,15 +468,17 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
     tier_mult = tier_calibration_mult(prelim_prob)
     self_calib_mult = clamp(GLOBAL_CALIBRATION_MULT * tier_mult, 0.88, 1.12)
 
-    game_prob = clamp(prelim_prob * self_calib_mult, 0.001, 0.40)
+    game_prob = clamp(prelim_prob * self_calib_mult, 0.01, 0.30)
 
-    # Grading
+    # Grading -- thresholds sit on the per-game scale: a league-average
+    # regular lands ~12-13% per game, so A is reserved for genuinely
+    # elite spots.
     grade = "D"
-    if game_prob >= 0.16:
+    if game_prob >= 0.20:
         grade = "A"
-    elif game_prob >= 0.12:
+    elif game_prob >= 0.15:
         grade = "B"
-    elif game_prob >= 0.08:
+    elif game_prob >= 0.11:
         grade = "C"
 
     return {
@@ -451,6 +486,8 @@ def compute_model(batter, batter_stat, batter_l7, batter_l14, vs_hand, h2h,
         "name": name,
         "team": team,
         "gameProb": round(game_prob, 4),
+        "perPA": round(per_pa, 4),
+        "expPA": exp_pa,
         "gameMatchup": game_matchup,
         "battingOrder": order,
         "pitcherName": game.get("pitcher", ""),

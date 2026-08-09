@@ -76,9 +76,15 @@ def update_tier_calibration():
 
     buckets = [{"lo": lo, "hi": hi, "total": 0, "hits": 0, "sumExpected": 0.0} for lo, hi in TIER_BUCKETS]
 
-    for file in sorted(history_dir.glob("*.json")):
-        if file.name.startswith("games_"):
-            continue  # game-line history, not HR-prop predictions
+    hr_files = [
+        f for f in sorted(history_dir.glob("*.json"))
+        # games_*/tennis_* are other markets' history, not HR-prop slates
+        if not f.name.startswith(("games_", "tennis_"))
+    ]
+    # Calibration should track the *current* model: only the most recent
+    # slates feed the buckets, so probabilities produced by long-retired
+    # model versions age out instead of biasing corrections forever.
+    for file in hr_files[-45:]:
         with open(file) as f:
             data = json.load(f)
         predictions = data.get("predictions", [])
@@ -117,6 +123,8 @@ def season_summary():
         return
     results = []
     for file in sorted(history_dir.glob("*.json")):
+        if file.name.startswith(("games_", "tennis_")):
+            continue
         date_str = file.stem
         result = evaluate_slate(date_str)
         if result:

@@ -1067,24 +1067,27 @@ function setProgress(p,msg){
   document.getElementById('ldFill').style.width=p+'%';
   document.getElementById('ldMsg').textContent=msg;
 }
+// Grade bands sit on the calibrated per-game scale: a league-average
+// regular homers in ~12-13% of games, and a true elite spot tops out
+// around 25-30%.
 function gradeFromProb(p){
-  if(p>=.38)return{g:'A+',cls:'grade-A'};
-  if(p>=.30)return{g:'A', cls:'grade-A'};
-  if(p>=.24)return{g:'B+',cls:'grade-B'};
-  if(p>=.19)return{g:'B', cls:'grade-B'};
-  if(p>=.14)return{g:'C+',cls:'grade-C'};
-  if(p>=.10)return{g:'C', cls:'grade-C'};
+  if(p>=.27)return{g:'A+',cls:'grade-A'};
+  if(p>=.22)return{g:'A', cls:'grade-A'};
+  if(p>=.18)return{g:'B+',cls:'grade-B'};
+  if(p>=.15)return{g:'B', cls:'grade-B'};
+  if(p>=.12)return{g:'C+',cls:'grade-C'};
+  if(p>=.09)return{g:'C', cls:'grade-C'};
   return{g:'D',cls:'grade-D'};
 }
 function gradeNameFromProb(p){
-  if(p>=.38)return'ELITE';
-  if(p>=.30)return'POWER PLAY';
-  if(p>=.24)return'STRONG BET';
-  if(p>=.19)return'VALUE PICK';
-  if(p>=.14)return'NEUTRAL';
+  if(p>=.27)return'ELITE';
+  if(p>=.22)return'POWER PLAY';
+  if(p>=.18)return'STRONG BET';
+  if(p>=.15)return'VALUE PICK';
+  if(p>=.12)return'NEUTRAL';
   return'AVOID';
 }
-function probColor(p){return p>=.30?'g-clr':p>=.20?'a-clr':'r-clr';}
+function probColor(p){return p>=.22?'g-clr':p>=.15?'a-clr':'r-clr';}
 function probFill(p){return p>=.30?'g-fill':p>=.20?'a-fill':'r-fill';}
 
 // ═══════════════════════════════════════
@@ -1095,14 +1098,32 @@ async function fetchSchedule(date){
   if(!d?.dates?.length)return[];
   return d.dates[0]?.games||[];
 }
+// MLB innings-pitched notation: "100.1"/"100.2" means 100 innings plus 1 or
+// 2 OUTS (thirds), not tenths. parseFloat alone understates IP and inflates
+// every per-inning rate (HR/9 etc.) built on it.
+function ipFloat(v){
+  const f=parseFloat(v||0);
+  if(!isFinite(f))return 0;
+  const whole=Math.trunc(f),outs=Math.round((f-whole)*10);
+  return (outs===1||outs===2)?whole+outs/3:f;
+}
+// A player who changed teams mid-season gets one split per team; pick the
+// fullest stat line (combined/most PAs) instead of blindly splits[0], which
+// could be a partial-season line for one of the teams.
+function bestSplit(splits,key){
+  if(!splits?.length)return null;
+  return splits.reduce((a,b)=>((b?.stat?.[key]||0)>(a?.stat?.[key]||0)?b:a)).stat||null;
+}
 async function fetchBatterSeason(pid){
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=season&group=hitting&season=${YR}&gameType=R`);
-  return d?.stats?.[0]?.splits?.[0]?.stat||null;
+  // sportId=1 pins the query to MLB stats so minor-league rehab/callup
+  // lines can never leak in as the "season" stat block.
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=season&group=hitting&season=${YR}&gameType=R&sportId=1`);
+  return bestSplit(d?.stats?.[0]?.splits,'plateAppearances');
 }
 async function fetchBatterRecent(pid,limit=14){
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=lastXGames&group=hitting&season=${YR}&gameType=R&limit=${limit}`);
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=lastXGames&group=hitting&season=${YR}&gameType=R&limit=${limit}&sportId=1`);
   if(!d?.stats?.[0]?.splits?.length)return null;
   const agg=d.stats[0].splits.reduce((a,s)=>{
     ['homeRuns','plateAppearances','hits','strikeOuts','baseOnBalls','atBats','doubles','triples'].forEach(k=>a[k]=(a[k]||0)+(s.stat[k]||0));
@@ -1119,16 +1140,16 @@ async function fetchBatterRecent(pid,limit=14){
 }
 async function fetchGameLog(pid){
   if(!pid)return[];
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=gameLog&group=hitting&season=${YR}&gameType=R`);
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=gameLog&group=hitting&season=${YR}&gameType=R&sportId=1`);
   if(!d?.stats?.[0]?.splits)return[];
   return d.stats[0].splits.slice(0,8).reverse();
 }
 async function fetchPitcherSeason(pid){
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=season&group=pitching&season=${YR}&gameType=R`);
-  if(!d?.stats?.[0]?.splits?.[0])return null;
-  const s=d.stats[0].splits[0].stat;
-  const ip=parseFloat(s.inningsPitched||0);
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=season&group=pitching&season=${YR}&gameType=R&sportId=1`);
+  const s=bestSplit(d?.stats?.[0]?.splits,'battersFaced');
+  if(!s)return null;
+  const ip=ipFloat(s.inningsPitched);
   const bf=s.battersFaced||0;
   return{
     hr9:ip>0?(s.homeRuns||0)/ip*9:LG.pitHR9,
@@ -1143,7 +1164,7 @@ async function fetchPitcherSeason(pid){
 async function fetchBatterSplits(pid){
   // Returns actual vs LHP and vs RHP season stats
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=statSplits&group=hitting&season=${YR}&gameType=R&sitCodes=vl,vr`);
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=statSplits&group=hitting&season=${YR}&gameType=R&sitCodes=vl,vr&sportId=1`);
   if(!d?.stats?.[0]?.splits)return null;
   const splits={};
   d.stats[0].splits.forEach(sp=>{
@@ -1155,7 +1176,7 @@ async function fetchBatterSplits(pid){
 async function fetchPitcherRecentStarts(pid,n=4){
   // Returns last N starts for pitcher trend analysis
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=gameLog&group=pitching&season=${YR}&gameType=R`);
+  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=gameLog&group=pitching&season=${YR}&gameType=R&sportId=1`);
   if(!d?.stats?.[0]?.splits)return null;
   return d.stats[0].splits.slice(0,n).reverse(); // oldest→newest so trend direction is clear
 }
@@ -1203,8 +1224,10 @@ async function fetchPerson(pid){
 async function fetchRoster(teamId){
   const d=await fetchJ(`${MLB}/teams/${teamId}/roster/Active?season=${YR}`);
   if(!d?.roster)return[];
-  // Include ALL position players (no slice limit)
-  return d.roster.filter(p=>!['P','SP','RP','TWP'].includes(p.position?.abbreviation));
+  // Include ALL position players (no slice limit). Two-way players (TWP,
+  // e.g. Ohtani) bat every day and MUST stay in the batter pool — filtering
+  // them out with the pitchers silently dropped them from every slate.
+  return d.roster.filter(p=>!['P','SP','RP'].includes(p.position?.abbreviation));
 }
 async function fetchWeather(lat,lon){
   const key=`${lat.toFixed(2)},${lon.toFixed(2)}`;
@@ -1262,9 +1285,9 @@ function pitcherTrendMult(recentStarts){
   const prior=recentStarts.slice(0,-2);
   if(!prior.length)return 1.0;
   const recentHR=recent.reduce((s,g)=>s+(g.stat?.homeRuns||0),0);
-  const recentIP=recent.reduce((s,g)=>s+parseFloat(g.stat?.inningsPitched||0),0);
+  const recentIP=recent.reduce((s,g)=>s+ipFloat(g.stat?.inningsPitched),0);
   const priorHR=prior.reduce((s,g)=>s+(g.stat?.homeRuns||0),0);
-  const priorIP=prior.reduce((s,g)=>s+parseFloat(g.stat?.inningsPitched||0),0);
+  const priorIP=prior.reduce((s,g)=>s+ipFloat(g.stat?.inningsPitched),0);
   if(recentIP<4||priorIP<4)return 1.0;
   const recentHR9=recentHR/recentIP*9;
   const priorHR9=priorHR/priorIP*9;
@@ -1359,7 +1382,7 @@ function pitcherFatigueMult(pitcherRecent){
   // Sum batters faced in last 2 starts
   const last2=pitcherRecent.slice(-2);
   const bf2=last2.reduce((s,g)=>s+(g.stat?.battersFaced||0),0);
-  const ip2=last2.reduce((s,g)=>s+parseFloat(g.stat?.inningsPitched||0),0);
+  const ip2=last2.reduce((s,g)=>s+ipFloat(g.stat?.inningsPitched),0);
   // High workload (high BF, low IP) = command issues = batter advantage
   if(ip2<1)return 1.0;
   const hitsPerIP=bf2/Math.max(ip2,1);
@@ -1812,9 +1835,8 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
   const convergenceMult=1+(strongFactors>=6?0.09:strongFactors>=5?0.06:strongFactors>=4?0.04:strongFactors>=3?0.02:0);
 
   // ─── Per-PA probability (all 29 factors) ───
-  const perPA=clamp(
-    baseRate
-    * brlMult * isoMult * recentMult * zoneMult
+  const factorProduct=
+    brlMult * isoMult * recentMult * zoneMult
     * pitcherHRMult * pitcherKMult * fbMult
     * parkFactor * altBonus * tempMult * windMult
     * pullMult * flyMult * opsMult * bbMult
@@ -1826,9 +1848,14 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
     // NEW 25-29
     * precipM * slugTrendM * pitFatigueM
     * lineupProtM * accuracyCalibM
-    * convergenceMult,
-    0.002,0.12
-  );
+    * convergenceMult;
+  // Square-root damping: ~30 bounded but heavily-correlated multipliers
+  // (brl/iso/zone/hard-contact/split all ride the same power signal)
+  // compound to 4x+ for any good hitter, which pinned every slugger at the
+  // per-PA cap and produced 40%+ "game probabilities" no sportsbook would
+  // recognize. Halving the product in log space keeps each factor's
+  // direction while restoring a realistic spread (top pick ~25-30%).
+  const perPA=clamp(baseRate*Math.sqrt(factorProduct),0.002,0.075);
 
   const expPA=lineupPA(battingOrder);
 
@@ -2070,7 +2097,9 @@ async function buildPredictions(){
     const pitchMix=pitcherArsenalMap[b.pitcherId]||estimatePitchMix(pitcherHand,pitcher?.era,pitcher?.gbPct,pitcher?.kPct);
     preds.push({
       pid:b.pid,name:b.name,batterHand,
-      team:b.homeAbbr||'—',park:b.park,parkName:b.park?.name||'—',
+      // A batter's team is his own side's abbreviation — the old
+      // `b.homeAbbr` labeled every away batter with the home team.
+      team:(b.isHome?b.homeAbbr:b.awayAbbr)||'—',park:b.park,parkName:b.park?.name||'—',
       pitcherId:b.pitcherId,pitcherName:b.pitcherName,pitcherHand,
       battingOrder:b.battingOrder,confirmed:b.confirmed,
       isHome:b.isHome,
@@ -3603,8 +3632,8 @@ async function loadGameLines(){
     return `<tr>
       <td><div class="pname">${g.awayTeam} @ ${g.homeTeam}</div><div class="pteam">${g.venue||''}</div></td>
       <td style="font-family:'Space Mono';font-size:9px;color:var(--text2);">
-        <div>${g.awayPitcher||'TBD'} (${fmt1(pq.awayStarter)}${pq.awayPen!=null?' / '+fmt1(pq.awayPen):''})</div>
-        <div>${g.homePitcher||'TBD'} (${fmt1(pq.homeStarter)}${pq.homePen!=null?' / '+fmt1(pq.homePen):''})</div>
+        <div>${g.awayPitcher||'TBD'} (${fmt1(pq.awayStarterEra??pq.awayStarter)}${pq.awayPen!=null?' / '+fmt1(pq.awayPen):''})</div>
+        <div>${g.homePitcher||'TBD'} (${fmt1(pq.homeStarterEra??pq.homeStarter)}${pq.homePen!=null?' / '+fmt1(pq.homePen):''})</div>
         <div style="color:var(--text3);font-size:7px;margin-top:2px;" title="Batter-vs-pitcher-hand lineup matchup multiplier">MATCHUP: ${g.awayTeam} ${fmt1((lm.away?.mult||1)*100)}% &middot; ${g.homeTeam} ${fmt1((lm.home?.mult||1)*100)}%</div>
       </td>
       <td>

@@ -169,6 +169,11 @@ jobs:
           git add "data/tennis_results/*.json" || true
           git add data/tennis_accuracy_log.json || true
           git add data/tennis_model_weights.json || true
+          # archive_season.py moves prior-season history into data/archives;
+          # stage both sides (the new zip and the removed history files) so
+          # the archive actually lands in the repo instead of evaporating
+          # when the runner is torn down.
+          git add -A data/history data/archives || true
           if git diff-index --quiet HEAD; then
             echo "No changes to commit - skipping push."
           else

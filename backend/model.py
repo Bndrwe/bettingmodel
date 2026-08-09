@@ -53,6 +53,29 @@ def _safe_int(d, key, default=0):
         return default
 
 
+def _ip_to_float(v, default=0.0):
+    """Convert MLB innings-pitched notation to a true decimal.
+
+    The Stats API reports IP as e.g. "100.1" / "100.2" where the digit
+    after the point means *outs* (thirds of an inning), not tenths.
+    Parsing it with plain float() understates innings by up to 0.47,
+    which skews every per-inning rate built on it (HR/9, FIP, bullpen
+    innings-weighting)."""
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return default
+    whole = int(f)
+    outs = round((f - whole) * 10)
+    if outs in (1, 2):
+        return whole + outs / 3.0
+    return f
+
+
+def _safe_ip(d, key, default=0.0):
+    return _ip_to_float(d.get(key) if d else None, default)
+
+
 # -- pitcher fetching -------------------------------------------------
 
 def fetch_pitcher_data(pitcher_id, season):
@@ -83,8 +106,14 @@ def fetch_pitcher_data(pitcher_id, season):
             if stats_data.get("stats") else []
         )
         if splits:
-            raw = splits[0].get("stat", {})
-            ip_season = _safe_float(raw, "inningsPitched")
+            # A pitcher who changed teams mid-season gets one split per team
+            # plus a combined line; take the split with the most batters
+            # faced (the combined/fullest one) instead of blindly the first.
+            raw = max(
+                (s.get("stat", {}) for s in splits),
+                key=lambda st: _safe_int(st, "battersFaced"),
+            )
+            ip_season = _safe_ip(raw, "inningsPitched")
             bf = _safe_int(raw, "battersFaced")
             k = _safe_int(raw, "strikeOuts")
             bb = _safe_int(raw, "baseOnBalls")
@@ -92,10 +121,15 @@ def fetch_pitcher_data(pitcher_id, season):
             # fly balls, which correlates with more home runs allowed.
             gb_ratio = _safe_float(raw, "groundOutsToAirouts", 1.0) or 1.0
             fb_pct = max(0.30, min(0.72, 0.42 + 0.12 * (1 / max(gb_ratio, 0.5))))
+            # ~38.3 batters come to the plate per 9 innings, so per-9 rates
+            # divide by that to become per-PA rates (the old /27 conversion
+            # treated K/9 as if only 3 batters hit per inning, overstating
+            # the fallback K%/BB% by ~40%).
+            pa_per_9 = 38.3
             pitcher_stat = {
                 "hr9":   _safe_float(raw, "homeRunsPer9"),
-                "kPct":  (k / bf) if bf > 0 else _safe_float(raw, "strikeoutsPer9") / 27.0,
-                "bbPct": (bb / bf) if bf > 0 else _safe_float(raw, "walksPer9") / 27.0,
+                "kPct":  (k / bf) if bf > 0 else _safe_float(raw, "strikeoutsPer9") / pa_per_9,
+                "bbPct": (bb / bf) if bf > 0 else _safe_float(raw, "walksPer9") / pa_per_9,
                 "fbPct": fb_pct,
                 "era":   _safe_float(raw, "era"),
                 "whip":  _safe_float(raw, "whip", 1.30) or 1.30,
@@ -132,7 +166,7 @@ def fetch_pitcher_data(pitcher_id, season):
         if recent:
             pitcher_l3 = [
                 {
-                    "ip":  _safe_float(s.get("stat"), "inningsPitched"),
+                    "ip":  _safe_ip(s.get("stat"), "inningsPitched"),
                     "hr":  _safe_int(s.get("stat"),   "homeRuns"),
                     "k":   _safe_int(s.get("stat"),   "strikeOuts"),
                     "bb":  _safe_int(s.get("stat"),   "baseOnBalls"),
@@ -171,7 +205,7 @@ def fetch_team_bullpen_hr9(team_id, season):
     if not splits:
         return None
     raw = splits[0].get("stat", {})
-    ip = _safe_float(raw, "inningsPitched")
+    ip = _safe_ip(raw, "inningsPitched")
     hr = _safe_int(raw, "homeRuns")
     if ip <= 0:
         return None
@@ -184,7 +218,7 @@ def fetch_batter_recent(batter_id, season, limit):
     """Aggregate the last *limit* games of hitting for a batter."""
     url = (
         f"{MLB_API}/people/{batter_id}/stats?stats=lastXGames&group=hitting"
-        f"&season={season}&gameType=R&limit={limit}"
+        f"&season={season}&gameType=R&limit={limit}&sportId=1"
     )
     data = fetch_json(url)
     if not data:
@@ -216,7 +250,7 @@ def fetch_batter_split(batter_id, season, opp_pitcher_hand):
     code = "vl" if opp_pitcher_hand == "L" else "vr"
     url = (
         f"{MLB_API}/people/{batter_id}/stats?stats=statSplits&group=hitting"
-        f"&season={season}&gameType=R&sitCodes={code}"
+        f"&season={season}&gameType=R&sitCodes={code}&sportId=1"
     )
     data = fetch_json(url)
     if not data:

@@ -9,8 +9,12 @@ OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def load_predictions(date_str):
-    """Load predictions for a specific date."""
-    hist_file = Path(f"data/history/predictions_{date_str}.json")
+    """Load predictions for a specific date.
+
+    model.py writes history snapshots as data/history/<date>.json; the old
+    predictions_<date>.json path never existed, so this loader always
+    returned None and the daily training step silently did nothing."""
+    hist_file = Path(f"data/history/{date_str}.json")
     if hist_file.exists():
         with open(hist_file) as f:
             return json.load(f)
@@ -33,8 +37,10 @@ def compare_predictions_to_results(predictions, results):
     results_dict = {r['player_name']: r for r in results.get('results', [])}
     
     for pred in predictions.get('predictions', [])[:50]:  # Top 50
-        player_name = pred['name']
-        predicted_prob = pred['game_prob']
+        player_name = pred.get('name', '')
+        # compute_model() emits camelCase "gameProb"; the old snake_case
+        # lookup raised KeyError on the very first prediction.
+        predicted_prob = pred.get('gameProb', pred.get('game_prob', 0))
         
         if player_name in results_dict:
             actual_hrs = results_dict[player_name]['home_runs']

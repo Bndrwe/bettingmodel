@@ -35,7 +35,7 @@ from datetime import date
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from model import fetch_json, _safe_float, _safe_int, PARK_FACTORS, MLB_API, fetch_batter_split
+from model import fetch_json, _safe_float, _safe_int, _safe_ip, PARK_FACTORS, MLB_API, fetch_batter_split
 from factors import clamp
 
 LG_ERA = 4.15
@@ -180,25 +180,30 @@ def fetch_starter_quality(pitcher_id, season):
     """Regressed ERA/FIP blend for a probable starter (league-average when
     unknown or on a tiny sample). FIP isolates the pitcher's own strikeout,
     walk and home-run rates from defense/luck, so blending it with ERA is
-    more predictive of *future* run prevention than ERA alone."""
+    more predictive of *future* run prevention than ERA alone.
+
+    Returns (regressed_quality, actual_era) -- the actual season ERA rides
+    along so the UI can display the pitcher's real stat line instead of
+    passing the internal regressed blend off as an "ERA"."""
     if not pitcher_id:
-        return LG_ERA
+        return LG_ERA, None
     data = fetch_json(
         f"{MLB_API}/people/{pitcher_id}/stats?stats=season&group=pitching&season={season}&sportId=1"
     )
     if not data:
-        return LG_ERA
+        return LG_ERA, None
     splits = data.get("stats", [{}])[0].get("splits", []) if data.get("stats") else []
     if not splits:
-        return LG_ERA
-    raw = splits[0].get("stat", {})
+        return LG_ERA, None
+    # Traded pitchers get one split per team; take the fullest line.
+    raw = max((s.get("stat", {}) for s in splits), key=lambda st: _safe_int(st, "battersFaced"))
     era = _safe_float(raw, "era", LG_ERA) or LG_ERA
-    ip = _safe_float(raw, "inningsPitched")
+    ip = _safe_ip(raw, "inningsPitched")
     fip = _fip(_safe_int(raw, "homeRuns"), _safe_int(raw, "baseOnBalls"), _safe_int(raw, "strikeOuts"), ip)
     blended = 0.6 * era + 0.4 * fip if fip is not None else era
     bf = _safe_int(raw, "battersFaced")
     prw = clamp(bf / 300, 0.10, 0.85)
-    return prw * blended + (1 - prw) * LG_ERA
+    return prw * blended + (1 - prw) * LG_ERA, era
 
 
 def fetch_bullpen_quality(team_id, starter_id, season):
@@ -231,7 +236,7 @@ def fetch_bullpen_quality(team_id, starter_id, season):
             if not splits:
                 continue
             raw = splits[0].get("stat", {})
-            ip = _safe_float(raw, "inningsPitched")
+            ip = _safe_ip(raw, "inningsPitched")
             if ip < 5:  # skip token/rehab-stint appearances
                 continue
             era = _safe_float(raw, "era", LG_ERA) or LG_ERA
@@ -343,8 +348,8 @@ def build_game_prediction(game, season):
     home_rs, home_hits_pg, home_ra = get_team_run_environment(home_id, season)
     away_rs, away_hits_pg, away_ra = get_team_run_environment(away_id, season)
 
-    home_starter_q = fetch_starter_quality(home_pitcher_id, season)
-    away_starter_q = fetch_starter_quality(away_pitcher_id, season)
+    home_starter_q, home_starter_era = fetch_starter_quality(home_pitcher_id, season)
+    away_starter_q, away_starter_era = fetch_starter_quality(away_pitcher_id, season)
     home_pen_q = fetch_bullpen_quality(home_id, home_pitcher_id, season)
     away_pen_q = fetch_bullpen_quality(away_id, away_pitcher_id, season)
     home_pitching_q = combined_pitching_quality(home_starter_q, home_pen_q)
@@ -486,6 +491,8 @@ def build_game_prediction(game, season):
         "expectedRuns": {"home": round(exp_runs_home, 2), "away": round(exp_runs_away, 2)},
         "pitchingQuality": {
             "homeStarter": round(home_starter_q, 2), "awayStarter": round(away_starter_q, 2),
+            "homeStarterEra": round(home_starter_era, 2) if home_starter_era is not None else None,
+            "awayStarterEra": round(away_starter_era, 2) if away_starter_era is not None else None,
             "homePen": round(home_pen_q, 2) if home_pen_q else None,
             "awayPen": round(away_pen_q, 2) if away_pen_q else None,
         },
