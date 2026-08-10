@@ -674,15 +674,23 @@ flex-wrap:wrap;}.sb-cell{min-width:50%;}}
   </div>
   </div>
 
-  <!-- TENNIS: ATP / WTA -->
+  <!-- TENNIS: ATP / WTA / CHALLENGER / ITF / UTR -->
   <div class="main-tab tab-tennis-matches" style="display:none">
   <div>
     <div class="sec-title" style="display:flex;align-items:center;justify-content:space-between;">
-      🎾 TENNIS — ATP &amp; WTA MATCH WINNER
+      🎾 TENNIS — MATCH WINNER (ATP · WTA · CHALLENGER · ITF · UTR)
       <span style="font-family:'Space Mono';font-size:8px;color:var(--text3);letter-spacing:1px;" id="tnUpdated">—</span>
     </div>
     <div style="font-family:'Space Mono';font-size:8px;color:var(--text3);margin-bottom:8px;">
-      Every ATP &amp; WTA tour-level match for the day, not just majors. Model probability blends devigged bookmaker odds with a ranking-points model when odds aren't posted yet — <span id="tnSourceNote">source shown per match</span>. FIRST SET is derived from the same match-win model via best-of-3/5 series math, not a separate signal. <b style="color:var(--green)">PICK</b> is the model's favorite.
+      Every professional singles match on the day's schedule — tour-level, Challenger/125, ITF and UTR. Model probability blends devigged bookmaker odds with a ranking-points model when odds aren't posted yet — <span id="tnSourceNote">source shown per match</span>. FIRST SET is derived from the same match-win model via best-of-3/5 series math, not a separate signal. <b style="color:var(--green)">PICK</b> is the model's favorite.
+    </div>
+    <div id="tnTourFilters" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+      <button class="sub-tab-btn active" onclick="setTennisTourFilter('ALL',this)">ALL</button>
+      <button class="sub-tab-btn" onclick="setTennisTourFilter('ATP',this)">ATP</button>
+      <button class="sub-tab-btn" onclick="setTennisTourFilter('WTA',this)">WTA</button>
+      <button class="sub-tab-btn" onclick="setTennisTourFilter('CHALLENGER',this)">CHALLENGER</button>
+      <button class="sub-tab-btn" onclick="setTennisTourFilter('ITF',this)">ITF</button>
+      <button class="sub-tab-btn" onclick="setTennisTourFilter('UTR',this)">UTR</button>
     </div>
     <div class="table-wrap">
       <table class="dtable">
@@ -3842,7 +3850,35 @@ async function loadTennisMatches(){
   });
   renderGlobalTopPicks();
 
-  const sorted=[...data.matches].sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));
+  TN_MATCHES=data.matches;
+  renderTennisTable();
+}
+
+let TN_MATCHES=[];
+let TN_TOUR_FILTER='ALL';
+function tennisTourCategory(tour){
+  const t=(tour||'').toUpperCase();
+  if(t.includes('CHALLENGER')||t.includes('125'))return'CHALLENGER';
+  if(t.includes('ITF'))return'ITF';
+  if(t.includes('UTR'))return'UTR';
+  if(t.startsWith('WTA'))return'WTA';
+  if(t.startsWith('ATP'))return'ATP';
+  return'OTHER';
+}
+function setTennisTourFilter(f,btn){
+  TN_TOUR_FILTER=f;
+  document.querySelectorAll('#tnTourFilters .sub-tab-btn').forEach(b=>b.classList.toggle('active',b===btn));
+  renderTennisTable();
+}
+function renderTennisTable(){
+  const tbody=document.getElementById('tennisBody');
+  if(!tbody)return;
+  const filtered=TN_TOUR_FILTER==='ALL'?TN_MATCHES:TN_MATCHES.filter(m=>tennisTourCategory(m.tour)===TN_TOUR_FILTER);
+  if(!filtered.length){
+    tbody.innerHTML=`<tr><td colspan="7" class="empty">No ${TN_TOUR_FILTER==='ALL'?'':TN_TOUR_FILTER+' '}matches on today's schedule.</td></tr>`;
+    return;
+  }
+  const sorted=[...filtered].sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));
   tbody.innerHTML=sorted.map(m=>{
     const p1=m.player1,p2=m.player2;
     const pick=m.pick==='player1'?p1.name:p2.name;

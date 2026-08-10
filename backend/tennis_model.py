@@ -32,6 +32,10 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml",
 }
 TOURS = {"ATP": "atp-men", "WTA": "wta-women"}
+# How many ranking pages to pull per tour (~100 players/page). Challenger
+# and ITF players routinely sit outside the top 100, so a single page left
+# most lower-tier matches with no ranking signal at all.
+RANKING_PAGES = 5
 
 
 def clamp(v, lo, hi):
@@ -72,13 +76,36 @@ def _parse_odds(td):
         return None
 
 
-def _tour_from_href(href):
-    slug = _slug(href) or ""
-    if "wta" in slug:
-        return "WTA"
-    if "atp" in slug:
-        return "ATP"
-    return "Other"
+def classify_tour(href, tournament_name):
+    """Classify a tournament into (tour_label, ranking_table).
+
+    tennisexplorer's tournament hrefs encode gender (atp-men / wta-women)
+    but lump every tier under it, so the *tier* (tour-level vs Challenger
+    vs ITF vs UTR/exhibition) comes from the tournament name. The old
+    version returned only ATP/WTA and the schedule parser then dropped
+    every other row, so Challenger, ITF and UTR matches never appeared at
+    all despite being on the scraped page already.
+
+    ranking_table says which official ranking list the players would appear
+    on ("ATP"/"WTA") -- Challenger/ITF men hold ATP ranking points, their
+    women's equivalents hold WTA points."""
+    slug = ((href or "").lower())
+    name = (tournament_name or "").lower()
+    if "wta" in slug or "women" in slug:
+        gender = "W"
+    elif "atp" in slug or "men" in slug:
+        gender = "M"
+    else:
+        gender = None
+    if gender is None:
+        return None, None
+    if "challenger" in name or "challenger" in slug:
+        return ("ATP Challenger" if gender == "M" else "WTA 125"), ("ATP" if gender == "M" else "WTA")
+    if "itf" in name or "futures" in name:
+        return ("ITF Men" if gender == "M" else "ITF Women"), ("ATP" if gender == "M" else "WTA")
+    if "utr" in name:
+        return ("UTR" if gender == "M" else "UTR Women"), ("ATP" if gender == "M" else "WTA")
+    return ("ATP" if gender == "M" else "WTA"), ("ATP" if gender == "M" else "WTA")
 
 
 def parse_schedule(html):
@@ -91,7 +118,7 @@ def parse_schedule(html):
     """
     soup = BeautifulSoup(html, "lxml")
     matches = []
-    current_tournament, current_tour = None, None
+    current_tournament, current_tour, current_rank_table = None, None, None
 
     for table in soup.find_all("table", class_="result"):
         pending = {}
@@ -102,7 +129,7 @@ def parse_schedule(html):
                 a = name_td.find("a") if name_td else None
                 if a:
                     current_tournament = a.get_text(strip=True)
-                    current_tour = _tour_from_href(a.get("href"))
+                    current_tour, current_rank_table = classify_tour(a.get("href"), current_tournament)
                 continue
 
             row_id = tr.get("id")
@@ -123,12 +150,14 @@ def parse_schedule(html):
                     _text(td) for td in tr.find_all("td", class_="score")
                 ]
             else:
-                if current_tour not in ("ATP", "WTA"):
-                    continue
+                if not current_tour:
+                    continue  # unclassifiable section (e.g. juniors/exhibitions)
                 name_td = tr.find("td", class_="t-name")
                 a = name_td.find("a") if name_td else None
                 if not a:
                     continue
+                if len(name_td.find_all("a")) > 1:
+                    continue  # doubles pairing -- singles rankings don't apply
                 time_td = tr.find("td", class_="first")
                 match_id = None
                 for link in tr.find_all("a"):
@@ -141,6 +170,7 @@ def parse_schedule(html):
                     "matchId": match_id,
                     "tournament": current_tournament,
                     "tour": current_tour,
+                    "rankTable": current_rank_table,
                     "time": _match_time(time_td),
                     "player1": a.get_text(strip=True),
                     "player1Slug": _slug(a.get("href")),
@@ -155,7 +185,24 @@ def parse_schedule(html):
 
 
 def fetch_rankings(tour_path):
-    html = fetch(f"{BASE}/ranking/{tour_path}/")
+    """Pull the ranking list, several pages deep (~100 players/page), so
+    Challenger/ITF players ranked outside the top 100 still get a real
+    ranking-points signal instead of a blind 50/50."""
+    out = {}
+    for page in range(1, RANKING_PAGES + 1):
+        try:
+            html = fetch(f"{BASE}/ranking/{tour_path}/?page={page}")
+        except Exception as e:
+            print(f"Ranking page {page} fetch failed for {tour_path}: {e}")
+            break
+        page_out = _parse_ranking_page(html)
+        if not page_out:
+            break
+        out.update(page_out)
+    return out
+
+
+def _parse_ranking_page(html):
     soup = BeautifulSoup(html, "lxml")
     out = {}
     # The page has more than one <table class="result"> -- the first is
@@ -315,7 +362,9 @@ def build_predictions(target_date):
     weights = _load_weights()
     out_matches = []
     for m in raw_matches:
-        ranks = rankings.get(m["tour"], {})
+        # rankTable maps every tier to the official list its players hold
+        # points on (Challenger/ITF men -> ATP, women -> WTA).
+        ranks = rankings.get(m.get("rankTable") or m["tour"], {})
         r1 = ranks.get(m["player1Slug"], {})
         r2 = ranks.get(m["player2Slug"], {})
         odds_p = implied_prob(m.get("oddsHome"), m.get("oddsAway"))
