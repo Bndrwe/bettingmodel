@@ -3835,13 +3835,17 @@ async function loadTennisMatches(){
   const updEl=document.getElementById('tnUpdated');
   if(updEl)updEl.textContent=`UPDATED ${data.updatedAt}`;
 
+  // Matches with no odds AND no ranking for either player carry pick:null
+  // — the model has no information about them, so they must never enter
+  // the ranked pick lists (they used to ship as ~58% "player1" picks).
   TN_ALL_PICKS=data.matches.flatMap(m=>{
+    if(!m.pick)return[];
     const p1=m.player1.name,p2=m.player2.name;
     const matchup=`${m.tour} · ${m.tournament||''}`;
     const mlProb=Math.max(m.modelProb.player1,m.modelProb.player2);
     const mlName=m.pick==='player1'?p1:p2;
     const picks=[{sport:'TENNIS',label:mlName,sub:`MONEYLINE vs ${m.pick==='player1'?p2:p1}`,matchup,prob:mlProb}];
-    if(m.firstSet){
+    if(m.firstSet&&m.firstSet.pick){
       const fsProb=Math.max(m.firstSet.player1,m.firstSet.player2);
       const fsName=m.firstSet.pick==='player1'?p1:p2;
       picks.push({sport:'TENNIS',label:fsName,sub:`1ST SET vs ${m.firstSet.pick==='player1'?p2:p1}`,matchup,prob:fsProb});
@@ -3881,25 +3885,33 @@ function renderTennisTable(){
   const sorted=[...filtered].sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));
   tbody.innerHTML=sorted.map(m=>{
     const p1=m.player1,p2=m.player2;
-    const pick=m.pick==='player1'?p1.name:p2.name;
     const oddsTxt=(m.odds.player1&&m.odds.player2)?`${m.odds.player1.toFixed(2)} / ${m.odds.player2.toFixed(2)}`:
                   m.odds.player1?`${m.odds.player1.toFixed(2)} / —`:m.odds.player2?`— / ${m.odds.player2.toFixed(2)}`:'—';
     const p1Rank=p1.rank?`#${p1.rank}`:'';
     const p2Rank=p2.rank?`#${p2.rank}`:'';
-    const pickProb=Math.max(m.modelProb.player1,m.modelProb.player2);
-    const pickColor=pickProb>=.70?'g-clr':pickProb>=.58?'a-clr':'r-clr';
-    const fs=m.firstSet||{player1:.5,player2:.5,pick:'player1'};
-    const fsName=fs.pick==='player1'?p1.name:p2.name;
-    const fsProb=Math.max(fs.player1,fs.player2);
-    const fsColor=fsProb>=.70?'g-clr':fsProb>=.58?'a-clr':'r-clr';
-    return `<tr>
+    const noSignal=!m.pick;
+    const srcLbl=m.source==='odds+ranking'?'odds+rank':m.source==='odds-only'?'odds only':m.source==='ranking-only'?'rank only':'no data';
+    const pickCell=noSignal
+      ? `<div class="model-pick"><span class="model-pick-lbl" style="color:var(--text3)">NO PICK</span><span class="model-pick-sub" style="color:var(--text3)">no odds or ranking</span></div>`
+      : (()=>{const pick=m.pick==='player1'?p1.name:p2.name;
+              const pickProb=Math.max(m.modelProb.player1,m.modelProb.player2);
+              const pickColor=pickProb>=.70?'g-clr':pickProb>=.58?'a-clr':'r-clr';
+              return `<div class="model-pick"><span class="model-pick-lbl">${pick}</span><span class="model-pick-sub"><span class="${pickColor}">${(pickProb*100).toFixed(1)}%</span> · ${srcLbl}</span></div>`;})();
+    const fs=m.firstSet;
+    const fsCell=(noSignal||!fs||!fs.pick)
+      ? `<div class="model-pick"><span class="model-pick-lbl" style="color:var(--text3)">—</span><span class="model-pick-sub" style="color:var(--text3)">no pick</span></div>`
+      : (()=>{const fsName=fs.pick==='player1'?p1.name:p2.name;
+              const fsProb=Math.max(fs.player1,fs.player2);
+              const fsColor=fsProb>=.70?'g-clr':fsProb>=.58?'a-clr':'r-clr';
+              return `<div class="model-pick"><span class="model-pick-lbl">${fsName}</span><span class="model-pick-sub"><span class="${fsColor}">${(fsProb*100).toFixed(1)}%</span> · set 1</span></div>`;})();
+    return `<tr${noSignal?' style="opacity:.55"':''}>
       <td style="font-family:'Space Mono';font-size:10px;">${m.time||'—'}</td>
       <td style="font-family:'Space Mono';font-size:9px;color:var(--text3);">${m.tour}</td>
       <td class="pname" style="font-size:10px;">${m.tournament||''}</td>
       <td class="pname">${p1.name} ${p1Rank}<br><span style="color:var(--text3);">vs</span> ${p2.name} ${p2Rank}</td>
       <td style="font-family:'Space Mono';font-size:9px;">${oddsTxt}</td>
-      <td><div class="model-pick"><span class="model-pick-lbl">${pick}</span><span class="model-pick-sub"><span class="${pickColor}">${(pickProb*100).toFixed(1)}%</span> · ${m.source==='odds+ranking'?'odds+rank':'rank only'}</span></div></td>
-      <td><div class="model-pick"><span class="model-pick-lbl">${fsName}</span><span class="model-pick-sub"><span class="${fsColor}">${(fsProb*100).toFixed(1)}%</span> · set 1</span></div></td>
+      <td>${pickCell}</td>
+      <td>${fsCell}</td>
     </tr>`;
   }).join('');
 }

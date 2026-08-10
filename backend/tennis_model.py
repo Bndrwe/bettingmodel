@@ -255,17 +255,34 @@ def implied_prob(odds_a, odds_b):
 
 def ranking_prob(points_a, points_b):
     """Bradley-Terry-style share on log-compressed ranking points -- used
-    only as a fallback when no market odds are posted yet."""
+    only as a fallback when no market odds are posted yet.
+
+    Returns None (not 0.5) when either player has no ranking points, so
+    callers can tell "no information" apart from "genuinely even". The old
+    0.5 return was indistinguishable from a real pick-em and flowed
+    straight into a published pick."""
     if not points_a or not points_b:
-        return 0.5
+        return None
     diff = math.log(max(points_a, 1)) - math.log(max(points_b, 1))
     p = 1.0 / (1.0 + math.exp(-2.2 * diff))
     return clamp(p, 0.05, 0.95)
 
 
 def blend_prob(odds_p, rank_p):
+    """Returns (prob_player1, source). source == "no-signal" means neither
+    market odds nor rankings were available: the model has nothing to say
+    about the match and the caller must NOT publish a pick.
+
+    Previously a no-data match produced 0.5, which calibrate() then floored
+    to 0.51+ and the pick rule turned into "player1" -- so on a typical
+    slate ~280 of 450 matches shipped a ~58%-confidence pick that was
+    really just 'whoever the site happened to list first'."""
+    if odds_p is None and rank_p is None:
+        return 0.5, "no-signal"
     if odds_p is None:
         return clamp(rank_p, 0.05, 0.95), "ranking-only"
+    if rank_p is None:
+        return clamp(odds_p, 0.03, 0.97), "odds-only"
     return clamp(0.65 * odds_p + 0.35 * rank_p, 0.03, 0.97), "odds+ranking"
 
 
@@ -370,12 +387,15 @@ def build_predictions(target_date):
         odds_p = implied_prob(m.get("oddsHome"), m.get("oddsAway"))
         rank_p = ranking_prob(r1.get("points"), r2.get("points"))
         prob1, source = blend_prob(odds_p, rank_p)
-        prob1 = calibrate(prob1, weights)
-        pick = "player1" if prob1 >= 0.5 else "player2"
+        has_signal = source != "no-signal"
+        if has_signal:
+            prob1 = calibrate(prob1, weights)
+        pick = ("player1" if prob1 >= 0.5 else "player2") if has_signal else None
 
         fs_prob1 = first_set_prob(prob1, m.get("tournament"), m.get("tour"))
-        fs_prob1 = calibrate(fs_prob1, weights, bucket_key="firstSetCalibrationBuckets")
-        fs_pick = "player1" if fs_prob1 >= 0.5 else "player2"
+        if has_signal:
+            fs_prob1 = calibrate(fs_prob1, weights, bucket_key="firstSetCalibrationBuckets")
+        fs_pick = ("player1" if fs_prob1 >= 0.5 else "player2") if has_signal else None
 
         out_matches.append({
             "matchId": m.get("matchId"),

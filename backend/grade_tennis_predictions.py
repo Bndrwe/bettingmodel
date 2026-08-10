@@ -2,8 +2,12 @@
 self-learning loop -- same pattern as grade_game_predictions.py for MLB.
 """
 import json
+import sys
 from datetime import date, timedelta
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from collect_tennis_results import norm_name  # noqa: E402
 
 CONFIDENCE_BUCKETS = [
     (0.50, 0.55), (0.55, 0.60), (0.60, 0.65), (0.65, 0.70),
@@ -19,6 +23,30 @@ def _load(path):
         return json.load(f)
 
 
+def _winner_position(pred, result, key):
+    """Map a result's recorded winner IDENTITY onto this prediction's
+    player1/player2 slots.
+
+    The results page re-renders completed matches with the winner first, so
+    the old positional comparison (pred["pick"] == result["winner"]) matched
+    the morning ordering against the post-match ordering -- ~94% of every
+    day's matches graded as "player1 won", manufacturing a 97.5% hit rate
+    for picks that were literally "whoever was listed first"."""
+    slug = result.get(f"{key}Slug")
+    name_norm = result.get(f"{key}NameNorm")
+    if not slug and not name_norm:
+        # Legacy results file written before identities were recorded --
+        # ungradeable, because its "player1" refers to a different ordering.
+        return None
+    for pos in ("player1", "player2"):
+        p = pred.get(pos) or {}
+        if slug and p.get("slug") and p["slug"] == slug:
+            return pos
+        if name_norm and norm_name(p.get("name")) == name_norm:
+            return pos
+    return None
+
+
 def grade_day(date_str):
     preds = _load(f"data/history/tennis_{date_str}.json")
     results = _load(f"data/tennis_results/results_{date_str}.json")
@@ -32,29 +60,40 @@ def grade_day(date_str):
         r = results_by_id.get(m.get("matchId"))
         if not r:
             continue
+
+        winner_pos = _winner_position(m, r, "winner")
+        if winner_pos is None:
+            # Can't tie the recorded winner back to either predicted player
+            # (renamed/re-slugged entry) -- skip rather than guess.
+            continue
         prob = max(m["modelProb"]["player1"], m["modelProb"]["player2"])
-        hit = m["pick"] == r["winner"]
+        # A match with no real signal (no odds, no ranking for either
+        # player) carries pick=None and must not be scored -- counting
+        # "whoever the site listed first" as a pick is what produced the
+        # bogus 97.5% ranking-only hit rate.
+        hit = None if not m.get("pick") else (m["pick"] == winner_pos)
 
         fs = m.get("firstSet") or {}
-        fs_winner = r.get("firstSetWinner")
+        fs_pos = _winner_position(m, r, "firstSetWinner")
         fs_hit, fs_prob = None, None
-        if fs and fs_winner is not None:
+        if fs and fs.get("pick") and fs_pos is not None:
             fs_prob = max(fs.get("player1", 0.5), fs.get("player2", 0.5))
-            fs_hit = fs.get("pick") == fs_winner
+            fs_hit = fs.get("pick") == fs_pos
 
         graded.append({
             "matchId": m.get("matchId"),
             "matchup": f"{m['player1']['name']} vs {m['player2']['name']}",
             "tour": m.get("tour"),
             "tournament": m.get("tournament"),
-            "pick": m["pick"],
-            "winner": r["winner"],
+            "pick": m.get("pick"),
+            "winner": winner_pos,
+            "winnerName": r.get("winnerName"),
             "prob": round(prob, 4),
             "source": m.get("source"),
             "hit": hit,
             "firstSet": {
                 "pick": fs.get("pick"),
-                "winner": fs_winner,
+                "winner": fs_pos,
                 "prob": round(fs_prob, 4) if fs_prob is not None else None,
                 "hit": fs_hit,
             },
@@ -66,14 +105,14 @@ def update_accuracy_log(date_str, graded):
     log_path = Path("data/tennis_accuracy_log.json")
     log = _load(log_path) or {"sessions": []}
 
-    hits = sum(1 for g in graded if g["hit"])
+    hits = sum(1 for g in graded if g["hit"] is True)
     fs_hits = sum(1 for g in graded if g["firstSet"].get("hit") is True)
     fs_total = sum(1 for g in graded if g["firstSet"].get("hit") is not None)
     session = {
         "date": date_str,
         "matchesGraded": len(graded),
         "hits": hits,
-        "total": len(graded),
+        "total": sum(1 for g in graded if g["hit"] is not None),
         "firstSet": {"hits": fs_hits, "total": fs_total},
         "detail": graded,
     }
@@ -85,7 +124,8 @@ def update_accuracy_log(date_str, graded):
     with open(log_path, "w") as f:
         json.dump(log, f, indent=2)
 
-    print(f"Graded {len(graded)} tennis matches for {date_str}: {hits}/{len(graded)} hit "
+    graded_total = sum(1 for g in graded if g["hit"] is not None)
+    print(f"Graded {len(graded)} tennis matches for {date_str}: {hits}/{graded_total} hit "
           f"(first set: {fs_hits}/{fs_total})")
     return log
 

@@ -1,127 +1,14 @@
 {
-  "calibrationBuckets": [
-    {
-      "lo": 0.5,
-      "hi": 0.55,
-      "total": 645,
-      "hits": 596,
-      "sumExpected": 325.80199999999985
-    },
-    {
-      "lo": 0.55,
-      "hi": 0.6,
-      "total": 1977,
-      "hits": 1511,
-      "sumExpected": 1153.376900000004
-    },
-    {
-      "lo": 0.6,
-      "hi": 0.65,
-      "total": 2341,
-      "hits": 1363,
-      "sumExpected": 1454.8362000000022
-    },
-    {
-      "lo": 0.65,
-      "hi": 0.7,
-      "total": 1069,
-      "hits": 697,
-      "sumExpected": 715.9682999999998
-    },
-    {
-      "lo": 0.7,
-      "hi": 0.75,
-      "total": 932,
-      "hits": 679,
-      "sumExpected": 677.1176000000006
-    },
-    {
-      "lo": 0.75,
-      "hi": 0.8,
-      "total": 407,
-      "hits": 266,
-      "sumExpected": 311.9964
-    },
-    {
-      "lo": 0.8,
-      "hi": 0.9,
-      "total": 17,
-      "hits": 13,
-      "sumExpected": 13.7419
-    },
-    {
-      "lo": 0.9,
-      "hi": 1.01,
-      "total": 0,
-      "hits": 0,
-      "sumExpected": 0.0
-    }
-  ],
-  "firstSetCalibrationBuckets": [
-    {
-      "lo": 0.5,
-      "hi": 0.55,
-      "total": 824,
-      "hits": 230,
-      "sumExpected": 418.62039999999945
-    },
-    {
-      "lo": 0.55,
-      "hi": 0.6,
-      "total": 2524,
-      "hits": 1715,
-      "sumExpected": 1464.4938000000125
-    },
-    {
-      "lo": 0.6,
-      "hi": 0.65,
-      "total": 2813,
-      "hits": 1733,
-      "sumExpected": 1741.1596999999997
-    },
-    {
-      "lo": 0.65,
-      "hi": 0.7,
-      "total": 591,
-      "hits": 427,
-      "sumExpected": 400.1400000000003
-    },
-    {
-      "lo": 0.7,
-      "hi": 0.75,
-      "total": 536,
-      "hits": 369,
-      "sumExpected": 386.0654000000001
-    },
-    {
-      "lo": 0.75,
-      "hi": 0.8,
-      "total": 100,
-      "hits": 66,
-      "sumExpected": 76.23890000000002
-    },
-    {
-      "lo": 0.8,
-      "hi": 0.9,
-      "total": 0,
-      "hits": 0,
-      "sumExpected": 0.0
-    },
-    {
-      "lo": 0.9,
-      "hi": 1.01,
-      "total": 0,
-      "hits": 0,
-      "sumExpected": 0.0
-    }
-  ],
+  "calibrationBuckets": [],
+  "firstSetCalibrationBuckets": [],
   "accuracySummary": {
-    "hits": 5125,
-    "total": 7388
+    "hits": 0,
+    "total": 0
   },
   "firstSetAccuracySummary": {
-    "hits": 4540,
-    "total": 7388
+    "hits": 0,
+    "total": 0
   },
-  "lastUpdated": "2026-08-08"
+  "resetNote": "Reset 2026-08-09: every prior session was graded by ROW POSITION, but tennisexplorer re-renders completed matches with the winner listed first, so ~94% of matches scored as 'player1 won' and ranking-only picks showed a fabricated 97.5% hit rate. The archived results files record no player identities, so the old gradings cannot be recomputed and are discarded rather than left to poison calibration.",
+  "lastUpdated": "2026-08-10"
 }
