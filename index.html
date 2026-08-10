@@ -1200,9 +1200,21 @@ async function fetchPitcherArsenal(pid){
   // replacing the old hand/K%/GB-rate heuristic that only ever produced a
   // handful of generic combinations regardless of who was actually pitching.
   if(!pid)return null;
-  const d=await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&group=pitching&season=${YR}&sportId=1`)
-        ||await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&season=${YR}`);
-  const splits=d?.stats?.[0]?.splits;
+  // Try this season, then the same season without the group/sportId
+  // qualifiers, then last season — a pitcher with few innings so far often
+  // has no arsenal published yet, and last year's real mix beats a guess.
+  let d=await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&group=pitching&season=${YR}&sportId=1`);
+  let splits=d?.stats?.[0]?.splits;
+  if(!splits?.length){
+    d=await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&season=${YR}`);
+    splits=d?.stats?.[0]?.splits;
+  }
+  let stale=false;
+  if(!splits?.length){
+    d=await fetchJ(`${MLB}/people/${pid}/stats?stats=pitchArsenal&group=pitching&season=${YR-1}&sportId=1`);
+    splits=d?.stats?.[0]?.splits;
+    stale=!!splits?.length;
+  }
   if(!splits?.length)return null;
   const totals={fb:0,off:0,brk:0};
   let anyUsage=false;
@@ -1224,7 +1236,7 @@ async function fetchPitcherArsenal(pid){
   if(!anyUsage)return null;
   const sum=totals.fb+totals.off+totals.brk;
   if(sum<=0)return null;
-  return{fb:totals.fb/sum,off:totals.off/sum,brk:totals.brk/sum,source:'real'};
+  return{fb:totals.fb/sum,off:totals.off/sum,brk:totals.brk/sum,source:stale?'real-prev':'real'};
 }
 async function fetchH2H(batterId,pitcherId){
   if(!batterId||!pitcherId)return null;
@@ -1340,7 +1352,9 @@ function dayNightMult(gameDate){
   if(!gameDate)return 1.0;
   const h=new Date(gameDate).getHours();
   // Night games (after 5pm local): slight edge for batters (better shadows, fresher arms)
-  return (h>=17||h<10)?1.02:0.985;
+  // Most MLB games are night games, so 1.02/0.985 was a net slate-wide
+  // boost rather than a day-vs-night contrast; centered.
+  return (h>=17||h<10)?1.01:0.98;
 }
 
 // New: hard contact quality proxy (no Statcast needed)
@@ -1362,7 +1376,9 @@ function countAdvantage(batterKPct,batterBBPct,pitcherKPct,pitcherBBPct){
   const batterContact=clamp(1-(batterKPct/LG.kPct-1)*0.5,0.7,1.3);
   // High pitcher BB% (wild) + low batter K% = favorable counts = more HR opportunity
   const adv=pitcherControl*batterContact;
-  return clamp(0.96+0.06*(adv-1),0.94,1.08);
+  // Centered on 1.0: the old 0.96 base returned 0.96 for a perfectly
+  // average matchup, docking every batter 4% on every slate.
+  return clamp(1+0.06*(adv-1),0.94,1.08);
 }
 
 // Factor 25: Precipitation risk — high rain chance suppresses fly-ball carry
@@ -1414,7 +1430,9 @@ function pitcherFatigueMult(pitcherRecent){
 function lineupProtectionMult(slot){
   if(!slot||slot<1||slot>9)return 1.0;
   // Protection tiers: cleanup/3-4-5 = best; leadoff = decent (see pitches); 7-9 = weak
-  const protection={1:1.01,2:1.02,3:1.05,4:1.06,5:1.05,6:1.02,7:0.98,8:0.96,9:0.94};
+  // Normalized so the nine slots average 1.0 (they averaged 1.010 before,
+  // a free boost applied to every batter in the lineup).
+  const protection={1:1.00,2:1.01,3:1.04,4:1.05,5:1.04,6:1.01,7:0.97,8:0.95,9:0.93};
   return protection[slot]||1.0;
 }
 
@@ -1685,17 +1703,32 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
   // Regression weight by sample (full weight at 500 PA)
   const rw=clamp(pa/500,0.05,0.95);
 
-  // ─── Factor 1: Barrel/BIP estimate ───
-  const brl=estBarrel(iso);
-  const brlMult=clamp(0.65+0.35*(brl/LG.brl),0.65,1.75); // tightened from 0.55–2.2
-
-  // ─── Factor 2: ISO ───
-  const regISO=rw*iso+(1-rw)*LG.iso;
-  const isoMult=clamp(0.68+0.32*(regISO/LG.iso),0.68,1.65); // tightened from 0.6–1.8
-
-  // Base HR/PA
+  // Base HR/PA — the batter's OWN regressed home-run rate.
   const rawRate=hr/pa;
   const baseRate=rw*rawRate+(1-rw)*LG.hrPA;
+
+  // ─── Factors 1/2/11/12/18: batter power ───
+  // Barrel, ISO, flyball, OPS+ and hard-contact are five views of the same
+  // underlying power — power that baseRate ALREADY encodes. Multiplying
+  // them on top of it counted the same hitter five times: in a fully
+  // NEUTRAL matchup an elite slugger collected 1.58 x 1.32 x 1.06 x 1.03
+  // x 1.10 ≈ 2.4x on top of a baseRate that was itself 2.1x league.
+  // Collapsed into one residual: how far the batter's contact quality runs
+  // ahead of (or behind) what his own HR rate already implies.
+  const brl=estBarrel(iso);
+  const regISO=rw*iso+(1-rw)*LG.iso;
+  const pullRate=estPullRate(batterHand,iso);
+  const xbhPerH=(hr+dbl*0.55)/Math.max(h,1);
+  const ops=obp+slg;
+  const regOPS=rw*ops+(1-rw)*LG.ops;
+  const qualityIndex=0.40*(regISO/LG.iso)+0.25*(brl/LG.brl)
+                    +0.15*(xbhPerH/0.21)+0.10*(regOPS/LG.ops)
+                    +0.10*(pullRate/0.42);
+  const hrRatio=Math.max(rawRate,0.004)/LG.hrPA;
+  const powerMult=clamp(1+0.20*(qualityIndex/Math.max(rw*hrRatio+(1-rw)*1.0,0.30)-1),0.82,1.25);
+  // Kept for the factor breakdown UI; only powerMult enters the product.
+  const brlMult=clamp(0.65+0.35*(brl/LG.brl),0.65,1.75);
+  const isoMult=clamp(0.68+0.32*(regISO/LG.iso),0.68,1.65);
 
   // ─── Factor 3: Recent form L14 ───
   let recentMult=1.0,recentLabel='NEUTRAL',recentSample=false;
@@ -1709,7 +1742,10 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
   // ─── Factor 4: Zone match (platoon + K alignment) ───
   const platoonAdv=(batterHand==='L'&&pitcherHand==='R')||(batterHand==='R'&&pitcherHand==='L');
   const kPct=k/pa;
-  const zoneScore=zoneMatchScore(kPct,pitcherStat?.kPct||LG.pitKPct,platoonAdv,iso);
+  // iso passed as league-average: the batter-power term lived here too and
+  // would be a sixth count of the same signal; what remains is the pitcher
+  // K% and platoon look, which are genuinely matchup-specific.
+  const zoneScore=zoneMatchScore(kPct,pitcherStat?.kPct||LG.pitKPct,platoonAdv,LG.iso);
   const zoneMult=clamp(0.87+(zoneScore/50)*0.13,0.87,1.13);
 
   // ─── Factor 5: Pitcher HR/9 (recalibrated) ───
@@ -1739,18 +1775,9 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
     if(park)windMult=windEffect(weather.windSpeed,weather.windDir,park.cfBearing);
   }
 
-  // ─── Factor 10: Pull/Air tendency ───
-  const pullRate=estPullRate(batterHand,iso);
+  // Factors 10/11/12 (pull, flyball, OPS+) fold into powerMult above.
   const pullMult=clamp(0.93+pullRate*0.18,0.93,1.14);
-
-  // ─── Factor 11: Flyball tendency (XBH rate proxy) ───
-  const xbhPerH=(hr+dbl*0.55)/Math.max(h,1);
-  const lgXbhPerH=0.21;
-  const flyMult=clamp(0.93+0.07*(xbhPerH/Math.max(lgXbhPerH,0.01)),0.93,1.14);
-
-  // ─── Factor 12: OPS+ relative to league ───
-  const ops=obp+slg;
-  const regOPS=rw*ops+(1-rw)*LG.ops;
+  const flyMult=clamp(0.93+0.07*(xbhPerH/0.21),0.93,1.14);
   const opsMult=clamp(0.92+0.08*(regOPS/LG.ops),0.92,1.20);
 
   // ─── Factor 13: Plate discipline / BB rate ───
@@ -1789,7 +1816,8 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
     splitMult=clamp((splitMult+isoRatio)/2,0.50,2.10); // blend rate + ISO ratio
   } else {
     // Fall back to estimated platoon advantage
-    splitMult=platoonAdv?1.10:0.96;
+    // Centered: base rate already blends both platoon states over a season.
+    splitMult=platoonAdv?1.06:0.95;
   }
 
   // ─── Factor 18: Head-to-Head vs this pitcher ───
@@ -1852,10 +1880,10 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
 
   // ─── Per-PA probability (all 29 factors) ───
   const factorProduct=
-    brlMult * isoMult * recentMult * zoneMult
+    powerMult * recentMult * zoneMult
     * pitcherHRMult * pitcherKMult * fbMult
     * parkFactor * altBonus * tempMult * windMult
-    * pullMult * flyMult * opsMult * bbMult
+    * bbMult
     * whipMult * homeAdvMult * kAlignMult
     // NEW 17-24
     * splitMult * h2hMultVal * streak7Mult
@@ -1865,13 +1893,13 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
     * precipM * slugTrendM * pitFatigueM
     * lineupProtM * accuracyCalibM
     * convergenceMult;
-  // Square-root damping: ~30 bounded but heavily-correlated multipliers
-  // (brl/iso/zone/hard-contact/split all ride the same power signal)
-  // compound to 4x+ for any good hitter, which pinned every slugger at the
-  // per-PA cap and produced 40%+ "game probabilities" no sportsbook would
-  // recognize. Halving the product in log space keeps each factor's
-  // direction while restoring a realistic spread (top pick ~25-30%).
-  const perPA=clamp(baseRate*Math.sqrt(factorProduct),0.002,0.075);
+  // Damping: even with every factor centered on 1.0, the matchup-side ones
+  // (park, pitcher HR/9, FB%, WHIP, weather) move together on a given day,
+  // so the product is compressed in log space. Matches backend/factors.py
+  // exactly. Reference points: league-average regular in a neutral matchup
+  // ~12%, elite slugger neutral ~26% (his own season rate), best spot on a
+  // slate ~32%, weak hitter vs an ace in a cold pitcher's park ~6%.
+  const perPA=clamp(baseRate*Math.pow(factorProduct,0.70),0.002,0.085);
 
   const expPA=lineupPA(battingOrder);
 
@@ -1885,6 +1913,7 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
   return{
     perPA,expPA,
     factors:{
+      power:{val:fmt(qualityIndex,2)+'x',mult:powerMult,tag:powerMult>1.06?'pos':powerMult<0.95?'neg':'avg',label:'Power Quality'},
       brl:{val:fmt(brl*100,1)+'%',mult:brlMult,tag:brlMult>1.22?'pos':brlMult<0.88?'neg':'avg',label:'Brl/BIP%'},
       iso:{val:fmt(iso,3),mult:isoMult,tag:isoMult>1.15?'pos':isoMult<0.88?'neg':'avg',label:'ISO'},
       recent:{val:recentLabel,mult:recentMult,tag:recentLabel==='HOT'?'pos':recentLabel==='COLD'?'neg':recentSample?'sml':'avg',label:'HR Form L14'},
@@ -1956,12 +1985,22 @@ function runMC(perPAprob,raw,pitcherFBPct,expPA,nSims=10000){
 }
 
 function estimatePitchMix(hand,era,gbPct,kPct){
-  // Fallback only -- used when a pitcher has no pitchArsenal data yet
-  // (e.g. a brand-new call-up with no MLB innings logged).
-  const isPowerArm=kPct>0.26;
-  const isGroundBall=(gbPct||1.0)>1.3;
-  if(hand==='L'){return{fb:isGroundBall?0.48:0.58,off:isPowerArm?0.26:0.32,brk:0.10+(isGroundBall?0.04:0),source:'est'};}
-  return{fb:isGroundBall?0.42:0.52,off:isPowerArm?0.22:0.26,brk:isPowerArm?0.26:0.22,source:'est'};
+  // Fallback only -- used when MLB publishes no pitchArsenal data for this
+  // pitcher in either season. Derived CONTINUOUSLY from the pitcher's own
+  // K% and groundout/airout ratio so every arm gets a distinct mix; the
+  // old version had four hard-coded outcomes, so essentially every RHP
+  // rendered the identical 52/26/22 split regardless of who was pitching.
+  const k =(isFinite(kPct)&&kPct>0)?kPct:LG.pitKPct;
+  const gb=(isFinite(gbPct)&&gbPct>0)?gbPct:1.10;
+  const kDev =clamp((k-LG.pitKPct)/0.10,-1.2,1.5); // ±10 pts of K% = ±1.0
+  const gbDev=clamp((gb-1.10)/0.60,-1.2,1.5);      // GB:FB ratio spread
+  // Power arms lean on breaking balls; groundball arms lean on sinkers.
+  let fb =0.50-0.09*kDev+0.07*gbDev-(hand==='L'?0.02:0);
+  let brk=0.28+0.10*kDev-0.05*gbDev-(hand==='L'?0.02:0);
+  let off=0.22-0.01*kDev-0.02*gbDev+(hand==='L'?0.04:0);
+  fb=clamp(fb,0.28,0.70);brk=clamp(brk,0.08,0.45);off=clamp(off,0.06,0.40);
+  const sum=fb+brk+off;
+  return{fb:fb/sum,off:off/sum,brk:brk/sum,source:'est'};
 }
 
 // ═══════════════════════════════════════
@@ -2109,7 +2148,7 @@ async function buildPredictions(){
       h2hMap[b.pid],relevantSplit,b.gameDate,b.pid
     );
     if(!model)continue;
-    const gameProb=clamp(1-Math.pow(1-model.perPA,model.expPA),0,0.85);
+    const gameProb=clamp(1-Math.pow(1-model.perPA,model.expPA),0.01,0.35);
     const mc=runMC(model.perPA,model.raw,pitcher?.gbPct,model.expPA);
     // Prefer the pitcher's real, individual arsenal mix (MLB Stats API);
     // only fall back to the hand/K%/GB-rate estimate when a pitcher's
@@ -3074,7 +3113,8 @@ function renderPitchMix(p){
   const pm=p.pitchMix;
   const pitcherHR9=fmt(p.pitcher?.hr9||LG.pitHR9,2);
   const kPct=fmt((p.pitcher?.kPct||LG.pitKPct)*100,0)+'%';
-  document.getElementById('throwsTitle').textContent=`${(p.pitcherName||'PITCHER').split(' ').pop().toUpperCase()} THROWS${pm.source==='real'?' · ACTUAL ARSENAL':' · EST'}`;
+  const srcTag=pm.source==='real'?' · ACTUAL ARSENAL':pm.source==='real-prev'?` · ${YR-1} ARSENAL`:' · ESTIMATED';
+  document.getElementById('throwsTitle').textContent=`${(p.pitcherName||'PITCHER').split(' ').pop().toUpperCase()} THROWS${srcTag}`;
   document.getElementById('pitchMix').innerHTML=`
     <div class="pm-pill fb active"><div><span class="pm-dot fb"></span>FB</div><div class="pm-pct" style="color:var(--blue)">${fmt(pm.fb*100,0)}%</div><div class="pm-lbl">FASTBALL</div></div>
     <div class="pm-pill off active"><div><span class="pm-dot off"></span>OFF</div><div class="pm-pct" style="color:var(--purple)">${fmt(pm.off*100,0)}%</div><div class="pm-lbl">OFFSPEED</div></div>
@@ -3083,7 +3123,9 @@ function renderPitchMix(p){
     <span style="color:var(--text2)">HR/9: <b style="color:var(--white)">${pitcherHR9}</b></span>
     <span style="color:var(--text2)">K%: <b style="color:var(--white)">${kPct}</b></span>
     <span style="color:var(--text2)">ERA: <b style="color:var(--white)">${p.pitcher?.era?.toFixed(2)||'—'}</b></span>
-    <span style="color:var(--text2)">WHIP: <b style="color:var(--white)">${p.pitcher?.whip?.toFixed(2)||'—'}</b></span>`;
+    <span style="color:var(--text2)">WHIP: <b style="color:var(--white)">${p.pitcher?.whip?.toFixed(2)||'—'}</b></span>
+    <span style="color:var(--text2)">IP: <b style="color:var(--white)">${p.pitcher?.ip?.toFixed(1)||'—'}</b></span>
+    <span style="color:var(--text2)">BF: <b style="color:var(--white)">${p.pitcher?.bf||'—'}</b></span>`;
 }
 function renderGameLog(log,p){
   if(!log||!log.length){document.getElementById('abRow').innerHTML='<div style="font-family:\'Space Mono\';font-size:9px;color:var(--text3)">No recent game data</div>';return;}

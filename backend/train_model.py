@@ -34,27 +34,31 @@ def compare_predictions_to_results(predictions, results):
         return []
     
     comparisons = []
-    results_dict = {r['player_name']: r for r in results.get('results', [])}
-    
+    # Match on player_id, not display name: accents, "Jr."/"II" suffixes and
+    # differing punctuation between the prediction and result feeds silently
+    # dropped players when keying by name.
+    results_by_id = {
+        str(r['player_id']): r for r in results.get('results', []) if 'player_id' in r
+    }
+    results_by_name = {r.get('player_name'): r for r in results.get('results', [])}
+
     for pred in predictions.get('predictions', [])[:50]:  # Top 50
         player_name = pred.get('name', '')
         # compute_model() emits camelCase "gameProb"; the old snake_case
         # lookup raised KeyError on the very first prediction.
         predicted_prob = pred.get('gameProb', pred.get('game_prob', 0))
-        
-        if player_name in results_dict:
-            actual_hrs = results_dict[player_name]['home_runs']
-            hit_hr = actual_hrs > 0
-            
+        r = results_by_id.get(str(pred.get('pid', ''))) or results_by_name.get(player_name)
+        if r:
+            actual_hrs = r['home_runs']
             comparisons.append({
                 'player': player_name,
                 'predicted_prob': predicted_prob,
                 'actual_hrs': actual_hrs,
-                'hit_hr': hit_hr,
+                'hit_hr': actual_hrs > 0,
                 'grade': pred.get('grade', 'N/A'),
                 'factors': pred.get('factors', {})
             })
-    
+
     return comparisons
 
 def analyze_with_ai(comparisons):
@@ -148,6 +152,11 @@ def save_training_log(date_str, comparisons, ai_suggestions):
         "total_predictions": len(comparisons),
         "hits": sum(1 for c in comparisons if c['hit_hr']),
         "accuracy": (sum(1 for c in comparisons if c['hit_hr']) / len(comparisons) * 100) if comparisons else 0,
+        # Sum of the probabilities the model actually assigned. factors.py
+        # compared observed hit-rate against a HARD-CODED 0.125 expectation,
+        # so any change to the model's scale (like the per-PA -> per-game
+        # fix) instantly showed as "drift" and got corrected against.
+        "sum_expected": round(sum(c['predicted_prob'] for c in comparisons), 4),
         "ai_suggestions": ai_suggestions
     }
     
