@@ -23,15 +23,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -56,15 +56,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -89,15 +89,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -122,15 +122,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -155,15 +155,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -188,15 +188,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -221,15 +221,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -254,14 +254,14 @@
         "player2": 1.84
       },
       "modelProb": {
-        "player1": 0.5809,
-        "player2": 0.4191
+        "player1": 0.5014,
+        "player2": 0.4986
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.5938,
-        "player2": 0.4062,
+        "player1": 0.5009,
+        "player2": 0.4991,
         "pick": "player1"
       }
     },
@@ -287,14 +287,14 @@
         "player2": 1.7
       },
       "modelProb": {
-        "player1": 0.392,
-        "player2": 0.608
+        "player1": 0.457,
+        "player2": 0.543
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3878,
-        "player2": 0.6122,
+        "player1": 0.4713,
+        "player2": 0.5287,
         "pick": "player2"
       }
     },
@@ -320,15 +320,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -353,15 +353,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -386,15 +386,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -419,15 +419,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -452,15 +452,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -485,15 +485,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -518,15 +518,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -551,15 +551,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -584,15 +584,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -617,14 +617,14 @@
         "player2": 1.98
       },
       "modelProb": {
-        "player1": 0.6066,
-        "player2": 0.3934
+        "player1": 0.541,
+        "player2": 0.459
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6113,
-        "player2": 0.3887,
+        "player1": 0.5273,
+        "player2": 0.4727,
         "pick": "player1"
       }
     },
@@ -650,14 +650,14 @@
         "player2": 1.93
       },
       "modelProb": {
-        "player1": 0.5987,
-        "player2": 0.4013
+        "player1": 0.5288,
+        "player2": 0.4712
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6059,
-        "player2": 0.3941,
+        "player1": 0.5192,
+        "player2": 0.4808,
         "pick": "player1"
       }
     },
@@ -683,15 +683,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -716,14 +716,14 @@
         "player2": 2.11
       },
       "modelProb": {
-        "player1": 0.5984,
-        "player2": 0.4016
+        "player1": 0.6141,
+        "player2": 0.3859
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6057,
-        "player2": 0.3943,
+        "player1": 0.5766,
+        "player2": 0.4234,
         "pick": "player1"
       }
     },
@@ -749,14 +749,14 @@
         "player2": 3.25
       },
       "modelProb": {
-        "player1": 0.7239,
-        "player2": 0.2761
+        "player1": 0.7691,
+        "player2": 0.2309
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6723,
-        "player2": 0.3277,
+        "player1": 0.6883,
+        "player2": 0.3117,
         "pick": "player1"
       }
     },
@@ -782,14 +782,14 @@
         "player2": 3.19
       },
       "modelProb": {
-        "player1": 0.5951,
-        "player2": 0.4049
+        "player1": 0.6108,
+        "player2": 0.3892
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6035,
-        "player2": 0.3965,
+        "player1": 0.5744,
+        "player2": 0.4256,
         "pick": "player1"
       }
     },
@@ -815,14 +815,14 @@
         "player2": 2.15
       },
       "modelProb": {
-        "player1": 0.6027,
-        "player2": 0.3973
+        "player1": 0.5349,
+        "player2": 0.4651
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6086,
-        "player2": 0.3914,
+        "player1": 0.5233,
+        "player2": 0.4767,
         "pick": "player1"
       }
     },
@@ -845,17 +845,17 @@
       },
       "odds": {
         "player1": null,
-        "player2": 3.04
+        "player2": 3.06
       },
       "modelProb": {
-        "player1": 0.6549,
-        "player2": 0.3451
+        "player1": 0.5839,
+        "player2": 0.4161
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6036,
-        "player2": 0.3964,
+        "player1": 0.5562,
+        "player2": 0.4438,
         "pick": "player1"
       }
     },
@@ -881,14 +881,14 @@
         "player2": 1.74
       },
       "modelProb": {
-        "player1": 0.3714,
-        "player2": 0.6286
+        "player1": 0.4253,
+        "player2": 0.5747
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3737,
-        "player2": 0.6263,
+        "player1": 0.45,
+        "player2": 0.55,
         "pick": "player2"
       }
     },
@@ -914,14 +914,14 @@
         "player2": 1.95
       },
       "modelProb": {
-        "player1": 0.4117,
-        "player2": 0.5883
+        "player1": 0.4872,
+        "player2": 0.5128
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4011,
-        "player2": 0.5989,
+        "player1": 0.4915,
+        "player2": 0.5085,
         "pick": "player2"
       }
     },
@@ -944,17 +944,17 @@
       },
       "odds": {
         "player1": null,
-        "player2": 4.44
+        "player2": 4.41
       },
       "modelProb": {
-        "player1": 0.6715,
-        "player2": 0.3285
+        "player1": 0.7732,
+        "player2": 0.2268
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6153,
-        "player2": 0.3847,
+        "player1": 0.6915,
+        "player2": 0.3085,
         "pick": "player1"
       }
     },
@@ -980,14 +980,14 @@
         "player2": 1.55
       },
       "modelProb": {
-        "player1": 0.3333,
-        "player2": 0.6667
+        "player1": 0.3548,
+        "player2": 0.6452
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3881,
-        "player2": 0.6119,
+        "player1": 0.402,
+        "player2": 0.598,
         "pick": "player2"
       }
     },
@@ -1013,14 +1013,14 @@
         "player2": 2.19
       },
       "modelProb": {
-        "player1": 0.6082,
-        "player2": 0.3918
+        "player1": 0.5434,
+        "player2": 0.4566
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6123,
-        "player2": 0.3877,
+        "player1": 0.529,
+        "player2": 0.471,
         "pick": "player1"
       }
     },
@@ -1046,14 +1046,14 @@
         "player2": 3.64
       },
       "modelProb": {
-        "player1": 0.6307,
-        "player2": 0.3693
+        "player1": 0.7253,
+        "player2": 0.2747
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6278,
-        "player2": 0.3722,
+        "player1": 0.6552,
+        "player2": 0.3448,
         "pick": "player1"
       }
     },
@@ -1079,14 +1079,14 @@
         "player2": 1.39
       },
       "modelProb": {
-        "player1": 0.3731,
-        "player2": 0.6269
+        "player1": 0.2806,
+        "player2": 0.7194
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3748,
-        "player2": 0.6252,
+        "player1": 0.3491,
+        "player2": 0.6509,
         "pick": "player2"
       }
     },
@@ -1112,14 +1112,14 @@
         "player2": 1.9
       },
       "modelProb": {
-        "player1": 0.4029,
-        "player2": 0.5971
+        "player1": 0.4737,
+        "player2": 0.5263
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3952,
-        "player2": 0.6048,
+        "player1": 0.4824,
+        "player2": 0.5176,
         "pick": "player2"
       }
     },
@@ -1145,14 +1145,14 @@
         "player2": 1.56
       },
       "modelProb": {
-        "player1": 0.336,
-        "player2": 0.664
+        "player1": 0.359,
+        "player2": 0.641
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.39,
-        "player2": 0.61,
+        "player1": 0.4048,
+        "player2": 0.5952,
         "pick": "player2"
       }
     },
@@ -1178,14 +1178,14 @@
         "player2": 1.51
       },
       "modelProb": {
-        "player1": 0.4102,
-        "player2": 0.5898
+        "player1": 0.3377,
+        "player2": 0.6623
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4002,
-        "player2": 0.5998,
+        "player1": 0.3901,
+        "player2": 0.6099,
         "pick": "player2"
       }
     },
@@ -1211,14 +1211,14 @@
         "player2": 2.57
       },
       "modelProb": {
-        "player1": 0.6444,
-        "player2": 0.3556
+        "player1": 0.6109,
+        "player2": 0.3891
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6372,
-        "player2": 0.3628,
+        "player1": 0.5745,
+        "player2": 0.4255,
         "pick": "player1"
       }
     },
@@ -1244,14 +1244,14 @@
         "player2": 1.54
       },
       "modelProb": {
-        "player1": 0.3306,
-        "player2": 0.6694
+        "player1": 0.3506,
+        "player2": 0.6494
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3862,
-        "player2": 0.6138,
+        "player1": 0.3991,
+        "player2": 0.6009,
         "pick": "player2"
       }
     },
@@ -1277,14 +1277,14 @@
         "player2": 1.51
       },
       "modelProb": {
-        "player1": 0.4102,
-        "player2": 0.5898
+        "player1": 0.3377,
+        "player2": 0.6623
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4002,
-        "player2": 0.5998,
+        "player1": 0.3901,
+        "player2": 0.6099,
         "pick": "player2"
       }
     },
@@ -1310,15 +1310,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -1343,14 +1343,14 @@
         "player2": 1.26
       },
       "modelProb": {
-        "player1": 0.3162,
-        "player2": 0.6838
+        "player1": 0.2063,
+        "player2": 0.7937
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.376,
-        "player2": 0.624,
+        "player1": 0.2923,
+        "player2": 0.7077,
         "pick": "player2"
       }
     },
@@ -1376,14 +1376,14 @@
         "player2": 1.21
       },
       "modelProb": {
-        "player1": 0.287,
-        "player2": 0.713
+        "player1": 0.1736,
+        "player2": 0.8264
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.355,
-        "player2": 0.645,
+        "player1": 0.2651,
+        "player2": 0.7349,
         "pick": "player2"
       }
     },
@@ -1409,15 +1409,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -1442,15 +1442,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -1475,14 +1475,14 @@
         "player2": 1.25
       },
       "modelProb": {
-        "player1": 0.3121,
-        "player2": 0.6879
+        "player1": 0.2,
+        "player2": 0.8
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3731,
-        "player2": 0.6269,
+        "player1": 0.2871,
+        "player2": 0.7129,
         "pick": "player2"
       }
     },
@@ -1508,14 +1508,14 @@
         "player2": 3.5
       },
       "modelProb": {
-        "player1": 0.6236,
-        "player2": 0.3764
+        "player1": 0.7143,
+        "player2": 0.2857
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6229,
-        "player2": 0.3771,
+        "player1": 0.6471,
+        "player2": 0.3529,
         "pick": "player1"
       }
     },
@@ -1541,14 +1541,14 @@
         "player2": 1.07
       },
       "modelProb": {
-        "player1": 0.2627,
-        "player2": 0.7373
+        "player1": 0.0654,
+        "player2": 0.9346
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3178,
-        "player2": 0.6822,
+        "player1": 0.156,
+        "player2": 0.844,
         "pick": "player2"
       }
     },
@@ -1574,14 +1574,14 @@
         "player2": 1.1
       },
       "modelProb": {
-        "player1": 0.2793,
-        "player2": 0.7207
+        "player1": 0.0909,
+        "player2": 0.9091
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.33,
-        "player2": 0.67,
+        "player1": 0.186,
+        "player2": 0.814,
         "pick": "player2"
       }
     },
@@ -1607,14 +1607,14 @@
         "player2": 4.6
       },
       "modelProb": {
-        "player1": 0.6766,
-        "player2": 0.3234
+        "player1": 0.7826,
+        "player2": 0.2174
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6189,
-        "player2": 0.3811,
+        "player1": 0.6989,
+        "player2": 0.3011,
         "pick": "player1"
       }
     },
@@ -1640,14 +1640,14 @@
         "player2": 3.0
       },
       "modelProb": {
-        "player1": 0.5926,
-        "player2": 0.4074
+        "player1": 0.6667,
+        "player2": 0.3333
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6018,
-        "player2": 0.3982,
+        "player1": 0.613,
+        "player2": 0.387,
         "pick": "player1"
       }
     },
@@ -1673,15 +1673,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -1706,14 +1706,14 @@
         "player2": 7.0
       },
       "modelProb": {
-        "player1": 0.733,
-        "player2": 0.267
+        "player1": 0.8571,
+        "player2": 0.1429
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.679,
-        "player2": 0.321,
+        "player1": 0.7621,
+        "player2": 0.2379,
         "pick": "player1"
       }
     },
@@ -1739,14 +1739,14 @@
         "player2": 1.08
       },
       "modelProb": {
-        "player1": 0.2684,
-        "player2": 0.7316
+        "player1": 0.0741,
+        "player2": 0.9259
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3219,
-        "player2": 0.6781,
+        "player1": 0.1667,
+        "player2": 0.8333,
         "pick": "player2"
       }
     },
@@ -1772,14 +1772,14 @@
         "player2": 1.07
       },
       "modelProb": {
-        "player1": 0.2627,
-        "player2": 0.7373
+        "player1": 0.0654,
+        "player2": 0.9346
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3178,
-        "player2": 0.6822,
+        "player1": 0.156,
+        "player2": 0.844,
         "pick": "player2"
       }
     },
@@ -1805,14 +1805,14 @@
         "player2": 2.59
       },
       "modelProb": {
-        "player1": 0.6464,
-        "player2": 0.3536
+        "player1": 0.6139,
+        "player2": 0.3861
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6386,
-        "player2": 0.3614,
+        "player1": 0.5765,
+        "player2": 0.4235,
         "pick": "player1"
       }
     },
@@ -1838,14 +1838,14 @@
         "player2": 1.86
       },
       "modelProb": {
-        "player1": 0.3955,
-        "player2": 0.6045
+        "player1": 0.4624,
+        "player2": 0.5376
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3902,
-        "player2": 0.6098,
+        "player1": 0.4749,
+        "player2": 0.5251,
         "pick": "player2"
       }
     },
@@ -1871,14 +1871,14 @@
         "player2": 2.09
       },
       "modelProb": {
-        "player1": 0.594,
-        "player2": 0.406
+        "player1": 0.5215,
+        "player2": 0.4785
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6027,
-        "player2": 0.3973,
+        "player1": 0.5144,
+        "player2": 0.4856,
         "pick": "player1"
       }
     },
@@ -1904,14 +1904,14 @@
         "player2": 1.91
       },
       "modelProb": {
-        "player1": 0.4047,
-        "player2": 0.5953
+        "player1": 0.4764,
+        "player2": 0.5236
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3964,
-        "player2": 0.6036,
+        "player1": 0.4843,
+        "player2": 0.5157,
         "pick": "player2"
       }
     },
@@ -1934,17 +1934,17 @@
       },
       "odds": {
         "player1": null,
-        "player2": 3.33
+        "player2": 3.31
       },
       "modelProb": {
-        "player1": 0.6141,
-        "player2": 0.3859
+        "player1": 0.6979,
+        "player2": 0.3021
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6164,
-        "player2": 0.3836,
+        "player1": 0.6352,
+        "player2": 0.3648,
         "pick": "player1"
       }
     },
@@ -1970,14 +1970,14 @@
         "player2": 1.68
       },
       "modelProb": {
-        "player1": 0.3657,
-        "player2": 0.6343
+        "player1": 0.4048,
+        "player2": 0.5952
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3698,
-        "player2": 0.6302,
+        "player1": 0.4362,
+        "player2": 0.5638,
         "pick": "player2"
       }
     },
@@ -2003,14 +2003,14 @@
         "player2": 3.61
       },
       "modelProb": {
-        "player1": 0.6293,
-        "player2": 0.3707
+        "player1": 0.723,
+        "player2": 0.277
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6267,
-        "player2": 0.3733,
+        "player1": 0.6535,
+        "player2": 0.3465,
         "pick": "player1"
       }
     },
@@ -2036,14 +2036,14 @@
         "player2": 1.73
       },
       "modelProb": {
-        "player1": 0.3769,
-        "player2": 0.6231
+        "player1": 0.422,
+        "player2": 0.578
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3775,
-        "player2": 0.6225,
+        "player1": 0.4478,
+        "player2": 0.5522,
         "pick": "player2"
       }
     },
@@ -2069,14 +2069,14 @@
         "player2": 1.62
       },
       "modelProb": {
-        "player1": 0.3514,
-        "player2": 0.6486
+        "player1": 0.3827,
+        "player2": 0.6173
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4007,
-        "player2": 0.5993,
+        "player1": 0.4212,
+        "player2": 0.5788,
         "pick": "player2"
       }
     },
@@ -2099,17 +2099,17 @@
       },
       "odds": {
         "player1": null,
-        "player2": 2.38
+        "player2": 2.29
       },
       "modelProb": {
-        "player1": 0.6242,
-        "player2": 0.3758
+        "player1": 0.5633,
+        "player2": 0.4367
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6233,
-        "player2": 0.3767,
+        "player1": 0.5423,
+        "player2": 0.4577,
         "pick": "player1"
       }
     },
@@ -2135,14 +2135,14 @@
         "player2": 1.85
       },
       "modelProb": {
-        "player1": 0.3936,
-        "player2": 0.6064
+        "player1": 0.4595,
+        "player2": 0.5405
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3889,
-        "player2": 0.6111,
+        "player1": 0.4729,
+        "player2": 0.5271,
         "pick": "player2"
       }
     },
@@ -2168,15 +2168,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2201,15 +2201,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2234,15 +2234,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2267,15 +2267,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2300,15 +2300,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2333,15 +2333,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2366,15 +2366,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2399,15 +2399,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2432,15 +2432,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2465,15 +2465,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2498,15 +2498,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2531,15 +2531,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2564,15 +2564,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2597,15 +2597,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2630,15 +2630,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2663,15 +2663,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2696,15 +2696,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2729,15 +2729,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2762,15 +2762,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2795,15 +2795,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2828,15 +2828,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2861,15 +2861,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2894,15 +2894,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2927,15 +2927,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2960,15 +2960,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -2993,15 +2993,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3026,15 +3026,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3059,15 +3059,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3092,15 +3092,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3125,15 +3125,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3158,15 +3158,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3191,15 +3191,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3224,15 +3224,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3257,15 +3257,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3290,15 +3290,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3323,15 +3323,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3356,15 +3356,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3389,15 +3389,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3422,15 +3422,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3455,15 +3455,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3488,15 +3488,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3521,15 +3521,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3554,15 +3554,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3587,15 +3587,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3620,15 +3620,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3653,15 +3653,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3686,14 +3686,14 @@
         "player2": 2.98
       },
       "modelProb": {
-        "player1": 0.5912,
-        "player2": 0.4088
+        "player1": 0.6644,
+        "player2": 0.3356
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6008,
-        "player2": 0.3992,
+        "player1": 0.6115,
+        "player2": 0.3885,
         "pick": "player1"
       }
     },
@@ -3719,14 +3719,14 @@
         "player2": 1.35
       },
       "modelProb": {
-        "player1": 0.3506,
-        "player2": 0.6494
+        "player1": 0.2593,
+        "player2": 0.7407
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4002,
-        "player2": 0.5998,
+        "player1": 0.3333,
+        "player2": 0.6667,
         "pick": "player2"
       }
     },
@@ -3752,14 +3752,14 @@
         "player2": 1.98
       },
       "modelProb": {
-        "player1": 0.4167,
-        "player2": 0.5833
+        "player1": 0.4949,
+        "player2": 0.5051
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4045,
-        "player2": 0.5955,
+        "player1": 0.4966,
+        "player2": 0.5034,
         "pick": "player2"
       }
     },
@@ -3785,14 +3785,14 @@
         "player2": 2.4
       },
       "modelProb": {
-        "player1": 0.6265,
-        "player2": 0.3735
+        "player1": 0.5833,
+        "player2": 0.4167
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6249,
-        "player2": 0.3751,
+        "player1": 0.5558,
+        "player2": 0.4442,
         "pick": "player1"
       }
     },
@@ -3818,14 +3818,14 @@
         "player2": 3.23
       },
       "modelProb": {
-        "player1": 0.6081,
-        "player2": 0.3919
+        "player1": 0.6904,
+        "player2": 0.3096
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6123,
-        "player2": 0.3877,
+        "player1": 0.6299,
+        "player2": 0.3701,
         "pick": "player1"
       }
     },
@@ -3851,15 +3851,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3884,15 +3884,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -3917,14 +3917,14 @@
         "player2": 1.03
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -3950,14 +3950,14 @@
         "player2": 8.83
       },
       "modelProb": {
-        "player1": 0.7062,
-        "player2": 0.2938
+        "player1": 0.8867,
+        "player2": 0.1133
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.64,
-        "player2": 0.36,
+        "player1": 0.7905,
+        "player2": 0.2095,
         "pick": "player1"
       }
     },
@@ -3983,14 +3983,14 @@
         "player2": 1.07
       },
       "modelProb": {
-        "player1": 0.2627,
-        "player2": 0.7373
+        "player1": 0.0654,
+        "player2": 0.9346
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3178,
-        "player2": 0.6822,
+        "player1": 0.156,
+        "player2": 0.844,
         "pick": "player2"
       }
     },
@@ -4016,14 +4016,14 @@
         "player2": 2.56
       },
       "modelProb": {
-        "player1": 0.6435,
-        "player2": 0.3565
+        "player1": 0.6094,
+        "player2": 0.3906
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6365,
-        "player2": 0.3635,
+        "player1": 0.5734,
+        "player2": 0.4266,
         "pick": "player1"
       }
     },
@@ -4049,14 +4049,14 @@
         "player2": 1.66
       },
       "modelProb": {
-        "player1": 0.3611,
-        "player2": 0.6389
+        "player1": 0.3976,
+        "player2": 0.6024
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3666,
-        "player2": 0.6334,
+        "player1": 0.4313,
+        "player2": 0.5687,
         "pick": "player2"
       }
     },
@@ -4082,14 +4082,14 @@
         "player2": 1.35
       },
       "modelProb": {
-        "player1": 0.3506,
-        "player2": 0.6494
+        "player1": 0.2593,
+        "player2": 0.7407
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.4002,
-        "player2": 0.5998,
+        "player1": 0.3333,
+        "player2": 0.6667,
         "pick": "player2"
       }
     },
@@ -4115,14 +4115,14 @@
         "player2": 1.64
       },
       "modelProb": {
-        "player1": 0.3563,
-        "player2": 0.6437
+        "player1": 0.3902,
+        "player2": 0.6098
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3633,
-        "player2": 0.6367,
+        "player1": 0.4263,
+        "player2": 0.5737,
         "pick": "player2"
       }
     },
@@ -4148,14 +4148,14 @@
         "player2": 2.5
       },
       "modelProb": {
-        "player1": 0.6374,
-        "player2": 0.3626
+        "player1": 0.6,
+        "player2": 0.4
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6323,
-        "player2": 0.3677,
+        "player1": 0.5671,
+        "player2": 0.4329,
         "pick": "player1"
       }
     },
@@ -4181,14 +4181,14 @@
         "player2": 1.39
       },
       "modelProb": {
-        "player1": 0.3731,
-        "player2": 0.6269
+        "player1": 0.2806,
+        "player2": 0.7194
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3748,
-        "player2": 0.6252,
+        "player1": 0.3491,
+        "player2": 0.6509,
         "pick": "player2"
       }
     },
@@ -4214,14 +4214,14 @@
         "player2": 1.83
       },
       "modelProb": {
-        "player1": 0.3898,
-        "player2": 0.6102
+        "player1": 0.4536,
+        "player2": 0.5464
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3863,
-        "player2": 0.6137,
+        "player1": 0.469,
+        "player2": 0.531,
         "pick": "player2"
       }
     },
@@ -4247,14 +4247,14 @@
         "player2": 1.75
       },
       "modelProb": {
-        "player1": 0.3736,
-        "player2": 0.6264
+        "player1": 0.4286,
+        "player2": 0.5714
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3752,
-        "player2": 0.6248,
+        "player1": 0.4522,
+        "player2": 0.5478,
         "pick": "player2"
       }
     },
@@ -4280,14 +4280,14 @@
         "player2": 1.4
       },
       "modelProb": {
-        "player1": 0.3764,
-        "player2": 0.6236
+        "player1": 0.2857,
+        "player2": 0.7143
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3771,
-        "player2": 0.6229,
+        "player1": 0.3529,
+        "player2": 0.6471,
         "pick": "player2"
       }
     },
@@ -4313,14 +4313,14 @@
         "player2": 1.08
       },
       "modelProb": {
-        "player1": 0.2684,
-        "player2": 0.7316
+        "player1": 0.0741,
+        "player2": 0.9259
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3219,
-        "player2": 0.6781,
+        "player1": 0.1667,
+        "player2": 0.8333,
         "pick": "player2"
       }
     },
@@ -4346,14 +4346,14 @@
         "player2": 1.83
       },
       "modelProb": {
-        "player1": 0.3898,
-        "player2": 0.6102
+        "player1": 0.4536,
+        "player2": 0.5464
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3863,
-        "player2": 0.6137,
+        "player1": 0.469,
+        "player2": 0.531,
         "pick": "player2"
       }
     },
@@ -4379,14 +4379,14 @@
         "player2": 1.48
       },
       "modelProb": {
-        "player1": 0.4015,
-        "player2": 0.5985
+        "player1": 0.3243,
+        "player2": 0.6757
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3943,
-        "player2": 0.6057,
+        "player1": 0.3806,
+        "player2": 0.6194,
         "pick": "player2"
       }
     },
@@ -4412,14 +4412,14 @@
         "player2": 1.17
       },
       "modelProb": {
-        "player1": 0.2686,
-        "player2": 0.7314
+        "player1": 0.1453,
+        "player2": 0.8547
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3222,
-        "player2": 0.6778,
+        "player1": 0.2401,
+        "player2": 0.7599,
         "pick": "player2"
       }
     },
@@ -4445,14 +4445,14 @@
         "player2": 2.38
       },
       "modelProb": {
-        "player1": 0.6242,
-        "player2": 0.3758
+        "player1": 0.5798,
+        "player2": 0.4202
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6233,
-        "player2": 0.3767,
+        "player1": 0.5534,
+        "player2": 0.4466,
         "pick": "player1"
       }
     },
@@ -4478,14 +4478,14 @@
         "player2": 1.9
       },
       "modelProb": {
-        "player1": 0.4029,
-        "player2": 0.5971
+        "player1": 0.4737,
+        "player2": 0.5263
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3952,
-        "player2": 0.6048,
+        "player1": 0.4824,
+        "player2": 0.5176,
         "pick": "player2"
       }
     },
@@ -4511,14 +4511,14 @@
         "player2": 1.05
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -4544,14 +4544,14 @@
         "player2": 1.05
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -4577,14 +4577,14 @@
         "player2": 3.78
       },
       "modelProb": {
-        "player1": 0.6459,
-        "player2": 0.3541
+        "player1": 0.7354,
+        "player2": 0.2646
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6383,
-        "player2": 0.3617,
+        "player1": 0.6627,
+        "player2": 0.3373,
         "pick": "player1"
       }
     },
@@ -4610,14 +4610,14 @@
         "player2": 1.28
       },
       "modelProb": {
-        "player1": 0.3243,
-        "player2": 0.6757
+        "player1": 0.2188,
+        "player2": 0.7812
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3817,
-        "player2": 0.6183,
+        "player1": 0.3022,
+        "player2": 0.6978,
         "pick": "player2"
       }
     },
@@ -4643,14 +4643,14 @@
         "player2": 4.11
       },
       "modelProb": {
-        "player1": 0.6598,
-        "player2": 0.3402
+        "player1": 0.7567,
+        "player2": 0.2433
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.607,
-        "player2": 0.393,
+        "player1": 0.6787,
+        "player2": 0.3213,
         "pick": "player1"
       }
     },
@@ -4676,14 +4676,14 @@
         "player2": 1.61
       },
       "modelProb": {
-        "player1": 0.3489,
-        "player2": 0.6511
+        "player1": 0.3789,
+        "player2": 0.6211
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.399,
-        "player2": 0.601,
+        "player1": 0.4185,
+        "player2": 0.5815,
         "pick": "player2"
       }
     },
@@ -4709,14 +4709,14 @@
         "player2": 2.73
       },
       "modelProb": {
-        "player1": 0.6593,
-        "player2": 0.3407
+        "player1": 0.6337,
+        "player2": 0.3663
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6067,
-        "player2": 0.3933,
+        "player1": 0.5901,
+        "player2": 0.4099,
         "pick": "player1"
       }
     },
@@ -4742,14 +4742,14 @@
         "player2": 1.58
       },
       "modelProb": {
-        "player1": 0.3413,
-        "player2": 0.6587
+        "player1": 0.3671,
+        "player2": 0.6329
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3937,
-        "player2": 0.6063,
+        "player1": 0.4104,
+        "player2": 0.5896,
         "pick": "player2"
       }
     },
@@ -4775,14 +4775,14 @@
         "player2": 1.6
       },
       "modelProb": {
-        "player1": 0.3464,
-        "player2": 0.6536
+        "player1": 0.375,
+        "player2": 0.625
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3973,
-        "player2": 0.6027,
+        "player1": 0.4159,
+        "player2": 0.5841,
         "pick": "player2"
       }
     },
@@ -4808,14 +4808,14 @@
         "player2": 1.41
       },
       "modelProb": {
-        "player1": 0.3797,
-        "player2": 0.6203
+        "player1": 0.2908,
+        "player2": 0.7092
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3794,
-        "player2": 0.6206,
+        "player1": 0.3566,
+        "player2": 0.6434,
         "pick": "player2"
       }
     },
@@ -4841,14 +4841,14 @@
         "player2": 1.13
       },
       "modelProb": {
-        "player1": 0.295,
-        "player2": 0.705
+        "player1": 0.115,
+        "player2": 0.885
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3608,
-        "player2": 0.6392,
+        "player1": 0.2113,
+        "player2": 0.7887,
         "pick": "player2"
       }
     },
@@ -4874,14 +4874,14 @@
         "player2": 1.78
       },
       "modelProb": {
-        "player1": 0.3798,
-        "player2": 0.6202
+        "player1": 0.4382,
+        "player2": 0.5618
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3795,
-        "player2": 0.6205,
+        "player1": 0.4587,
+        "player2": 0.5413,
         "pick": "player2"
       }
     },
@@ -4907,14 +4907,14 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.354,
-        "player2": 0.646
+        "player1": 0.4264,
+        "player2": 0.5736
       },
       "pick": "player2",
       "source": "ranking-only",
       "firstSet": {
-        "player1": 0.3617,
-        "player2": 0.6383,
+        "player1": 0.4508,
+        "player2": 0.5492,
         "pick": "player2"
       }
     },
@@ -4940,14 +4940,14 @@
         "player2": 1.41
       },
       "modelProb": {
-        "player1": 0.3797,
-        "player2": 0.6203
+        "player1": 0.2908,
+        "player2": 0.7092
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3794,
-        "player2": 0.6206,
+        "player1": 0.3566,
+        "player2": 0.6434,
         "pick": "player2"
       }
     },
@@ -4973,14 +4973,14 @@
         "player2": 2.95
       },
       "modelProb": {
-        "player1": 0.589,
-        "player2": 0.411
+        "player1": 0.661,
+        "player2": 0.339
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.5993,
-        "player2": 0.4007,
+        "player1": 0.6091,
+        "player2": 0.3909,
         "pick": "player1"
       }
     },
@@ -5006,14 +5006,14 @@
         "player2": 1.13
       },
       "modelProb": {
-        "player1": 0.295,
-        "player2": 0.705
+        "player1": 0.115,
+        "player2": 0.885
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3608,
-        "player2": 0.6392,
+        "player1": 0.2113,
+        "player2": 0.7887,
         "pick": "player2"
       }
     },
@@ -5036,17 +5036,17 @@
       },
       "odds": {
         "player1": null,
-        "player2": 1.34
+        "player2": 1.38
       },
       "modelProb": {
-        "player1": 0.347,
-        "player2": 0.653
+        "player1": 0.2754,
+        "player2": 0.7246
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3977,
-        "player2": 0.6023,
+        "player1": 0.3453,
+        "player2": 0.6547,
         "pick": "player2"
       }
     },
@@ -5072,15 +5072,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5105,15 +5105,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5138,15 +5138,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5171,15 +5171,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5204,14 +5204,14 @@
         "player2": 1.4
       },
       "modelProb": {
-        "player1": 0.3764,
-        "player2": 0.6236
+        "player1": 0.2857,
+        "player2": 0.7143
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3771,
-        "player2": 0.6229,
+        "player1": 0.3529,
+        "player2": 0.6471,
         "pick": "player2"
       }
     },
@@ -5237,14 +5237,14 @@
         "player2": 5.09
       },
       "modelProb": {
-        "player1": 0.6902,
-        "player2": 0.3098
+        "player1": 0.8035,
+        "player2": 0.1965
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6286,
-        "player2": 0.3714,
+        "player1": 0.7157,
+        "player2": 0.2843,
         "pick": "player1"
       }
     },
@@ -5270,14 +5270,14 @@
         "player2": 1.05
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -5303,15 +5303,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5336,15 +5336,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5369,14 +5369,14 @@
         "player2": 1.34
       },
       "modelProb": {
-        "player1": 0.347,
-        "player2": 0.653
+        "player1": 0.2537,
+        "player2": 0.7463
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3977,
-        "player2": 0.6023,
+        "player1": 0.3292,
+        "player2": 0.6708,
         "pick": "player2"
       }
     },
@@ -5402,15 +5402,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5435,14 +5435,14 @@
         "player2": 1.83
       },
       "modelProb": {
-        "player1": 0.3898,
-        "player2": 0.6102
+        "player1": 0.4536,
+        "player2": 0.5464
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3863,
-        "player2": 0.6137,
+        "player1": 0.469,
+        "player2": 0.531,
         "pick": "player2"
       }
     },
@@ -5468,15 +5468,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5501,14 +5501,14 @@
         "player2": 3.1
       },
       "modelProb": {
-        "player1": 0.7125,
-        "player2": 0.2875
+        "player1": 0.7577,
+        "player2": 0.2423
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6446,
-        "player2": 0.3554,
+        "player1": 0.6795,
+        "player2": 0.3205,
         "pick": "player1"
       }
     },
@@ -5534,14 +5534,14 @@
         "player2": 2.0
       },
       "modelProb": {
-        "player1": 0.6453,
-        "player2": 0.3547
+        "player1": 0.573,
+        "player2": 0.427
       },
       "pick": "player1",
       "source": "odds+ranking",
       "firstSet": {
-        "player1": 0.6379,
-        "player2": 0.3621,
+        "player1": 0.5488,
+        "player2": 0.4512,
         "pick": "player1"
       }
     },
@@ -5567,15 +5567,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5600,14 +5600,14 @@
         "player2": 1.02
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -5633,14 +5633,14 @@
         "player2": 1.19
       },
       "modelProb": {
-        "player1": 0.278,
-        "player2": 0.722
+        "player1": 0.1597,
+        "player2": 0.8403
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.329,
-        "player2": 0.671,
+        "player1": 0.253,
+        "player2": 0.747,
         "pick": "player2"
       }
     },
@@ -5666,14 +5666,14 @@
         "player2": 1.39
       },
       "modelProb": {
-        "player1": 0.3731,
-        "player2": 0.6269
+        "player1": 0.2806,
+        "player2": 0.7194
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3748,
-        "player2": 0.6252,
+        "player1": 0.3491,
+        "player2": 0.6509,
         "pick": "player2"
       }
     },
@@ -5699,14 +5699,14 @@
         "player2": 1.11
       },
       "modelProb": {
-        "player1": 0.2846,
-        "player2": 0.7154
+        "player1": 0.0991,
+        "player2": 0.9009
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3533,
-        "player2": 0.6467,
+        "player1": 0.1948,
+        "player2": 0.8052,
         "pick": "player2"
       }
     },
@@ -5732,14 +5732,14 @@
         "player2": 1.02
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -5765,14 +5765,14 @@
         "player2": 1.34
       },
       "modelProb": {
-        "player1": 0.347,
-        "player2": 0.653
+        "player1": 0.2537,
+        "player2": 0.7463
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3977,
-        "player2": 0.6023,
+        "player1": 0.3292,
+        "player2": 0.6708,
         "pick": "player2"
       }
     },
@@ -5798,14 +5798,14 @@
         "player2": 2.54
       },
       "modelProb": {
-        "player1": 0.6415,
-        "player2": 0.3585
+        "player1": 0.6063,
+        "player2": 0.3937
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6352,
-        "player2": 0.3648,
+        "player1": 0.5714,
+        "player2": 0.4286,
         "pick": "player1"
       }
     },
@@ -5831,14 +5831,14 @@
         "player2": 1.74
       },
       "modelProb": {
-        "player1": 0.3714,
-        "player2": 0.6286
+        "player1": 0.4253,
+        "player2": 0.5747
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3737,
-        "player2": 0.6263,
+        "player1": 0.45,
+        "player2": 0.55,
         "pick": "player2"
       }
     },
@@ -5864,14 +5864,14 @@
         "player2": 1.33
       },
       "modelProb": {
-        "player1": 0.3434,
-        "player2": 0.6566
+        "player1": 0.2481,
+        "player2": 0.7519
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3952,
-        "player2": 0.6048,
+        "player1": 0.3249,
+        "player2": 0.6751,
         "pick": "player2"
       }
     },
@@ -5897,15 +5897,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5930,15 +5930,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5963,15 +5963,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -5996,15 +5996,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6029,15 +6029,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6062,15 +6062,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6095,15 +6095,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6128,15 +6128,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6161,15 +6161,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6194,15 +6194,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6227,15 +6227,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6260,15 +6260,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6293,15 +6293,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6326,15 +6326,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6359,15 +6359,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6392,15 +6392,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6425,15 +6425,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6458,15 +6458,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6491,15 +6491,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6524,15 +6524,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6557,15 +6557,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6590,15 +6590,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6623,15 +6623,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6656,15 +6656,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6689,15 +6689,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6722,15 +6722,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6755,15 +6755,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6788,15 +6788,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6821,15 +6821,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6854,15 +6854,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6887,15 +6887,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6920,15 +6920,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6953,15 +6953,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -6986,15 +6986,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7019,15 +7019,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7052,15 +7052,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7085,15 +7085,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7118,15 +7118,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7151,15 +7151,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7184,15 +7184,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7217,14 +7217,14 @@
         "player2": 1.05
       },
       "modelProb": {
-        "player1": 0.2527,
-        "player2": 0.7473
+        "player1": 0.05,
+        "player2": 0.95
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3102,
-        "player2": 0.6898,
+        "player1": 0.1354,
+        "player2": 0.8646,
         "pick": "player2"
       }
     },
@@ -7250,14 +7250,14 @@
         "player2": 1.79
       },
       "modelProb": {
-        "player1": 0.3819,
-        "player2": 0.6181
+        "player1": 0.4413,
+        "player2": 0.5587
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3809,
-        "player2": 0.6191,
+        "player1": 0.4608,
+        "player2": 0.5392,
         "pick": "player2"
       }
     },
@@ -7283,14 +7283,14 @@
         "player2": 2.65
       },
       "modelProb": {
-        "player1": 0.6521,
-        "player2": 0.3479
+        "player1": 0.6226,
+        "player2": 0.3774
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6017,
-        "player2": 0.3983,
+        "player1": 0.5825,
+        "player2": 0.4175,
         "pick": "player1"
       }
     },
@@ -7316,14 +7316,14 @@
         "player2": 1.72
       },
       "modelProb": {
-        "player1": 0.3747,
-        "player2": 0.6253
+        "player1": 0.4186,
+        "player2": 0.5814
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.376,
-        "player2": 0.624,
+        "player1": 0.4455,
+        "player2": 0.5545,
         "pick": "player2"
       }
     },
@@ -7349,14 +7349,14 @@
         "player2": 1.83
       },
       "modelProb": {
-        "player1": 0.3898,
-        "player2": 0.6102
+        "player1": 0.4536,
+        "player2": 0.5464
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3863,
-        "player2": 0.6137,
+        "player1": 0.469,
+        "player2": 0.531,
         "pick": "player2"
       }
     },
@@ -7382,14 +7382,14 @@
         "player2": 1.65
       },
       "modelProb": {
-        "player1": 0.3587,
-        "player2": 0.6413
+        "player1": 0.3939,
+        "player2": 0.6061
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3649,
-        "player2": 0.6351,
+        "player1": 0.4288,
+        "player2": 0.5712,
         "pick": "player2"
       }
     },
@@ -7415,14 +7415,14 @@
         "player2": 1.46
       },
       "modelProb": {
-        "player1": 0.3955,
-        "player2": 0.6045
+        "player1": 0.3151,
+        "player2": 0.6849
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3902,
-        "player2": 0.6098,
+        "player1": 0.374,
+        "player2": 0.626,
         "pick": "player2"
       }
     },
@@ -7448,14 +7448,14 @@
         "player2": 3.88
       },
       "modelProb": {
-        "player1": 0.6504,
-        "player2": 0.3496
+        "player1": 0.7423,
+        "player2": 0.2577
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6005,
-        "player2": 0.3995,
+        "player1": 0.6678,
+        "player2": 0.3322,
         "pick": "player1"
       }
     },
@@ -7481,14 +7481,14 @@
         "player2": 1.73
       },
       "modelProb": {
-        "player1": 0.3769,
-        "player2": 0.6231
+        "player1": 0.422,
+        "player2": 0.578
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3775,
-        "player2": 0.6225,
+        "player1": 0.4478,
+        "player2": 0.5522,
         "pick": "player2"
       }
     },
@@ -7514,14 +7514,14 @@
         "player2": 2.2
       },
       "modelProb": {
-        "player1": 0.6095,
-        "player2": 0.3905
+        "player1": 0.5455,
+        "player2": 0.4545
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6133,
-        "player2": 0.3867,
+        "player1": 0.5303,
+        "player2": 0.4697,
         "pick": "player1"
       }
     },
@@ -7547,14 +7547,14 @@
         "player2": 1.33
       },
       "modelProb": {
-        "player1": 0.3434,
-        "player2": 0.6566
+        "player1": 0.2481,
+        "player2": 0.7519
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3952,
-        "player2": 0.6048,
+        "player1": 0.3249,
+        "player2": 0.6751,
         "pick": "player2"
       }
     },
@@ -7580,14 +7580,14 @@
         "player2": 3.13
       },
       "modelProb": {
-        "player1": 0.6016,
-        "player2": 0.3984
+        "player1": 0.6805,
+        "player2": 0.3195
       },
       "pick": "player1",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.6079,
-        "player2": 0.3921,
+        "player1": 0.6228,
+        "player2": 0.3772,
         "pick": "player1"
       }
     },
@@ -7613,15 +7613,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7646,15 +7646,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7679,15 +7679,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7712,15 +7712,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7745,15 +7745,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7778,15 +7778,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7811,15 +7811,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7844,15 +7844,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7877,15 +7877,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7910,15 +7910,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7943,15 +7943,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -7976,15 +7976,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8009,15 +8009,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8042,15 +8042,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8075,15 +8075,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8108,15 +8108,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8141,15 +8141,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8174,15 +8174,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8207,15 +8207,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8240,15 +8240,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8273,15 +8273,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8306,15 +8306,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8339,15 +8339,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8372,15 +8372,15 @@
         "player2": null
       },
       "modelProb": {
-        "player1": 0.58,
-        "player2": 0.42
+        "player1": 0.5,
+        "player2": 0.5
       },
-      "pick": "player1",
-      "source": "ranking-only",
+      "pick": null,
+      "source": "no-signal",
       "firstSet": {
-        "player1": 0.5932,
-        "player2": 0.4068,
-        "pick": "player1"
+        "player1": 0.5,
+        "player2": 0.5,
+        "pick": null
       }
     },
     {
@@ -8405,14 +8405,14 @@
         "player2": 1.4
       },
       "modelProb": {
-        "player1": 0.3764,
-        "player2": 0.6236
+        "player1": 0.2857,
+        "player2": 0.7143
       },
       "pick": "player2",
-      "source": "odds+ranking",
+      "source": "odds-only",
       "firstSet": {
-        "player1": 0.3771,
-        "player2": 0.6229,
+        "player1": 0.3529,
+        "player2": 0.6471,
         "pick": "player2"
       }
     }

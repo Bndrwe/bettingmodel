@@ -668,139 +668,6 @@
       }
     },
     {
-      "gamePk": 825048,
-      "gameDate": "2026-08-11T01:40:00Z",
-      "venue": "Chase Field",
-      "homeTeam": "AZ",
-      "awayTeam": "COL",
-      "homeTeamId": 109,
-      "awayTeamId": 115,
-      "homePitcher": "Michael Soroka",
-      "awayPitcher": "Gabriel Hughes",
-      "expectedRuns": {
-        "home": 5.43,
-        "away": 4.53
-      },
-      "pitchingQuality": {
-        "homeStarter": 3.12,
-        "awayStarter": 3.92,
-        "homeStarterEra": 3.07,
-        "awayStarterEra": 4.25,
-        "homePen": 3.7,
-        "awayPen": 5.34
-      },
-      "lineupMatchup": {
-        "home": {
-          "mult": 0.964,
-          "source": "teamSplit"
-        },
-        "away": {
-          "mult": 1.033,
-          "source": "teamSplit"
-        }
-      },
-      "moneyline": {
-        "homeProb": 0.5837,
-        "awayProb": 0.4163,
-        "homeOdds": -140,
-        "awayOdds": 140
-      },
-      "runLine": {
-        "standard": {
-          "homeLine": -1.5,
-          "awayLine": 1.5,
-          "homeCoverProb": 0.4454,
-          "awayCoverProb": 0.5546
-        },
-        "alternates": [
-          {
-            "homeLine": -1.0,
-            "awayLine": 1.0,
-            "homeCoverProb": 0.4906,
-            "awayCoverProb": 0.5094
-          },
-          {
-            "homeLine": -2.5,
-            "awayLine": 2.5,
-            "homeCoverProb": 0.3578,
-            "awayCoverProb": 0.6422
-          }
-        ]
-      },
-      "total": {
-        "modelTotal": 10.0,
-        "lines": [
-          {
-            "line": 8.5,
-            "overProb": 0.6025,
-            "underProb": 0.3975
-          },
-          {
-            "line": 9.5,
-            "overProb": 0.533,
-            "underProb": 0.467
-          },
-          {
-            "line": 10.5,
-            "overProb": 0.462,
-            "underProb": 0.538
-          },
-          {
-            "line": 11.5,
-            "overProb": 0.3927,
-            "underProb": 0.6073
-          }
-        ]
-      },
-      "f5": {
-        "expectedRuns": {
-          "home": 3.02,
-          "away": 2.52
-        },
-        "moneyline": {
-          "homeProb": 0.5818,
-          "awayProb": 0.4182,
-          "homeOdds": -139,
-          "awayOdds": 139
-        },
-        "runLine": {
-          "homeLine": -0.5,
-          "awayLine": 0.5,
-          "homeCoverProb": 0.5603,
-          "awayCoverProb": 0.4397
-        },
-        "total": {
-          "modelTotal": 5.5,
-          "overProb": 0.5042,
-          "underProb": 0.4958
-        }
-      },
-      "nrfi": {
-        "expectedFirstInningRuns": {
-          "home": 0.634,
-          "away": 0.529
-        },
-        "nrfiProb": 0.3231,
-        "yrfiProb": 0.6769
-      },
-      "teamHits": {
-        "home": {
-          "team": "AZ",
-          "expectedHits": 9.92,
-          "modelLine": 10.0,
-          "overProb": 0.4896,
-          "underProb": 0.5104
-        },
-        "away": {
-          "team": "COL",
-          "expectedHits": 8.11,
-          "modelLine": 8.0,
-          "overProb": 0.5149,
-          "underProb": 0.4851
-        }
-      }
-    },
-    {
       "gamePk": 824969,
       "gameDate": "2026-08-11T01:40:00Z",
       "venue": "Sutter Health Park",
@@ -1063,6 +930,139 @@
           "modelLine": 7.0,
           "overProb": 0.5269,
           "underProb": 0.4731
+        }
+      }
+    },
+    {
+      "gamePk": 825048,
+      "gameDate": "2026-08-11T01:40:00Z",
+      "venue": "Chase Field",
+      "homeTeam": "AZ",
+      "awayTeam": "COL",
+      "homeTeamId": 109,
+      "awayTeamId": 115,
+      "homePitcher": "Michael Soroka",
+      "awayPitcher": "Gabriel Hughes",
+      "expectedRuns": {
+        "home": 5.43,
+        "away": 4.53
+      },
+      "pitchingQuality": {
+        "homeStarter": 3.12,
+        "awayStarter": 3.92,
+        "homeStarterEra": 3.07,
+        "awayStarterEra": 4.25,
+        "homePen": 3.7,
+        "awayPen": 5.34
+      },
+      "lineupMatchup": {
+        "home": {
+          "mult": 0.964,
+          "source": "teamSplit"
+        },
+        "away": {
+          "mult": 1.033,
+          "source": "teamSplit"
+        }
+      },
+      "moneyline": {
+        "homeProb": 0.5837,
+        "awayProb": 0.4163,
+        "homeOdds": -140,
+        "awayOdds": 140
+      },
+      "runLine": {
+        "standard": {
+          "homeLine": -1.5,
+          "awayLine": 1.5,
+          "homeCoverProb": 0.4454,
+          "awayCoverProb": 0.5546
+        },
+        "alternates": [
+          {
+            "homeLine": -1.0,
+            "awayLine": 1.0,
+            "homeCoverProb": 0.4906,
+            "awayCoverProb": 0.5094
+          },
+          {
+            "homeLine": -2.5,
+            "awayLine": 2.5,
+            "homeCoverProb": 0.3578,
+            "awayCoverProb": 0.6422
+          }
+        ]
+      },
+      "total": {
+        "modelTotal": 10.0,
+        "lines": [
+          {
+            "line": 8.5,
+            "overProb": 0.6025,
+            "underProb": 0.3975
+          },
+          {
+            "line": 9.5,
+            "overProb": 0.533,
+            "underProb": 0.467
+          },
+          {
+            "line": 10.5,
+            "overProb": 0.462,
+            "underProb": 0.538
+          },
+          {
+            "line": 11.5,
+            "overProb": 0.3927,
+            "underProb": 0.6073
+          }
+        ]
+      },
+      "f5": {
+        "expectedRuns": {
+          "home": 3.02,
+          "away": 2.52
+        },
+        "moneyline": {
+          "homeProb": 0.5818,
+          "awayProb": 0.4182,
+          "homeOdds": -139,
+          "awayOdds": 139
+        },
+        "runLine": {
+          "homeLine": -0.5,
+          "awayLine": 0.5,
+          "homeCoverProb": 0.5603,
+          "awayCoverProb": 0.4397
+        },
+        "total": {
+          "modelTotal": 5.5,
+          "overProb": 0.5042,
+          "underProb": 0.4958
+        }
+      },
+      "nrfi": {
+        "expectedFirstInningRuns": {
+          "home": 0.634,
+          "away": 0.529
+        },
+        "nrfiProb": 0.3231,
+        "yrfiProb": 0.6769
+      },
+      "teamHits": {
+        "home": {
+          "team": "AZ",
+          "expectedHits": 9.92,
+          "modelLine": 10.0,
+          "overProb": 0.4896,
+          "underProb": 0.5104
+        },
+        "away": {
+          "team": "COL",
+          "expectedHits": 8.11,
+          "modelLine": 8.0,
+          "overProb": 0.5149,
+          "underProb": 0.4851
         }
       }
     },
