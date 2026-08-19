@@ -19541,6 +19541,666 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-08-18",
+      "gamesGraded": 15,
+      "moneyline": {
+        "hits": 10,
+        "total": 15
+      },
+      "runLine": {
+        "hits": 9,
+        "total": 15
+      },
+      "total": {
+        "hits": 5,
+        "total": 15
+      },
+      "f5": {
+        "hits": 6,
+        "total": 14
+      },
+      "nrfi": {
+        "hits": 11,
+        "total": 15
+      },
+      "teamHits": {
+        "hits": 14,
+        "total": 30
+      },
+      "detail": [
+        {
+          "gamePk": 824803,
+          "matchup": "NYY @ BAL",
+          "actualScore": "3-1",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5548,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 8.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "away",
+            "hit": null
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": false
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 7.0,
+              "actual": 4,
+              "hit": true
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 5,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824398,
+          "matchup": "SF @ CLE",
+          "actualScore": "1-8",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5521,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 7.0,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 12,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 7.5,
+              "actual": 7,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824475,
+          "matchup": "STL @ CIN",
+          "actualScore": "3-0",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5564,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.0,
+            "hit": false
+          },
+          "f5": {
+            "pick": "away",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": false
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 7.5,
+              "actual": 3,
+              "hit": false
+            },
+            "away": {
+              "pick": "over",
+              "line": 9.0,
+              "actual": 7,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 823341,
+          "matchup": "DET @ PIT",
+          "actualScore": "1-4",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5207,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.0,
+            "hit": false
+          },
+          "f5": {
+            "pick": "home",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": false
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 7.5,
+              "actual": 6,
+              "hit": true
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 5,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 822938,
+          "matchup": "TOR @ TB",
+          "actualScore": "10-5",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.6217,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 7.5,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 13,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 7.0,
+              "actual": 17,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 823423,
+          "matchup": "MIA @ PHI",
+          "actualScore": "4-6",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5379,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 8.5,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 8.5,
+              "actual": 10,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 5,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824723,
+          "matchup": "AZ @ BOS",
+          "actualScore": "4-9",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5893,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 8.5,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 9.0,
+              "actual": 13,
+              "hit": false
+            },
+            "away": {
+              "pick": "over",
+              "line": 6.5,
+              "actual": 7,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 823586,
+          "matchup": "SD @ NYM",
+          "actualScore": "5-2",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.51,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 7.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 7.0,
+              "actual": 6,
+              "hit": false
+            },
+            "away": {
+              "pick": "over",
+              "line": 7.0,
+              "actual": 10,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824075,
+          "matchup": "ATH @ KC",
+          "actualScore": "3-4",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5578,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 10.0,
+              "actual": 9,
+              "hit": false
+            },
+            "away": {
+              "pick": "over",
+              "line": 8.5,
+              "actual": 5,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 823667,
+          "matchup": "ATL @ MIN",
+          "actualScore": "1-4",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5714,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "away",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 7.5,
+              "actual": 10,
+              "hit": false
+            },
+            "away": {
+              "pick": "over",
+              "line": 9.0,
+              "actual": 6,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 823749,
+          "matchup": "SEA @ MIL",
+          "actualScore": "0-22",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.6128,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "home",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 7.5,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 7.5,
+              "actual": 22,
+              "hit": true
+            },
+            "away": {
+              "pick": "under",
+              "line": 6.5,
+              "actual": 5,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 822859,
+          "matchup": "WSH @ TEX",
+          "actualScore": "0-5",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5428,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": false
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "away",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 9.0,
+              "actual": 11,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.5,
+              "actual": 7,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824639,
+          "matchup": "CWS @ CHC",
+          "actualScore": "3-4",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5555,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 10.0,
+            "hit": false
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "under",
+              "line": 8.5,
+              "actual": 8,
+              "hit": true
+            },
+            "away": {
+              "pick": "under",
+              "line": 8.0,
+              "actual": 10,
+              "hit": false
+            }
+          }
+        },
+        {
+          "gamePk": 824154,
+          "matchup": "LAA @ HOU",
+          "actualScore": "3-1",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.5657,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.5,
+            "hit": false
+          },
+          "f5": {
+            "pick": "home",
+            "hit": false
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": false
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 9.0,
+              "actual": 3,
+              "hit": false
+            },
+            "away": {
+              "pick": "under",
+              "line": 9.0,
+              "actual": 8,
+              "hit": true
+            }
+          }
+        },
+        {
+          "gamePk": 824319,
+          "matchup": "LAD @ COL",
+          "actualScore": "7-6",
+          "moneyline": {
+            "pick": "away",
+            "prob": 0.5727,
+            "hit": true
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 13.0,
+            "hit": false
+          },
+          "f5": {
+            "pick": "away",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 9.5,
+              "actual": 10,
+              "hit": true
+            },
+            "away": {
+              "pick": "over",
+              "line": 13.0,
+              "actual": 10,
+              "hit": false
+            }
+          }
+        }
+      ]
     }
   ]
 }
