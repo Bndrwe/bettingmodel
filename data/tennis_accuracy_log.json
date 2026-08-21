@@ -177345,6 +177345,3962 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "matchesGraded": 232,
+      "hits": 148,
+      "total": 232,
+      "firstSet": {
+        "hits": 144,
+        "total": 232
+      },
+      "detail": [
+        {
+          "matchId": "3299189",
+          "matchup": "Nakashima B. vs Borges N.",
+          "tour": "ATP",
+          "tournament": "Cincinnati",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.674,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6169,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299161",
+          "matchup": "Fritz T. vs O'Connell C.",
+          "tour": "ATP",
+          "tournament": "Cincinnati",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7359,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6775,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299213",
+          "matchup": "Tiafoe F. vs Auger Aliassime F.",
+          "tour": "ATP",
+          "tournament": "Cincinnati",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.718,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6485,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299205",
+          "matchup": "Musetti L. vs Faria J.",
+          "tour": "ATP",
+          "tournament": "Cincinnati",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6247,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6331,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300005",
+          "matchup": "Paul T. vs Cobolli F.",
+          "tour": "ATP",
+          "tournament": "Cincinnati",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6478,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6491,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299389",
+          "matchup": "Onclin G. vs Skatov T.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6679,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6126,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3297303",
+          "matchup": "Ugo Carabelli C. vs Mejia N.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5922,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.611,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299391",
+          "matchup": "Magadan A. vs Hernandez Serrano J.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6496,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.5999,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299395",
+          "matchup": "Kouame M. vs Meligeni Rodrigues Alves F.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6034,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6186,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299393",
+          "matchup": "Harris L. vs Blanch D.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.674,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6169,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299399",
+          "matchup": "Rocha H. vs Hurkacz H.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6707,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6146,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300021",
+          "matchup": "Kopriva V. vs Onclin G.",
+          "tour": "ATP",
+          "tournament": "Cancun challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6396,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6434,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3297259",
+          "matchup": "Galarneau A. vs Prizmic D.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6221,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6314,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3297257",
+          "matchup": "Fearnley J. vs McDonald M.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6542,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6031,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299185",
+          "matchup": "Sakamoto R. vs Van Assche L.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6236,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6324,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299197",
+          "matchup": "De Jong J. vs Budkov Kjaer N.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6083,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6219,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299373",
+          "matchup": "Popyrin A. vs Gaston H.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6162,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6273,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300011",
+          "matchup": "Sakellaridis S. vs Vukic A.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6296,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6365,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299699",
+          "matchup": "Choinski J. vs Daniel T.",
+          "tour": "ATP",
+          "tournament": "Quebec City challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6419,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.645,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299989",
+          "matchup": "Royer V. vs Bueno G.",
+          "tour": "ATP",
+          "tournament": "Kingston challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7202,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6659,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299993",
+          "matchup": "Glinka D. vs Mayot H.",
+          "tour": "ATP",
+          "tournament": "Kingston challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6135,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6255,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299991",
+          "matchup": "Chidekh C. vs Midon L.",
+          "tour": "ATP",
+          "tournament": "Kingston challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6329,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6388,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299995",
+          "matchup": "Prado Angelo J. vs Martinez P.",
+          "tour": "ATP",
+          "tournament": "Kingston challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.654,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6029,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299511",
+          "matchup": "Tseng C. vs Krutykh O.",
+          "tour": "ATP",
+          "tournament": "Prague 2 challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6559,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6042,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299553",
+          "matchup": "Jianu F. vs Rehberg M.",
+          "tour": "ATP",
+          "tournament": "Prague 2 challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5918,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6107,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299655",
+          "matchup": "Gombos N. vs Papoe R.",
+          "tour": "ATP",
+          "tournament": "Prague 2 challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6148,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6264,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299533",
+          "matchup": "Mrva M. vs Kumstat J.",
+          "tour": "ATP",
+          "tournament": "Prague 2 challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5833,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.605,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299831",
+          "matchup": "Tarvet O. vs Broom C.",
+          "tour": "ATP",
+          "tournament": "Roehampton challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6406,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6441,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299833",
+          "matchup": "Maxted L. vs Boitan G.",
+          "tour": "ATP",
+          "tournament": "Roehampton challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.644,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6464,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299837",
+          "matchup": "Geerts M. vs Poullain L.",
+          "tour": "ATP",
+          "tournament": "Roehampton challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5925,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6112,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299835",
+          "matchup": "Matusevich A. vs Ceban M.",
+          "tour": "ATP",
+          "tournament": "Roehampton challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6708,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6147,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299849",
+          "matchup": "Compagnucci T. vs La Serna J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6178,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6284,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299855",
+          "matchup": "Giustino L. vs Kuzmanov D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6077,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6215,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299853",
+          "matchup": "Hassan B. vs Blancaneaux G.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6009,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6169,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297465",
+          "matchup": "Chung H. vs Samrej K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5984,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6152,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297479",
+          "matchup": "Wu T. vs Ichikawa T.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6283,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6356,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297463",
+          "matchup": "Jasika O. vs Tamm K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7364,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6779,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297467",
+          "matchup": "Shiraishi H. vs Sinha N.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6847,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6246,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297477",
+          "matchup": "Moriya H. vs Ogura K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5892,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6089,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3297473",
+          "matchup": "Mitsui S. vs Bouzige M.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5923,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6111,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298701",
+          "matchup": "Sach T. vs Ho C.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7232,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6681,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300031",
+          "matchup": "Chung H. vs Shiraishi H.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6771,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6191,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299441",
+          "matchup": "Castagnola L. vs Popovic S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6716,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6152,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299567",
+          "matchup": "Sorger S. vs Kajin K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7242,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6688,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299507",
+          "matchup": "Schlossmann F. vs Kivattsev K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.726,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6701,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299661",
+          "matchup": "Nagel A. vs Djonov C.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6386,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6427,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299633",
+          "matchup": "Henning P. vs Coelho D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7324,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6749,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299547",
+          "matchup": "Fernandes R. vs Almazan Valiente I.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6024,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.618,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299477",
+          "matchup": "Maute J. vs Yevseyev D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5994,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6159,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299631",
+          "matchup": "McCormick T. vs Leote Prata V.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6744,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6172,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299599",
+          "matchup": "Bieldiugin T. vs Kirkin E.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.708,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6413,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299967",
+          "matchup": "Colombo A. vs Reyniak M.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6258,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6339,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299817",
+          "matchup": "La Vela G. vs Kupcic J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6793,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6207,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299613",
+          "matchup": "Scaglia M. vs Mubarak A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7369,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6783,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299467",
+          "matchup": "Lagutin P. vs Silva T.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7364,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6779,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299975",
+          "matchup": "Senn N. vs Wiskandt M.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7118,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.644,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299517",
+          "matchup": "Handel T. vs Oetzbach A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5957,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6134,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299819",
+          "matchup": "Gundacker J. vs Pieri S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7217,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.667,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299971",
+          "matchup": "Barroso Campos A. vs Tsitsipas P.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6515,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6011,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299587",
+          "matchup": "Planinsek F. vs Mohar V.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7164,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6474,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299969",
+          "matchup": "Marques G. vs Andaloro F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5956,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6133,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299579",
+          "matchup": "Petkovic M. vs Giraldi C.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6863,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299215",
+          "matchup": "Becroft I. vs Te R.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5941,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6123,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299759",
+          "matchup": "Takahashi Y. vs Oh C.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6732,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6164,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299405",
+          "matchup": "Isomura K. vs Zhao Z.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6258,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6339,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299403",
+          "matchup": "Bar Biryukov P. vs Van Herzeele J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6956,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6323,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299763",
+          "matchup": "Kang K. vs Alhogbani A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.624,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6326,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299767",
+          "matchup": "M Rifki F. vs Kong W.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7364,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6779,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299765",
+          "matchup": "Chung Y. vs Meng F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6544,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6032,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299761",
+          "matchup": "Zhang T. vs Storch S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6587,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6062,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298981",
+          "matchup": "Juhas K. vs Peiro Serrano A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.714,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6456,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299725",
+          "matchup": "Popko D. vs Khotchenkov E.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299719",
+          "matchup": "Kisimov D. vs Krstic V.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6274,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.635,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299773",
+          "matchup": "Dean T. vs Wieland L.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.5974,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6145,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299861",
+          "matchup": "Miletich I. vs Andreescu S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6491,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.5995,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299747",
+          "matchup": "Majdandzic M. vs Collignon K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7297,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6729,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299347",
+          "matchup": "Virgili Berini F. vs Van Nunen M.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.683,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6233,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299857",
+          "matchup": "Guna R. vs Angeloni L.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6708,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6147,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299473",
+          "matchup": "Noce G. vs Toffanin N.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6629,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6091,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299859",
+          "matchup": "Tenti F. vs Garbero F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6586,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6061,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299541",
+          "matchup": "Batin T. vs Gima S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6655,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.611,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299415",
+          "matchup": "Valkusz M. vs Knitter K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7349,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6768,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299469",
+          "matchup": "Belkovics A. vs Fajta P.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7147,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6462,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3297737",
+          "matchup": "Rejchtman Vinciguerra W. vs Ryden V.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6617,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6083,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298959",
+          "matchup": "Larwig N. vs Moraing O.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6369,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6415,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298957",
+          "matchup": "Hallquist Lithen J. vs Jansson O.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6553,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6038,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298949",
+          "matchup": "Larue L. vs Johansson E.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6524,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6018,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298961",
+          "matchup": "Tortora D. vs Torres Ramis M.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7097,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6425,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298979",
+          "matchup": "Haita S. vs Talavera Cortes E.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.7248,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6693,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299745",
+          "matchup": "Loge J. vs Hendrikx J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7313,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6741,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299721",
+          "matchup": "Arzhankin A. vs Motta A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7068,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6404,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299865",
+          "matchup": "Monzon I. vs Bilardo J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.608,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6217,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299749",
+          "matchup": "Paardekooper S. vs Schlagenhauf N.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5992,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6158,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299727",
+          "matchup": "Zeuch T. vs Kokot B.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.7233,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6682,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299539",
+          "matchup": "Behrmann T. vs Shylov H.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6241,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6328,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299863",
+          "matchup": "Misasi G. vs Valle F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7237,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6685,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299435",
+          "matchup": "Sciahbasi M. vs Mazdrashki A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5974,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6145,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299471",
+          "matchup": "Agwi M. vs Hrazdil J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7304,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6735,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299565",
+          "matchup": "Madaras D. vs Breazu V.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6227,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6318,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299965",
+          "matchup": "Borg L. vs Friberg K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5843,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6057,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298953",
+          "matchup": "Simonsson J. vs Karlsson Wistrand J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6038,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6189,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298955",
+          "matchup": "Loureiro J. vs Tremblay D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6119,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6244,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299709",
+          "matchup": "Guttau N. vs Battiston A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6599,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6071,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299707",
+          "matchup": "Mridha J. vs Hoeyeraal H.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6347,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.64,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299753",
+          "matchup": "Van Der Meerschen M. vs De Jager J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6276,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6351,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299723",
+          "matchup": "Derepasko T. vs Bellifemine A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6148,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6263,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298977",
+          "matchup": "Pankin S. vs Petrovic D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.7078,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6411,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299729",
+          "matchup": "Michalski D. vs Berto L.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6863,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300159",
+          "matchup": "Seifert S. vs Larue L.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300169",
+          "matchup": "Tortora D. vs Nanobashvili S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7205,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6661,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300185",
+          "matchup": "Rejchtman Vinciguerra W. vs Simonsson J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6329,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6388,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299595",
+          "matchup": "Wallechner D. vs Hausberger G.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5984,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6152,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300171",
+          "matchup": "Faucon R. vs Virgili Berini F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6089,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6223,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299549",
+          "matchup": "Juszczak P. vs Minighini D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6167,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6276,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299757",
+          "matchup": "Torcq B. vs Wassermann D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6021,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6177,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299731",
+          "matchup": "Sadzik J. vs Wazny A.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6241,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6327,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300181",
+          "matchup": "Hallquist Lithen J. vs Larwig N.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6798,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.621,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300205",
+          "matchup": "Loureiro J. vs Edengren K.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6028,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299677",
+          "matchup": "Szerencsits B. vs Yunis F.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6698,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.614,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299611",
+          "matchup": "Exsted M. vs De La Fuente S.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6538,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6027,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299703",
+          "matchup": "Cundom J. vs Bobo D.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5998,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6162,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299705",
+          "matchup": "Alujas R. vs Aguilar Cardozo J.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7334,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6757,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299143",
+          "matchup": "Villanueva G. vs Malla B.",
+          "tour": "ATP",
+          "tournament": "Sion challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6788,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6204,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299305",
+          "matchup": "Cham E. vs Girdler J.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7118,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.644,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299379",
+          "matchup": "Ishikawa H. vs Wensley S.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6039,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6189,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299263",
+          "matchup": "Stevens Z. vs Braund A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7379,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.679,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299269",
+          "matchup": "Jones S. vs Papac T.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7258,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.67,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299271",
+          "matchup": "Staley J. vs Shtengelov A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6749,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6175,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300095",
+          "matchup": "Sheldon M. vs Lamchinniah H.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7157,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6469,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300097",
+          "matchup": "Shaya P. vs Corwin O.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5953,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6131,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300101",
+          "matchup": "Saye D. vs Solheim F.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6162,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6273,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300105",
+          "matchup": "Spurling N. vs Burnett E.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6562,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6045,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299941",
+          "matchup": "Kask M. vs Mayoral C.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.711,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6434,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299959",
+          "matchup": "Vales V. vs Ayllon Prado A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7157,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6469,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300109",
+          "matchup": "Battle L. vs Kandhai N.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6162,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6273,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300111",
+          "matchup": "Nelson T. vs Wells C.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5918,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6107,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299951",
+          "matchup": "Teramo D. vs Saleh A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5984,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6152,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300099",
+          "matchup": "Poritzky E. vs Photiades P.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6489,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.5994,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300113",
+          "matchup": "Gordon A. vs Folkesson-Doudy N.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5918,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6107,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300115",
+          "matchup": "Fullerton M. vs Mahjoob C.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6538,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6027,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299945",
+          "matchup": "Crivei E. vs Pinzon Moreno F.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6769,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.619,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300107",
+          "matchup": "Chou D. vs Mayoral A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6021,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6177,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299237",
+          "matchup": "Mandou Berranger I. vs Garcia Gomez H.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7012,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6364,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299233",
+          "matchup": "Hujo O. vs De Ruiter C.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6098,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.623,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299235",
+          "matchup": "Bozemoj S. vs Clarijs R.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7012,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6364,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300051",
+          "matchup": "Kincses K. vs Van Donk M.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6874,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6265,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300053",
+          "matchup": "Wassermann M. vs Reiter M.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7012,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6364,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299891",
+          "matchup": "Neubauer C. vs Hujo O.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6363,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6411,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300055",
+          "matchup": "Garcia Gomez H. vs Koenders R.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.645,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6471,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299893",
+          "matchup": "Pernas T. vs Glarner R.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6291,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6361,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299895",
+          "matchup": "Mandou Berranger I. vs Lootsma N.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6318,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.638,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299869",
+          "matchup": "Pandit A. vs Abdul Hakim K.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299867",
+          "matchup": "Dembo J. vs S Venkatraman G.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299873",
+          "matchup": "Perchicot M. vs Bruce-Smith J.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299875",
+          "matchup": "Patton T. vs Salim R.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299879",
+          "matchup": "Sodan I. vs Necz A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299877",
+          "matchup": "Mehrotra A. vs Bastola A.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 9",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299221",
+          "matchup": "Gauff C. vs Bouzkova M.",
+          "tour": "WTA",
+          "tournament": "Cincinnati WTA",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.8116,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.7091,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299997",
+          "matchup": "Anisimova A. vs Pegula J.",
+          "tour": "WTA",
+          "tournament": "Cincinnati WTA",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6443,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6467,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299545",
+          "matchup": "Zolotareva R. vs Petrovic D.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7964,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6966,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299509",
+          "matchup": "Astakhova D. vs Ciric Bagaric L.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6281,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6355,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299451",
+          "matchup": "Vujovic L. vs Dencheva R.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6569,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6049,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298819",
+          "matchup": "Pedone G. vs Zavatska K.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5938,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6121,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299607",
+          "matchup": "Bertea E. vs Panshina V.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6567,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6048,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299529",
+          "matchup": "Zaar L. vs Lansere S.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6766,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6188,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298821",
+          "matchup": "Encheva L. vs Kaji H.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6487,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.5992,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299527",
+          "matchup": "De Stefano S. vs Bulgaru M.",
+          "tour": "WTA",
+          "tournament": "Kursumlijska Banja 15 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.613,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6252,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299445",
+          "matchup": "Kovackova A. vs Herrero Linana A.",
+          "tour": "WTA",
+          "tournament": "Prague 4 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6264,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6343,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299575",
+          "matchup": "Kotliar Y. vs Lovric P.",
+          "tour": "WTA",
+          "tournament": "Prague 4 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6279,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6353,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299521",
+          "matchup": "Kovackova J. vs Schunk N.",
+          "tour": "WTA",
+          "tournament": "Prague 4 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5826,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6045,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299783",
+          "matchup": "Mettraux M. vs Goina P.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6771,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6191,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299421",
+          "matchup": "Zanolini C. vs Lombardini M.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6262,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6342,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299785",
+          "matchup": "Simionescu D. vs Kuhl C.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player2",
+          "winner": "player2",
+          "prob": 0.6289,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.636,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299493",
+          "matchup": "Popa M. vs Simion O.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6158,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.627,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299787",
+          "matchup": "Nagy A. vs Drobysheva M.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6543,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6031,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299789",
+          "matchup": "Ewald W. vs Ceuca A.",
+          "tour": "WTA",
+          "tournament": "Bistrita ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6865,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6258,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299561",
+          "matchup": "Steiner V. vs Vogt M.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6122,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6246,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299463",
+          "matchup": "Park S. vs Veldman K.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7027,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6374,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299795",
+          "matchup": "Giza L. vs Lukas T.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6716,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6152,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299797",
+          "matchup": "Brockmann T. vs Yesypchuk D.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6394,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6433,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299505",
+          "matchup": "Kokkinis T. vs Bennemann E.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7024,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6372,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299151",
+          "matchup": "Daems J. vs Fontenel C.",
+          "tour": "WTA",
+          "tournament": "Erwitte ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5918,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6107,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299583",
+          "matchup": "Geerlings A. vs Maduzzi G.",
+          "tour": "WTA",
+          "tournament": "Krak\u00f3w ITF",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6617,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6083,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299585",
+          "matchup": "Pawlikowska Z. vs Gniewkowska O.",
+          "tour": "WTA",
+          "tournament": "Krak\u00f3w ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6982,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6342,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299681",
+          "matchup": "Jakupovic D. vs Kmiecik A.",
+          "tour": "WTA",
+          "tournament": "Krak\u00f3w ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7093,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6422,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299645",
+          "matchup": "Zelnickova R. vs Leykina P.",
+          "tour": "WTA",
+          "tournament": "Krak\u00f3w ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6143,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.626,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299487",
+          "matchup": "Okutoyi A. vs Samardzic A.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7367,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6781,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298801",
+          "matchup": "Guth M. vs Kozakova K.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6192,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6294,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299673",
+          "matchup": "Lim J. vs Malmkjaer E.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6695,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6137,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298811",
+          "matchup": "Bonelli E. vs Manta N.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.651,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6008,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299685",
+          "matchup": "Cvetkovic A. vs Spiteri D.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6237,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6325,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299453",
+          "matchup": "Sziedat F. vs Yashina E.",
+          "tour": "WTA",
+          "tournament": "Verbier ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.62,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.63,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299909",
+          "matchup": "Dzjachangirova M. vs Veljacic Z.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Tennis Series 5",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6852,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6249,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299623",
+          "matchup": "Pontes Tourinho N. vs Souza M.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7174,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6481,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299667",
+          "matchup": "Fullana L. vs Badia L.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6863,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299981",
+          "matchup": "Laron M. vs Plaza Araujo L.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7434,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6831,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299625",
+          "matchup": "Bohrer Martins C. vs Ccuno R.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6553,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6038,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299695",
+          "matchup": "Barros V. vs Mi L.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6194,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6295,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299983",
+          "matchup": "Romero C. vs Sanchez Uribe M.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6194,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6295,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299985",
+          "matchup": "Candiotto A. vs Sousa Salazar N.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6863,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299979",
+          "matchup": "Schincariol Barbosa G. vs Barrera Aguirre I.",
+          "tour": "WTA",
+          "tournament": "Campos Do Jordao ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6419,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.645,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299825",
+          "matchup": "Defalco J. vs Shubina D.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7309,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6738,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299551",
+          "matchup": "Giaccio J. vs Garcia J.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6793,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6207,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299823",
+          "matchup": "Esquiva Banuls C. vs El Jardi D.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6738,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6168,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299827",
+          "matchup": "Ishii S. vs Losciale V.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7087,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6417,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299569",
+          "matchup": "Pascual Montalvo I. vs Koskel A.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.5888,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6087,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299829",
+          "matchup": "Cembranos P. vs Ruan Z.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6537,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6027,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299821",
+          "matchup": "Hatouka Y. vs Vargas V.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.737,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6783,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299137",
+          "matchup": "Gomez V. vs Kardava Z.",
+          "tour": "WTA",
+          "tournament": "Logrono ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6597,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6069,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299411",
+          "matchup": "Jeong S. vs Chanta A.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6739,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6169,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299427",
+          "matchup": "Yang Y. vs Wu R.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6162,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6273,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299219",
+          "matchup": "Matsuda R. vs Kim N.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6744,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6172,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299217",
+          "matchup": "Zhu C. vs Yang Y.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6372,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6417,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298799",
+          "matchup": "Chen M. vs Kim D.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6547,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6034,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299407",
+          "matchup": "Wei S. vs Kim Y.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7366,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.678,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299409",
+          "matchup": "Plipuech P. vs Deng T.",
+          "tour": "WTA",
+          "tournament": "Tianjin 3 ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.5835,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6051,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299465",
+          "matchup": "Longueville R. vs Reguer A.",
+          "tour": "WTA",
+          "tournament": "Wanfercee-Baulet ITF",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6354,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player2",
+            "prob": 0.6405,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299805",
+          "matchup": "De Koning R. vs Shkutova A.",
+          "tour": "WTA",
+          "tournament": "Wanfercee-Baulet ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.587,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6075,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300059",
+          "matchup": "Teixido Garcia M. vs Claeys L.",
+          "tour": "WTA",
+          "tournament": "Wanfercee-Baulet ITF",
+          "pick": "player1",
+          "winner": "player2",
+          "prob": 0.6387,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6428,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299809",
+          "matchup": "Brune Olsen A. vs Burchak A.",
+          "tour": "WTA",
+          "tournament": "Wanfercee-Baulet ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.717,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6478,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299499",
+          "matchup": "Andrienko M. vs Yuldasheva S.",
+          "tour": "WTA",
+          "tournament": "Wanfercee-Baulet ITF",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6306,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6372,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299327",
+          "matchup": "Compuesto B. vs Mickoska S.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6429,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player2",
+            "prob": 0.6457,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3298687",
+          "matchup": "Wan I. vs Katz A.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.7431,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6829,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3298689",
+          "matchup": "Dodaj C. vs Mihulka B.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.6662,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6115,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3300065",
+          "matchup": "Ivanova E. vs Loureiro M.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7065,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6402,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300071",
+          "matchup": "Spencer A. vs Runstrom F.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6863,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300073",
+          "matchup": "Kovalcik J. vs Syrtveit N.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6788,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6204,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300075",
+          "matchup": "Clemens T. vs Lesterhuis A.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6007,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6168,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300077",
+          "matchup": "Weir L. vs Bowles A.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7477,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6863,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3300079",
+          "matchup": "Poling L. vs Chulak Z.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.7202,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6659,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3299375",
+          "matchup": "Gale L. vs Mancini A.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Tennis Series",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.64,
+          "source": "odds+ranking",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6437,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3299881",
+          "matchup": "Santitto J. vs Yu R.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Tennis Series",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6028,
+            "hit": true
+          }
+        }
+      ]
     }
   ]
 }
