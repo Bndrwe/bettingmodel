@@ -1,0 +1,197 @@
+{
+  "date": "2026-08-26",
+  "games": [
+    {
+      "homeRuns": 0,
+      "awayRuns": 3,
+      "homeHits": 2,
+      "awayHits": 8,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 0,
+        "away": 2
+      },
+      "f5Complete": true,
+      "gamePk": 824234
+    },
+    {
+      "homeRuns": 2,
+      "awayRuns": 0,
+      "homeHits": 6,
+      "awayHits": 2,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Complete": true,
+      "gamePk": 825039
+    },
+    {
+      "homeRuns": 9,
+      "awayRuns": 10,
+      "homeHits": 12,
+      "awayHits": 15,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 4,
+        "away": 2
+      },
+      "f5Complete": true,
+      "gamePk": 823180
+    },
+    {
+      "homeRuns": 3,
+      "awayRuns": 4,
+      "homeHits": 3,
+      "awayHits": 12,
+      "firstInningRuns": {
+        "home": 1,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 3,
+        "away": 1
+      },
+      "f5Complete": true,
+      "gamePk": 823988
+    },
+    {
+      "homeRuns": 3,
+      "awayRuns": 0,
+      "homeHits": 7,
+      "awayHits": 5,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 2,
+        "away": 0
+      },
+      "f5Complete": true,
+      "gamePk": 823255
+    },
+    {
+      "homeRuns": 0,
+      "awayRuns": 6,
+      "homeHits": 2,
+      "awayHits": 10,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 2
+      },
+      "f5Runs": {
+        "home": 0,
+        "away": 6
+      },
+      "f5Complete": true,
+      "gamePk": 823096
+    },
+    {
+      "homeRuns": 4,
+      "awayRuns": 0,
+      "homeHits": 10,
+      "awayHits": 5,
+      "firstInningRuns": {
+        "home": 1,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 2,
+        "away": 0
+      },
+      "f5Complete": true,
+      "gamePk": 823825
+    },
+    {
+      "homeRuns": 1,
+      "awayRuns": 13,
+      "homeHits": 7,
+      "awayHits": 15,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 1,
+        "away": 4
+      },
+      "f5Complete": true,
+      "gamePk": 822692
+    },
+    {
+      "homeRuns": 9,
+      "awayRuns": 3,
+      "homeHits": 13,
+      "awayHits": 4,
+      "firstInningRuns": {
+        "home": 2,
+        "away": 1
+      },
+      "f5Runs": {
+        "home": 3,
+        "away": 2
+      },
+      "f5Complete": true,
+      "gamePk": 823506
+    },
+    {
+      "homeRuns": 3,
+      "awayRuns": 0,
+      "homeHits": 6,
+      "awayHits": 6,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 3,
+        "away": 0
+      },
+      "f5Complete": true,
+      "gamePk": 822772
+    },
+    {
+      "homeRuns": 1,
+      "awayRuns": 8,
+      "homeHits": 9,
+      "awayHits": 13,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 1,
+        "away": 7
+      },
+      "f5Complete": true,
+      "gamePk": 823584
+    },
+    {
+      "homeRuns": 6,
+      "awayRuns": 5,
+      "homeHits": 14,
+      "awayHits": 10,
+      "firstInningRuns": {
+        "home": 1,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 4,
+        "away": 3
+      },
+      "f5Complete": true,
+      "gamePk": 824878
+    }
+  ]
+}
