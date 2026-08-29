@@ -553,25 +553,6 @@
       ]
     },
     {
-      "matchId": "3307517",
-      "winner": "player1",
-      "firstSetWinner": "player1",
-      "player1Scores": [
-        "6",
-        "6",
-        "",
-        "",
-        ""
-      ],
-      "player2Scores": [
-        "4",
-        "1",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
       "matchId": "3307549",
       "winner": "player2",
       "firstSetWinner": "player2",
@@ -642,6 +623,25 @@
       "player2Scores": [
         "2",
         "3",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "matchId": "3307517",
+      "winner": "player1",
+      "firstSetWinner": "player1",
+      "player1Scores": [
+        "6",
+        "6",
+        "",
+        "",
+        ""
+      ],
+      "player2Scores": [
+        "4",
+        "1",
         "",
         "",
         ""
@@ -1726,6 +1726,25 @@
         "1",
         "2",
         "",
+        "",
+        ""
+      ]
+    },
+    {
+      "matchId": "3308019",
+      "winner": "player1",
+      "firstSetWinner": "player2",
+      "player1Scores": [
+        "1",
+        "7",
+        "6",
+        "",
+        ""
+      ],
+      "player2Scores": [
+        "6",
+        "5",
+        "3",
         "",
         ""
       ]
