@@ -25469,6 +25469,78 @@
           }
         }
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "gamesGraded": 1,
+      "moneyline": {
+        "hits": 0,
+        "total": 1
+      },
+      "runLine": {
+        "hits": 1,
+        "total": 1
+      },
+      "total": {
+        "hits": 1,
+        "total": 1
+      },
+      "f5": {
+        "hits": 1,
+        "total": 1
+      },
+      "nrfi": {
+        "hits": 1,
+        "total": 1
+      },
+      "teamHits": {
+        "hits": 1,
+        "total": 2
+      },
+      "detail": [
+        {
+          "gamePk": 824911,
+          "matchup": "SF @ ATL",
+          "actualScore": "7-3",
+          "moneyline": {
+            "pick": "home",
+            "prob": 0.6122,
+            "hit": false
+          },
+          "runLine": {
+            "pick": "away",
+            "line": -1.5,
+            "hit": true
+          },
+          "total": {
+            "pick": "over",
+            "line": 9.0,
+            "hit": true
+          },
+          "f5": {
+            "pick": "home",
+            "hit": true
+          },
+          "nrfi": {
+            "pick": "yrfi",
+            "hit": true
+          },
+          "teamHits": {
+            "home": {
+              "pick": "over",
+              "line": 8.5,
+              "actual": 9,
+              "hit": true
+            },
+            "away": {
+              "pick": "under",
+              "line": 7.5,
+              "actual": 11,
+              "hit": false
+            }
+          }
+        }
+      ]
     }
   ]
 }
