@@ -170,6 +170,26 @@ select:focus,input:focus{outline:1px solid var(--cyan);border-color:var(--cyan);
 #overlay.open{opacity:1;pointer-events:all;}
 #modal{position:fixed;inset:0;z-index:101;display:flex;align-items:center;justify-content:center;padding:16px;pointer-events:none;opacity:0;transform:scale(.97);transition:opacity .25s,transform .25s;}
 #modal.open{opacity:1;transform:none;pointer-events:all;}
+#tnOverlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:100;opacity:0;pointer-events:none;transition:opacity .25s;}
+#tnOverlay.open{opacity:1;pointer-events:all;}
+#tnModal{position:fixed;inset:0;z-index:101;display:flex;align-items:center;justify-content:center;padding:16px;pointer-events:none;opacity:0;transform:scale(.97);transition:opacity .25s,transform .25s;}
+#tnModal.open{opacity:1;transform:none;pointer-events:all;}
+.tn-split-bar{display:flex;height:26px;border-radius:5px;overflow:hidden;background:var(--surf3);border:1px solid var(--border);}
+.tn-split-a{background:linear-gradient(90deg,rgba(34,211,238,.35),rgba(34,211,238,.55));display:flex;align-items:center;justify-content:center;font-family:'Space Mono';font-size:9px;color:var(--white);white-space:nowrap;overflow:hidden;transition:width .6s ease;}
+.tn-split-b{background:linear-gradient(90deg,rgba(255,45,120,.55),rgba(255,45,120,.35));display:flex;align-items:center;justify-content:center;font-family:'Space Mono';font-size:9px;color:var(--white);white-space:nowrap;overflow:hidden;transition:width .6s ease;}
+.tn-split-lbls{display:flex;justify-content:space-between;font-family:'Space Mono';font-size:8px;color:var(--text3);margin-top:4px;}
+.tn-len-row{margin-bottom:8px;}
+.tn-len-row:last-child{margin-bottom:0;}
+.tn-len-lbl{font-family:'Space Mono';font-size:8px;color:var(--text2);margin-bottom:3px;display:flex;justify-content:space-between;}
+.tn-len-bar{display:flex;height:14px;border-radius:3px;overflow:hidden;background:var(--surf3);}
+.tn-len-a{background:var(--cyan);opacity:.75;transition:width .6s ease;}
+.tn-len-b{background:var(--purple);opacity:.75;transition:width .6s ease;}
+.tn-len-gap{background:transparent;}
+.tn-compare-row{display:grid;grid-template-columns:1fr 64px 64px;gap:6px;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);font-family:'Space Mono';font-size:9px;}
+.tn-compare-row:last-child{border-bottom:none;}
+.tn-compare-lbl{color:var(--text3);letter-spacing:.5px;}
+.tn-compare-val{text-align:center;color:var(--text2);}
+.tn-compare-val.hi{color:var(--green);font-weight:700;}
 .modal-inner{background:var(--bg2);border:1px solid var(--border);border-radius:10px;width:100%;max-width:1100px;max-height:94vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,.6);}
 .mhdr{background:var(--bg3);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;align-items:center;gap:0;flex-shrink:0;}
 .mhdr-title{font-family:'Space Mono';font-size:9px;color:var(--text3);letter-spacing:2px;flex:0 0 100px;}
@@ -545,6 +565,80 @@ flex-wrap:wrap;}.sb-cell{min-width:50%;}}
               <div class="sz-ticks"><span>UNFAV</span><span>AVG</span><span>ELITE</span></div>
               <div style="font-family:'Space Mono';font-size:8px;color:var(--text2);margin-top:6px;" id="szDesc">—</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TENNIS MATCH MODAL -->
+<div id="tnOverlay" onclick="closeTennisModal()"></div>
+<div id="tnModal">
+  <div class="modal-inner">
+    <div class="mhdr">
+      <div class="mhdr-title" id="tnmTour">TENNIS</div>
+      <div class="mhdr-batter" id="tnmP1">
+        <div class="player-avatar" id="tnmP1Avatar">—</div>
+        <div>
+          <div class="batter-name" id="tnmP1Name">—</div>
+          <div class="batter-sub" id="tnmP1Sub">—</div>
+        </div>
+      </div>
+      <div class="vs-badge">vs</div>
+      <div class="mhdr-pitcher" id="tnmP2">
+        <div style="text-align:right">
+          <div class="batter-name" id="tnmP2Name">—</div>
+          <div class="batter-sub" id="tnmP2Sub">—</div>
+        </div>
+        <div class="player-avatar" id="tnmP2Avatar">—</div>
+      </div>
+      <button class="mclose" onclick="closeTennisModal()">✕</button>
+    </div>
+    <div class="mbody">
+      <div class="mleft">
+        <div class="grade-section">
+          <div class="grade-ring">
+            <svg viewBox="0 0 90 90">
+              <circle cx="45" cy="45" r="38" fill="none" stroke="var(--surf3)" stroke-width="5"/>
+              <circle cx="45" cy="45" r="38" fill="none" stroke="var(--green)" stroke-width="5"
+                stroke-dasharray="238.76" stroke-dashoffset="238.76" id="tnRingArc"
+                stroke-linecap="round" style="transition:stroke-dashoffset 1s ease"/>
+            </svg>
+            <div class="grade-ring-inner">
+              <div class="grade-letter" id="tnRingPct" style="font-size:22px;">—</div>
+              <div class="grade-xhr" id="tnRingTier">—</div>
+            </div>
+          </div>
+          <div class="grade-name" id="tnFavName">—</div>
+          <div class="grade-mult" id="tnMeta">—</div>
+          <div class="grade-desc" id="tnDesc">Loading analysis...</div>
+        </div>
+        <div class="breakdown-hdr" style="cursor:default;">
+          <span class="breakdown-hdr-txt">▲ MATCH COMPARISON</span>
+        </div>
+        <div class="breakdown-body" id="tnCompareBody" style="display:block;padding:10px 16px;"></div>
+      </div>
+      <div class="mright">
+        <div class="mr-section">
+          <div class="mr-title">MATCH WIN PROBABILITY</div>
+          <div id="tnMlBar"></div>
+        </div>
+        <div class="mr-section">
+          <div class="mr-title">FIRST SET WIN PROBABILITY</div>
+          <div id="tnFsBar"></div>
+        </div>
+        <div class="mr-section">
+          <div class="mr-title" id="tnLenTitle">PROJECTED MATCH LENGTH</div>
+          <div id="tnLenChart"></div>
+        </div>
+        <div class="mr-section">
+          <div class="mr-title">EVENT INFO</div>
+          <div class="h2h-stats" id="tnEventStats">
+            <div class="h2h-cell"><div class="h2h-val" id="tn-ev-tour">—</div><div class="h2h-lbl">TOUR</div></div>
+            <div class="h2h-cell"><div class="h2h-val" id="tn-ev-fmt">—</div><div class="h2h-lbl">FORMAT</div></div>
+            <div class="h2h-cell"><div class="h2h-val" id="tn-ev-time">—</div><div class="h2h-lbl">TIME</div></div>
+            <div class="h2h-cell"><div class="h2h-val" id="tn-ev-src">—</div><div class="h2h-lbl">SIGNAL</div></div>
           </div>
         </div>
       </div>
@@ -1038,6 +1132,8 @@ const PARKS = {
 let ALL = [];
 let GL_ALL_PICKS = [];
 let TN_ALL_PICKS = [];
+let TN_ALL_MATCHES = [];
+let TN_CURRENT = null;
 let FILTERED = [];
 let CURRENT = null;
 let CURR_PROP = 'hr';
@@ -1884,14 +1980,32 @@ function computeModel(stat,recent,recent7,pitcherStat,pitcherRecent,park,weather
 // ═══════════════════════════════════════
 // MONTE CARLO
 // ═══════════════════════════════════════
-function runMC(perPAprob,raw,pitcherFBPct,expPA,nSims=10000){
+function runMC(perPAprob,raw,pitcherStat,expPA,nSims=10000){
   const{slg,avg,obp,bbPct,hr:hrSeason,pa}=raw;
   const paInt=Math.max(1,Math.round(expPA));
   const hrProb=perPAprob;
-  const tripleP=Math.min((raw.trp||0)/Math.max(pa,1)*1.1,0.008);
-  const doubleP=Math.min((raw.dbl||0)/Math.max(pa,1)*1.05,0.06);
-  const singleP=Math.min(((raw.h||0)-(raw.dbl||0)-(raw.trp||0)-(raw.hr||0))/Math.max(pa,1)*0.98,0.22);
-  const bbP=Math.min(bbPct,0.18);
+
+  // Pitcher-driven contact/walk adjustment -- previously this sim only let
+  // the opposing pitcher affect the HR channel (via perPAprob) and used the
+  // batter's own career single/double/triple/walk rates completely
+  // unmodified for every other outcome, so HITS/TB/RUN/RBI props never
+  // varied with who was actually on the mound (an ace and a AAA call-up
+  // produced identical hit odds for the same batter). Real WHIP/K%/BB% now
+  // scale those rates, regressed toward neutral by the pitcher's sample
+  // size just like the HR factors above.
+  const prw=pitcherStat?clamp((pitcherStat.bf||0)/400,0.05,0.90):0;
+  const pitKPct=pitcherStat?.kPct??LG.pitKPct;
+  const pitBBPct=pitcherStat?.bbPct??LG.pitBBPct;
+  const pitWhip=pitcherStat?.whip||1.30;
+  const rawContactMult=clamp(((1-pitKPct)/(1-LG.pitKPct))*(pitWhip/1.30),0.70,1.35);
+  const rawWalkMult=clamp(pitBBPct/LG.pitBBPct,0.65,1.45);
+  const pitContactMult=1+(rawContactMult-1)*prw;
+  const pitWalkMult=1+(rawWalkMult-1)*prw;
+
+  const tripleP=clamp(Math.min((raw.trp||0)/Math.max(pa,1)*1.1,0.008)*pitContactMult,0,0.02);
+  const doubleP=clamp(Math.min((raw.dbl||0)/Math.max(pa,1)*1.05,0.06)*pitContactMult,0,0.10);
+  const singleP=clamp(Math.min(((raw.h||0)-(raw.dbl||0)-(raw.trp||0)-(raw.hr||0))/Math.max(pa,1)*0.98,0.22)*pitContactMult,0,0.35);
+  const bbP=clamp(Math.min(bbPct,0.18)*pitWalkMult,0,0.25);
   const res={hr:[],tb:[],h:[],r:[],rbi:[],hbr:[]};
   for(let s=0;s<nSims;s++){
     let gHR=0,gTB=0,gH=0,gR=0,gRBI=0;
@@ -2063,7 +2177,7 @@ async function buildPredictions(){
     );
     if(!model)continue;
     const gameProb=clamp(1-Math.pow(1-model.perPA,model.expPA),0,0.85);
-    const mc=runMC(model.perPA,model.raw,pitcher?.gbPct,model.expPA);
+    const mc=runMC(model.perPA,model.raw,pitcher,model.expPA);
     // Prefer the pitcher's real, individual arsenal mix (MLB Stats API);
     // only fall back to the hand/K%/GB-rate estimate when a pitcher's
     // pitchArsenal data isn't available (e.g. brand-new call-up).
@@ -3797,7 +3911,8 @@ async function loadTennisMatches(){
   renderGlobalTopPicks();
 
   const sorted=[...data.matches].sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99'));
-  tbody.innerHTML=sorted.map(m=>{
+  TN_ALL_MATCHES=sorted;
+  tbody.innerHTML=sorted.map((m,idx)=>{
     const p1=m.player1,p2=m.player2;
     const pick=m.pick==='player1'?p1.name:p2.name;
     const oddsTxt=(m.odds.player1&&m.odds.player2)?`${m.odds.player1.toFixed(2)} / ${m.odds.player2.toFixed(2)}`:
@@ -3810,7 +3925,7 @@ async function loadTennisMatches(){
     const fsName=fs.pick==='player1'?p1.name:p2.name;
     const fsProb=Math.max(fs.player1,fs.player2);
     const fsColor=fsProb>=.70?'g-clr':fsProb>=.58?'a-clr':'r-clr';
-    return `<tr>
+    return `<tr style="cursor:pointer" onclick="openTennisModal(${idx})">
       <td style="font-family:'Space Mono';font-size:10px;">${m.time||'—'}</td>
       <td style="font-family:'Space Mono';font-size:9px;color:var(--text3);">${m.tour}</td>
       <td class="pname" style="font-size:10px;">${m.tournament||''}</td>
@@ -3820,6 +3935,142 @@ async function loadTennisMatches(){
       <td><div class="model-pick"><span class="model-pick-lbl">${fsName}</span><span class="model-pick-sub"><span class="${fsColor}">${(fsProb*100).toFixed(1)}%</span> · set 1</span></div></td>
     </tr>`;
   }).join('');
+}
+
+// ─── Tennis match detail modal: win-probability breakdown, first-set
+// split, and a derived match-length distribution (straight sets vs a
+// deciding set/sets), computed from the same per-set probability the
+// backend already derives from the match-win model (see
+// backend/tennis_model.py's first_set_prob/set_prob_from_match_prob) ───
+const TN_MAJORS=['wimbledon','us open','french open','roland garros','australian open'];
+function tnBestOf(tournament,tour){
+  const name=(tournament||'').toLowerCase();
+  if(tour==='ATP'&&TN_MAJORS.some(w=>name.includes(w)))return 5;
+  return 3;
+}
+function tnNCR(n,r){
+  if(r<0||r>n)return 0;
+  let res=1;
+  for(let i=0;i<r;i++)res=res*(n-i)/(i+1);
+  return res;
+}
+function tnMatchLengthDist(p,bestOf){
+  const winsNeeded=bestOf===5?3:2;
+  const rows=[];
+  for(let n=winsNeeded;n<=bestOf;n++){
+    rows.push({
+      sets:n,
+      p1:tnNCR(n-1,winsNeeded-1)*Math.pow(p,winsNeeded)*Math.pow(1-p,n-winsNeeded),
+      p2:tnNCR(n-1,winsNeeded-1)*Math.pow(1-p,winsNeeded)*Math.pow(p,n-winsNeeded),
+    });
+  }
+  return rows;
+}
+function tnImpliedProb(oddsA,oddsB){
+  const aOk=oddsA&&oddsA>1,bOk=oddsB&&oddsB>1;
+  if(aOk&&bOk){const ra=1/oddsA,rb=1/oddsB;return ra/(ra+rb);}
+  if(aOk)return clamp(1/oddsA,0.05,0.95);
+  if(bOk)return clamp(1-1/oddsB,0.05,0.95);
+  return null;
+}
+function tnSplitBarHtml(pctA,nameA,pctB,nameB){
+  const wA=Math.max(pctA*100,6),wB=Math.max(pctB*100,6);
+  const norm=100/(wA+wB);
+  return `<div class="tn-split-bar">
+      <div class="tn-split-a" style="width:${(wA*norm).toFixed(1)}%">${(pctA*100).toFixed(1)}%</div>
+      <div class="tn-split-b" style="width:${(wB*norm).toFixed(1)}%">${(pctB*100).toFixed(1)}%</div>
+    </div>
+    <div class="tn-split-lbls"><span>${nameA}</span><span>${nameB}</span></div>`;
+}
+function openTennisModal(idx){
+  TN_CURRENT=idx;
+  renderTennisModal(idx);
+  document.getElementById('tnOverlay').classList.add('open');
+  document.getElementById('tnModal').classList.add('open');
+}
+function closeTennisModal(){
+  document.getElementById('tnOverlay').classList.remove('open');
+  document.getElementById('tnModal').classList.remove('open');
+}
+function renderTennisModal(idx){
+  const m=TN_ALL_MATCHES[idx];if(!m)return;
+  const p1=m.player1,p2=m.player2;
+  const p1Prob=m.modelProb.player1,p2Prob=m.modelProb.player2;
+  const favIsP1=p1Prob>=p2Prob;
+  const favName=favIsP1?p1.name:p2.name;
+  const favProb=Math.max(p1Prob,p2Prob);
+  const bestOf=tnBestOf(m.tournament,m.tour);
+
+  document.getElementById('tnmTour').textContent=`${m.tour} MATCH`;
+  document.getElementById('tnmP1Name').textContent=p1.name.toUpperCase();
+  document.getElementById('tnmP1Sub').textContent=p1.rank?`#${p1.rank}${p1.points?' · '+p1.points+' PTS':''}`:'UNRANKED';
+  document.getElementById('tnmP1Avatar').textContent=p1.name.split(' ').map(w=>w[0]).join('').slice(0,2);
+  document.getElementById('tnmP2Name').textContent=p2.name.toUpperCase();
+  document.getElementById('tnmP2Sub').textContent=p2.rank?`#${p2.rank}${p2.points?' · '+p2.points+' PTS':''}`:'UNRANKED';
+  document.getElementById('tnmP2Avatar').textContent=p2.name.split(' ').map(w=>w[0]).join('').slice(0,2);
+
+  const tier=favProb>=.70?'HEAVY FAVORITE':favProb>=.58?'LEAN':'PICK\'EM';
+  const ringColor=favProb>=.70?'var(--green)':favProb>=.58?'var(--cyan)':'var(--amber)';
+  const arc=document.getElementById('tnRingArc');
+  arc.style.stroke=ringColor;
+  arc.style.strokeDashoffset=(238.76*(1-favProb)).toFixed(2);
+  document.getElementById('tnRingPct').textContent=(favProb*100).toFixed(0)+'%';
+  document.getElementById('tnRingPct').style.color=ringColor;
+  document.getElementById('tnRingTier').textContent=tier;
+  document.getElementById('tnFavName').textContent=favName.toUpperCase();
+  document.getElementById('tnMeta').textContent=`BEST OF ${bestOf} · ${m.source==='odds+ranking'?'ODDS + RANKING':'RANKING ONLY'}`;
+
+  const marketP1=tnImpliedProb(m.odds.player1,m.odds.player2);
+  let desc=`${favName} is the model's pick to win this ${m.tour} match${m.tournament?` at the ${m.tournament}`:''}.`;
+  if(marketP1!=null){
+    const marketFav=marketP1>=0.5?p1.name:p2.name;
+    const marketFavProb=Math.max(marketP1,1-marketP1);
+    const edge=(favProb-(favIsP1?marketP1:1-marketP1))*100;
+    desc+=` The market also favors ${marketFav} (${(marketFavProb*100).toFixed(0)}% implied)${Math.abs(edge)>=2?`, with the model ${edge>0?'more':'less'} confident by ${Math.abs(edge).toFixed(1)}pts.`:', roughly in line with the model.'}`;
+  }else{
+    desc+=' No market odds are posted for this match yet, so the pick leans on the ranking-points model alone.';
+  }
+  document.getElementById('tnDesc').textContent=desc;
+
+  const rankRow=(p1.rank&&p2.rank)?
+    `<div class="tn-compare-row"><div class="tn-compare-lbl">RANK</div><div class="tn-compare-val ${p1.rank<p2.rank?'hi':''}">#${p1.rank}</div><div class="tn-compare-val ${p2.rank<p1.rank?'hi':''}">#${p2.rank}</div></div>`:
+    `<div class="tn-compare-row"><div class="tn-compare-lbl">RANK</div><div class="tn-compare-val">${p1.rank?'#'+p1.rank:'—'}</div><div class="tn-compare-val">${p2.rank?'#'+p2.rank:'—'}</div></div>`;
+  const ptsRow=`<div class="tn-compare-row"><div class="tn-compare-lbl">POINTS</div><div class="tn-compare-val ${(p1.points||0)>(p2.points||0)?'hi':''}">${p1.points??'—'}</div><div class="tn-compare-val ${(p2.points||0)>(p1.points||0)?'hi':''}">${p2.points??'—'}</div></div>`;
+  const oddsRow=`<div class="tn-compare-row"><div class="tn-compare-lbl">ODDS</div><div class="tn-compare-val">${m.odds.player1?m.odds.player1.toFixed(2):'—'}</div><div class="tn-compare-val">${m.odds.player2?m.odds.player2.toFixed(2):'—'}</div></div>`;
+  const mlRow=`<div class="tn-compare-row"><div class="tn-compare-lbl">MATCH WIN%</div><div class="tn-compare-val ${p1Prob>p2Prob?'hi':''}">${(p1Prob*100).toFixed(1)}%</div><div class="tn-compare-val ${p2Prob>p1Prob?'hi':''}">${(p2Prob*100).toFixed(1)}%</div></div>`;
+  const fs=m.firstSet||{player1:.5,player2:.5};
+  const fsRow=`<div class="tn-compare-row"><div class="tn-compare-lbl">1ST SET%</div><div class="tn-compare-val ${fs.player1>fs.player2?'hi':''}">${(fs.player1*100).toFixed(1)}%</div><div class="tn-compare-val ${fs.player2>fs.player1?'hi':''}">${(fs.player2*100).toFixed(1)}%</div></div>`;
+  document.getElementById('tnCompareBody').innerHTML=
+    `<div class="tn-compare-row" style="color:var(--text3);"><div></div><div class="tn-compare-val">${p1.name.split(' ').pop()}</div><div class="tn-compare-val">${p2.name.split(' ').pop()}</div></div>`
+    +rankRow+ptsRow+oddsRow+mlRow+fsRow;
+
+  document.getElementById('tnMlBar').innerHTML=tnSplitBarHtml(p1Prob,p1.name,p2Prob,p2.name);
+  document.getElementById('tnFsBar').innerHTML=tnSplitBarHtml(fs.player1,p1.name,fs.player2,p2.name);
+
+  // Match-length distribution -- derived by inverting the same best-of-N
+  // series formula the backend used to go the other way (match prob ->
+  // per-set prob), so "straight sets" vs "goes the distance" reflects the
+  // model's real confidence spread, not a generic 50/50 guess.
+  const setP=fs.player1;
+  const dist=tnMatchLengthDist(setP,bestOf);
+  const setsLabel=n=>bestOf===5?(n===3?'3-0 SWEEP':n===4?'WINS IN 4':'5-SET EPIC'):(n===2?'STRAIGHT SETS':'3-SET DECIDER');
+  document.getElementById('tnLenTitle').textContent=`PROJECTED MATCH LENGTH (BEST OF ${bestOf})`;
+  document.getElementById('tnLenChart').innerHTML=dist.map(r=>{
+    const total=(r.p1+r.p2)||1;
+    return `<div class="tn-len-row">
+      <div class="tn-len-lbl"><span>${setsLabel(r.sets)}</span><span>${p1.name.split(' ').pop()} ${(r.p1*100).toFixed(1)}% · ${p2.name.split(' ').pop()} ${(r.p2*100).toFixed(1)}%</span></div>
+      <div class="tn-len-bar">
+        <div class="tn-len-a" style="width:${(r.p1*100).toFixed(1)}%"></div>
+        <div class="tn-len-b" style="width:${(r.p2*100).toFixed(1)}%"></div>
+        <div class="tn-len-gap" style="width:${(100-r.p1*100-r.p2*100).toFixed(1)}%"></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('tn-ev-tour').textContent=m.tour;
+  document.getElementById('tn-ev-fmt').textContent=`BO${bestOf}`;
+  document.getElementById('tn-ev-time').textContent=m.time||'—';
+  document.getElementById('tn-ev-src').textContent=m.source==='odds+ranking'?'ODDS+RANK':'RANK ONLY';
 }
 
 function tnResultBadge(hit){
