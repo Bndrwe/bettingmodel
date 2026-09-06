@@ -1273,8 +1273,13 @@ async function fetchPitcherArsenal(pid){
   const totals={fb:0,off:0,brk:0};
   let anyUsage=false;
   for(const s of splits){
-    const code=s.stat?.pitchType?.code;
-    const usage=parseFloat(s.stat?.usage ?? s.stat?.percentage ?? 0);
+    // The exact response shape for this stat type isn't documented, so
+    // accept a couple of plausible field-name/nesting variants rather than
+    // silently falling back to the generic estimate whenever one guess is
+    // wrong.
+    const st=s.stat||{};
+    const code=st.pitchType?.code??s.pitchType?.code??st.type?.code;
+    const usage=parseFloat(st.percentage??st.usage??s.percentage??s.usage??0);
     if(!code||!usage)continue;
     anyUsage=true;
     const fam=PITCH_FAMILY[code]||'off';
@@ -2028,11 +2033,24 @@ function runMC(perPAprob,raw,pitcherStat,expPA,nSims=10000){
 
 function estimatePitchMix(hand,era,gbPct,kPct){
   // Fallback only -- used when a pitcher has no pitchArsenal data yet
-  // (e.g. a brand-new call-up with no MLB innings logged).
-  const isPowerArm=kPct>0.26;
-  const isGroundBall=(gbPct||1.0)>1.3;
-  if(hand==='L'){return{fb:isGroundBall?0.48:0.58,off:isPowerArm?0.26:0.32,brk:0.10+(isGroundBall?0.04:0),source:'est'};}
-  return{fb:isGroundBall?0.42:0.52,off:isPowerArm?0.22:0.26,brk:isPowerArm?0.26:0.22,source:'est'};
+  // (e.g. a brand-new call-up with no MLB innings logged). Previously this
+  // only branched on two booleans (K% > 26%, GB:FB ratio > 1.3), which
+  // collapsed the entire league into 8 fixed outputs -- every pitcher who
+  // hit this fallback showed one of exactly 8 generic mixes regardless of
+  // their actual K rate or groundball tendency. Scale continuously off the
+  // pitcher's own real numbers instead, so the estimate actually varies
+  // pitcher-to-pitcher even without arsenal data.
+  const kp=kPct??LG.pitKPct;
+  const gb=gbPct??1.0;
+  const kShift=clamp((kp-LG.pitKPct)*0.6,-0.08,0.10);
+  const gbShift=clamp((gb-1.0)*0.08,-0.10,0.10);
+  const brkBase=hand==='L'?0.12:0.20;
+  const offBase=hand==='L'?0.28:0.24;
+  const brk=clamp(brkBase+kShift*0.6-gbShift*0.3,0.06,0.38);
+  const off=clamp(offBase+kShift*0.4,0.14,0.38);
+  const fb=clamp(1-brk-off,0.32,0.66);
+  const sum=fb+off+brk;
+  return{fb:fb/sum,off:off/sum,brk:brk/sum,source:'est'};
 }
 
 // ═══════════════════════════════════════
