@@ -10,30 +10,30 @@
     {
       "lo": 0.55,
       "hi": 0.6,
-      "total": 5228,
-      "hits": 4419,
-      "sumExpected": 3047.182099999822
+      "total": 5301,
+      "hits": 4481,
+      "sumExpected": 3090.0512999998205
     },
     {
       "lo": 0.6,
       "hi": 0.65,
-      "total": 4572,
-      "hits": 2704,
-      "sumExpected": 2845.838900000002
+      "total": 4679,
+      "hits": 2769,
+      "sumExpected": 2912.4770000000017
     },
     {
       "lo": 0.65,
       "hi": 0.7,
-      "total": 2710,
-      "hits": 1785,
-      "sumExpected": 1814.344699999995
+      "total": 2792,
+      "hits": 1836,
+      "sumExpected": 1869.3717999999956
     },
     {
       "lo": 0.7,
       "hi": 0.75,
-      "total": 2296,
-      "hits": 1654,
-      "sumExpected": 1663.5950000000012
+      "total": 2387,
+      "hits": 1727,
+      "sumExpected": 1729.5820000000015
     },
     {
       "lo": 0.75,
@@ -45,9 +45,9 @@
     {
       "lo": 0.8,
       "hi": 0.9,
-      "total": 32,
-      "hits": 26,
-      "sumExpected": 26.3499
+      "total": 33,
+      "hits": 27,
+      "sumExpected": 27.2402
     },
     {
       "lo": 0.9,
@@ -75,23 +75,23 @@
     {
       "lo": 0.6,
       "hi": 0.65,
-      "total": 9615,
-      "hits": 6436,
-      "sumExpected": 5945.40859999961
+      "total": 9867,
+      "hits": 6603,
+      "sumExpected": 6102.715599999597
     },
     {
       "lo": 0.65,
       "hi": 0.7,
-      "total": 1659,
-      "hits": 1206,
-      "sumExpected": 1115.9203000000007
+      "total": 1760,
+      "hits": 1289,
+      "sumExpected": 1183.883200000001
     },
     {
       "lo": 0.7,
       "hi": 0.75,
-      "total": 551,
-      "hits": 377,
-      "sumExpected": 396.8161000000001
+      "total": 552,
+      "hits": 378,
+      "sumExpected": 397.5465000000001
     },
     {
       "lo": 0.75,
@@ -116,12 +116,12 @@
     }
   ],
   "accuracySummary": {
-    "hits": 11455,
-    "total": 15895
+    "hits": 11707,
+    "total": 16249
   },
   "firstSetAccuracySummary": {
-    "hits": 10530,
-    "total": 15895
+    "hits": 10781,
+    "total": 16249
   },
-  "lastUpdated": "2026-09-08"
+  "lastUpdated": "2026-09-09"
 }
