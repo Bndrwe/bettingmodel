@@ -291313,12 +291313,12 @@
     },
     {
       "date": "2026-09-14",
-      "matchesGraded": 275,
-      "hits": 222,
-      "total": 275,
+      "matchesGraded": 281,
+      "hits": 224,
+      "total": 281,
       "firstSet": {
-        "hits": 205,
-        "total": 275
+        "hits": 207,
+        "total": 281
       },
       "detail": [
         {
@@ -291335,6 +291335,23 @@
             "pick": "player2",
             "winner": "player1",
             "prob": 0.6955,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3322559",
+          "matchup": "Shelbayh A. vs Zink T.",
+          "tour": "ATP",
+          "tournament": "Tiburon challenger",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6083,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6215,
             "hit": false
           }
         },
@@ -291730,6 +291747,23 @@
           }
         },
         {
+          "matchId": "3323809",
+          "matchup": "Tallakson B. vs Castro V.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6913,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6492,
+            "hit": false
+          }
+        },
+        {
           "matchId": "3322647",
           "matchup": "Caragea A. vs Golden J.",
           "tour": "ATP",
@@ -291743,6 +291777,23 @@
             "pick": "player2",
             "winner": "player1",
             "prob": 0.6677,
+            "hit": false
+          }
+        },
+        {
+          "matchId": "3323221",
+          "matchup": "Portugal J. vs Berdullas Calvino S.",
+          "tour": "ATP",
+          "tournament": "UTR Pro Tennis Series 3",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6023,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6174,
             "hit": false
           }
         },
@@ -291981,6 +292032,40 @@
             "pick": "player1",
             "winner": "player1",
             "prob": 0.6262,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3323277",
+          "matchup": "Napoli da Silveira M. vs Barreiros Reyes M.",
+          "tour": "ATP",
+          "tournament": "Biella challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6023,
+            "hit": true
+          }
+        },
+        {
+          "matchId": "3323279",
+          "matchup": "Favalessa Fiorini B. vs Martins E.",
+          "tour": "ATP",
+          "tournament": "Biella challenger",
+          "pick": "player1",
+          "winner": "player1",
+          "prob": 0.58,
+          "source": "ranking-only",
+          "hit": true,
+          "firstSet": {
+            "pick": "player1",
+            "winner": "player1",
+            "prob": 0.6023,
             "hit": true
           }
         },
@@ -294753,6 +294838,23 @@
             "winner": "player1",
             "prob": 0.6356,
             "hit": true
+          }
+        },
+        {
+          "matchId": "3322639",
+          "matchup": "Heuser M. vs Dagan Fruchtman M.",
+          "tour": "WTA",
+          "tournament": "UTR Pro Match Series",
+          "pick": "player2",
+          "winner": "player1",
+          "prob": 0.6376,
+          "source": "odds+ranking",
+          "hit": false,
+          "firstSet": {
+            "pick": "player2",
+            "winner": "player1",
+            "prob": 0.6416,
+            "hit": false
           }
         },
         {
