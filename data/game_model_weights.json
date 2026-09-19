@@ -3,23 +3,23 @@
     {
       "lo": 0.5,
       "hi": 0.55,
-      "total": 279,
-      "hits": 148,
-      "sumExpected": 147.52279999999982
+      "total": 281,
+      "hits": 149,
+      "sumExpected": 148.6303999999998
     },
     {
       "lo": 0.55,
       "hi": 0.6,
-      "total": 317,
-      "hits": 188,
-      "sumExpected": 182.23440000000008
+      "total": 316,
+      "hits": 189,
+      "sumExpected": 181.6319000000001
     },
     {
       "lo": 0.6,
       "hi": 0.65,
-      "total": 147,
+      "total": 146,
       "hits": 83,
-      "sumExpected": 90.81999999999998
+      "sumExpected": 90.14419999999998
     },
     {
       "lo": 0.65,
@@ -31,9 +31,9 @@
     {
       "lo": 0.7,
       "hi": 0.75,
-      "total": 16,
+      "total": 15,
       "hits": 11,
-      "sumExpected": 11.4925
+      "sumExpected": 10.7487
     },
     {
       "lo": 0.75,
@@ -59,29 +59,29 @@
   ],
   "accuracySummary": {
     "moneyline": {
-      "hits": 442,
-      "total": 782
+      "hits": 444,
+      "total": 781
     },
     "runLine": {
       "hits": 488,
-      "total": 782
+      "total": 781
     },
     "total": {
-      "hits": 341,
-      "total": 782
+      "hits": 346,
+      "total": 781
     },
     "f5": {
-      "hits": 358,
-      "total": 664
+      "hits": 362,
+      "total": 663
     },
     "nrfi": {
-      "hits": 385,
-      "total": 782
+      "hits": 391,
+      "total": 781
     },
     "teamHits": {
-      "hits": 738,
-      "total": 1564
+      "hits": 743,
+      "total": 1562
     }
   },
-  "lastUpdated": "2026-09-18"
+  "lastUpdated": "2026-09-19"
 }
