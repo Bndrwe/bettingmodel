@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-25",
+  "games": [
+    {
+      "homeRuns": 4,
+      "awayRuns": 3,
+      "homeHits": 9,
+      "awayHits": 7,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 1
+      },
+      "f5Runs": {
+        "home": 3,
+        "away": 3
+      },
+      "f5Complete": true,
+      "gamePk": 824703
+    },
+    {
+      "homeRuns": 2,
+      "awayRuns": 10,
+      "homeHits": 9,
+      "awayHits": 13,
+      "firstInningRuns": {
+        "home": 0,
+        "away": 0
+      },
+      "f5Runs": {
+        "home": 1,
+        "away": 7
+      },
+      "f5Complete": true,
+      "gamePk": 823491
+    }
+  ]
+}
