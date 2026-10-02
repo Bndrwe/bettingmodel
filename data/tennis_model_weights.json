@@ -10,44 +10,44 @@
     {
       "lo": 0.55,
       "hi": 0.6,
-      "total": 5255,
-      "hits": 4552,
-      "sumExpected": 3065.131199999839
+      "total": 5242,
+      "hits": 4543,
+      "sumExpected": 3057.5134999998413
     },
     {
       "lo": 0.6,
       "hi": 0.65,
-      "total": 4942,
-      "hits": 2966,
-      "sumExpected": 3080.260900000006
+      "total": 4950,
+      "hits": 2973,
+      "sumExpected": 3085.4502000000057
     },
     {
       "lo": 0.65,
       "hi": 0.7,
-      "total": 3328,
-      "hits": 2231,
-      "sumExpected": 2228.302099999998
+      "total": 3373,
+      "hits": 2264,
+      "sumExpected": 2258.5409999999965
     },
     {
       "lo": 0.7,
       "hi": 0.75,
-      "total": 2903,
-      "hits": 2131,
-      "sumExpected": 2100.654800000001
+      "total": 2911,
+      "hits": 2148,
+      "sumExpected": 2106.403299999999
     },
     {
       "lo": 0.75,
       "hi": 0.8,
-      "total": 39,
-      "hits": 34,
-      "sumExpected": 29.4029
+      "total": 42,
+      "hits": 37,
+      "sumExpected": 31.6969
     },
     {
       "lo": 0.8,
       "hi": 0.9,
-      "total": 23,
-      "hits": 18,
-      "sumExpected": 19.261799999999997
+      "total": 50,
+      "hits": 41,
+      "sumExpected": 41.34629999999999
     },
     {
       "lo": 0.9,
@@ -68,30 +68,30 @@
     {
       "lo": 0.55,
       "hi": 0.6,
-      "total": 1539,
-      "hits": 1160,
-      "sumExpected": 909.2335000000181
+      "total": 1496,
+      "hits": 1132,
+      "sumExpected": 883.846900000016
     },
     {
       "lo": 0.6,
       "hi": 0.65,
-      "total": 12108,
-      "hits": 8167,
-      "sumExpected": 7511.568699999699
+      "total": 12140,
+      "hits": 8190,
+      "sumExpected": 7533.654699999692
     },
     {
       "lo": 0.65,
       "hi": 0.7,
-      "total": 2743,
-      "hits": 1992,
-      "sumExpected": 1841.9982000000023
+      "total": 2833,
+      "hits": 2063,
+      "sumExpected": 1902.1400000000021
     },
     {
       "lo": 0.7,
       "hi": 0.75,
-      "total": 90,
-      "hits": 57,
-      "sumExpected": 63.80189999999998
+      "total": 89,
+      "hits": 58,
+      "sumExpected": 63.08929999999999
     },
     {
       "lo": 0.75,
@@ -116,12 +116,12 @@
     }
   ],
   "accuracySummary": {
-    "hits": 12138,
-    "total": 16714
+    "hits": 12212,
+    "total": 16792
   },
   "firstSetAccuracySummary": {
-    "hits": 11421,
-    "total": 16714
+    "hits": 11488,
+    "total": 16792
   },
-  "lastUpdated": "2026-10-01"
+  "lastUpdated": "2026-10-02"
 }
